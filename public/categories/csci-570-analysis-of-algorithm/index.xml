@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>CSCI-570 Analysis of Algorithm - Category - Shuaiqifeiyang&#39;s blog</title>
+        <link>https://shuaiqifeiyang.tech/categories/csci-570-analysis-of-algorithm/</link>
+        <description>CSCI-570 Analysis of Algorithm - Category - Shuaiqifeiyang&#39;s blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>shuaiqifeiyang@gmail.com</managingEditor>
+            <webMaster>shuaiqifeiyang@gmail.com</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 25 Oct 2021 09:37:16 -0700</lastBuildDate><atom:link href="https://shuaiqifeiyang.tech/categories/csci-570-analysis-of-algorithm/" rel="self" type="application/rss+xml" /><item>
+    <title>Max Flow</title>
+    <link>https://shuaiqifeiyang.tech/posts/algorithm/max-flow/</link>
+    <pubDate>Mon, 25 Oct 2021 09:37:16 -0700</pubDate>
+    <author>Author</author>
+    <guid>https://shuaiqifeiyang.tech/posts/algorithm/max-flow/</guid>
+    <description><![CDATA[<p>This article introduces the maximum flow problem.</p>]]></description>
+</item></channel>
+</rss>
