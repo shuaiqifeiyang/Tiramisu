@@ -4,6 +4,7 @@ defaultContentLanguage = "en"
 # language code
 languageCode = "en"
 title = "Shuaiqifeiyang's blog"
+enableEmoji = true
 
 # Change the default theme to be use when building the site with Hugo
 theme = "LoveIt"

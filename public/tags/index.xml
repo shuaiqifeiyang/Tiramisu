@@ -4,26 +4,26 @@
         <link>https://shuaiqifeiyang.tech/tags/</link>
         <description>Tags - Tag - Shuaiqifeiyang&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>shuaiqifeiyang@gmail.com</managingEditor>
-            <webMaster>shuaiqifeiyang@gmail.com</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 26 Oct 2021 20:19:10 -0700</lastBuildDate><atom:link href="https://shuaiqifeiyang.tech/tags/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>shuaiqifeiyang@gmail.com</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 25 Oct 2021 09:37:16 -0700</lastBuildDate><atom:link href="https://shuaiqifeiyang.tech/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>Algorithm</title>
+    <link>https://shuaiqifeiyang.tech/tags/algorithm/</link>
+    <pubDate>Mon, 25 Oct 2021 09:37:16 -0700</pubDate>
+    <author>Author</author>
+    <guid>https://shuaiqifeiyang.tech/tags/algorithm/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
     <title>APP</title>
     <link>https://shuaiqifeiyang.tech/tags/app/</link>
-    <pubDate>Tue, 26 Oct 2021 20:19:10 -0700</pubDate>
+    <pubDate>Fri, 28 Feb 2020 20:19:10 -0700</pubDate>
     <author>Author</author>
     <guid>https://shuaiqifeiyang.tech/tags/app/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Game</title>
     <link>https://shuaiqifeiyang.tech/tags/game/</link>
-    <pubDate>Tue, 26 Oct 2021 20:19:10 -0700</pubDate>
+    <pubDate>Fri, 28 Feb 2020 20:19:10 -0700</pubDate>
     <author>Author</author>
     <guid>https://shuaiqifeiyang.tech/tags/game/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Algorithm</title>
-    <link>https://shuaiqifeiyang.tech/tags/algorithm/</link>
-    <pubDate>Tue, 26 Oct 2021 20:05:37 -0700</pubDate>
-    <author>Author</author>
-    <guid>https://shuaiqifeiyang.tech/tags/algorithm/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Nginx</title>
@@ -31,6 +31,20 @@
     <pubDate>Thu, 25 Jul 2019 19:08:14 -0700</pubDate>
     <author>Author</author>
     <guid>https://shuaiqifeiyang.tech/tags/nginx/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Graphics</title>
+    <link>https://shuaiqifeiyang.tech/tags/graphics/</link>
+    <pubDate>Wed, 09 Jan 2019 22:55:11 -0700</pubDate>
+    <author>Author</author>
+    <guid>https://shuaiqifeiyang.tech/tags/graphics/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>C&#43;&#43;</title>
+    <link>https://shuaiqifeiyang.tech/tags/c&#43;&#43;/</link>
+    <pubDate>Mon, 07 Jan 2019 23:09:08 -0700</pubDate>
+    <author>Author</author>
+    <guid>https://shuaiqifeiyang.tech/tags/c&#43;&#43;/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>

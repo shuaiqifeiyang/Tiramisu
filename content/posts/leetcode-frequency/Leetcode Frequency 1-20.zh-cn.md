@@ -1,7 +1,7 @@
 ---
 title: "1-20"
 date: 2021-10-26T20:05:49-07:00
-draft: false
+draft: true
 tags: ["Algorithm"]
 categories: ["Leetcode frequency"]
 ---

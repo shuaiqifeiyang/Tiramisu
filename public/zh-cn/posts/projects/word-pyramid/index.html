@@ -9,8 +9,8 @@
 <meta property="og:description" content="一款背单词的教育游戏" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://shuaiqifeiyang.tech/zh-cn/posts/projects/word-pyramid/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2021-10-26T20:19:10-07:00" />
-<meta property="article:modified_time" content="2021-10-26T20:19:10-07:00" />
+<meta property="article:published_time" content="2020-02-28T20:19:10-07:00" />
+<meta property="article:modified_time" content="2020-02-28T20:19:10-07:00" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Word Pyramid"/>
@@ -18,7 +18,7 @@
 <meta name="application-name" content="LoveIt">
 <meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://shuaiqifeiyang.tech/zh-cn/posts/projects/word-pyramid/" /><link rel="prev" href="https://shuaiqifeiyang.tech/zh-cn/posts/leetcode-frequency/leetcode-frequency-1-20/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://shuaiqifeiyang.tech/zh-cn/posts/projects/word-pyramid/" /><link rel="prev" href="https://shuaiqifeiyang.tech/zh-cn/posts/mics/how-to-build-nginx-server/" /><link rel="next" href="https://shuaiqifeiyang.tech/zh-cn/posts/algorithm/max-flow/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
@@ -27,8 +27,8 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/shuaiqifeiyang.tech\/zh-cn\/posts\/projects\/word-pyramid\/"
-        },"genre": "posts","keywords": "APP, Game","wordcount":  403 ,
-        "url": "https:\/\/shuaiqifeiyang.tech\/zh-cn\/posts\/projects\/word-pyramid\/","datePublished": "2021-10-26T20:19:10-07:00","dateModified": "2021-10-26T20:19:10-07:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+        },"genre": "posts","keywords": "APP, Game","wordcount":  586 ,
+        "url": "https:\/\/shuaiqifeiyang.tech\/zh-cn\/posts\/projects\/word-pyramid\/","datePublished": "2020-02-28T20:19:10-07:00","dateModified": "2020-02-28T20:19:10-07:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "作者"},"author": {
                 "@type": "Person",
@@ -110,7 +110,7 @@
             <div class="post-meta-line">
                 
                 <span class="post-category">收录于 <a href="/zh-cn/categories/projects/"><i class="far fa-folder fa-fw"></i>Projects</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-10-26">2021-10-26</time>&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2020-02-28">2020-02-28</time>&nbsp;
             </div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
@@ -129,37 +129,45 @@
 <h2 id="为什么要做这个游戏">为什么要做这个游戏</h2>
 <p>为什么人很容易沉迷游戏，而不会沉迷于工作、学习呢？因为游戏背后有一套完整的心理学理论引导你沉迷其中，包括即时反馈、阶段性目标、虚拟的游戏物品、随机的抽奖&hellip;我在想如果将游戏机制与学习结合起来，玩家可以通过在游戏中学习知识获得游戏中的奖励、经验、头衔等等，是不是也可以让人沉迷学习？基于这些想法，并且恰好新冠疫情给了我大把在家的时间，我将这个想法变成了一个手机游戏。</p>
 <h2 id="这是一个怎样的游戏">这是一个怎样的游戏</h2>
-<p>这是一个经营类的游戏，玩家通过背英语单词赚取金币，金币可以用来建造房子，开阔土地。虽然乍一看这是一个游戏，但是它实际上也是一个完善的背单词APP。作为一个曾经的托福考生，我按照我的经验将托福单词分了类，有些list是学科单词，有些list是容易弄混的词，单词的中文意思我也尽量做到简洁，这样可以让背单词更加高效。除此之外，这个APP还支持单词发音。
+<p>这是一个经营类的游戏，玩家通过背英语单词赚取金币，金币可以用来建造房子，开阔土地。虽然乍一看这是一个游戏，但是它实际上也是一个完善的背单词APP。作为一个曾经的托福考生，我按照我的经验将托福单词分了类，有些list是学科单词，有些list是容易弄混的词，单词的中文意思我也尽量做到简洁，这样可以让背单词更加高效。除此之外，这个APP还支持单词发音。<br>
+这个游戏已经上架了APP Store，<a href="https://apps.apple.com/us/app/word-pyramid/id1500563600" target="_blank" rel="noopener noreffer">下载链接</a></p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/projects/img/1.gif"
+        data-srcset="https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/projects/img/1.gif, https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/projects/img/1.gif 1.5x, https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/projects/img/1.gif 2x"
+        data-sizes="auto"
+        alt="https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/projects/img/1.gif"
+        title="https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/projects/img/1.gif" /> 
 <img
         class="lazyload"
         src="/svg/loading.min.svg"
-        data-src="./1.gif"
-        data-srcset="./1.gif, ./1.gif 1.5x, ./1.gif 2x"
+        data-src="https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/projects/img/2.gif"
+        data-srcset="https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/projects/img/2.gif, https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/projects/img/2.gif 1.5x, https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/projects/img/2.gif 2x"
         data-sizes="auto"
-        alt="./1.gif"
-        title="./1.gif" />
+        alt="https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/projects/img/2.gif"
+        title="https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/projects/img/2.gif" /> 
 <img
         class="lazyload"
         src="/svg/loading.min.svg"
-        data-src="./2.gif"
-        data-srcset="./2.gif, ./2.gif 1.5x, ./2.gif 2x"
+        data-src="https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/projects/img/3.gif"
+        data-srcset="https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/projects/img/3.gif, https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/projects/img/3.gif 1.5x, https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/projects/img/3.gif 2x"
         data-sizes="auto"
-        alt="./2.gif"
-        title="./2.gif" />
-<img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="./3.gif"
-        data-srcset="./3.gif, ./3.gif 1.5x, ./3.gif 2x"
-        data-sizes="auto"
-        alt="./3.gif"
-        title="./3.gif" /></p>
+        alt="https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/projects/img/3.gif"
+        title="https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/projects/img/3.gif" /> </p>
 <h2 id="如何做这个游戏">如何做这个游戏</h2>
-<h2 id="下一步的计划">下一步的计划</h2></div><div class="post-footer" id="post-footer">
+<p>我独自完成了游戏的设计、开发、美术。整个游戏是基于Unity引擎开发的，画UI用到了Krita、3D建模用到了MagicaPixel。</p>
+<h2 id="下一步的计划">下一步的计划</h2>
+<p>目前这个游戏取得了200+的下载量和5.0的评分，我下一步的计划：</p>
+<ol>
+<li>对设计做一些修改，增加引导环节，让玩家能够更加快的进入游戏角色。</li>
+<li>对画面做一些优化，增添夜间和白天的切换。</li>
+<li>增加更多的单词库。</li>
+</ol></div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>更新于 2021-10-26</span>
+                <span>更新于 2020-02-28</span>
             </div>
             <div class="post-info-license"></div>
         </div>
@@ -178,7 +186,8 @@
         </section>
     </div>
 
-    <div class="post-nav"><a href="/zh-cn/posts/leetcode-frequency/leetcode-frequency-1-20/" class="prev" rel="prev" title="1-20"><i class="fas fa-angle-left fa-fw"></i>1-20</a></div>
+    <div class="post-nav"><a href="/zh-cn/posts/mics/how-to-build-nginx-server/" class="prev" rel="prev" title="搭建Nginx服务器"><i class="fas fa-angle-left fa-fw"></i>搭建Nginx服务器</a>
+            <a href="/zh-cn/posts/algorithm/max-flow/" class="next" rel="next" title="Max Flow">Max Flow<i class="fas fa-angle-right fa-fw"></i></a></div>
 </div>
 </article></div>
             </main><footer class="footer">
