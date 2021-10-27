@@ -73,4 +73,32 @@
                     rel="alternate"
                     hreflang="zh-cn"
                     href="https://shuaiqifeiyang.tech/zh-cn/tags/"
+                    /></url><url>
+            <loc>https://shuaiqifeiyang.tech/zh-cn/categories/misc/</loc><lastmod>2019-07-25T19:08:14-07:00</lastmod><xhtml:link
+                        rel="alternate"
+                        hreflang="en"
+                        href="https://shuaiqifeiyang.tech/categories/misc/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="zh-cn"
+                    href="https://shuaiqifeiyang.tech/zh-cn/categories/misc/"
+                    /></url><url>
+            <loc>https://shuaiqifeiyang.tech/zh-cn/tags/nginx/</loc><lastmod>2019-07-25T19:08:14-07:00</lastmod><xhtml:link
+                        rel="alternate"
+                        hreflang="en"
+                        href="https://shuaiqifeiyang.tech/tags/nginx/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="zh-cn"
+                    href="https://shuaiqifeiyang.tech/zh-cn/tags/nginx/"
+                    /></url><url>
+            <loc>https://shuaiqifeiyang.tech/zh-cn/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</loc><lastmod>2019-07-25T19:08:14-07:00</lastmod></url><url>
+            <loc>https://shuaiqifeiyang.tech/zh-cn/posts/mics/how-to-build-nginx-server/</loc><lastmod>2019-07-25T19:08:14-07:00</lastmod><xhtml:link
+                        rel="alternate"
+                        hreflang="en"
+                        href="https://shuaiqifeiyang.tech/posts/mics/how-to-build-nginx-server/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="zh-cn"
+                    href="https://shuaiqifeiyang.tech/zh-cn/posts/mics/how-to-build-nginx-server/"
                     /></url></urlset>
