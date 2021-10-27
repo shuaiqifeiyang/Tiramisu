@@ -2,16 +2,88 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://shuaiqifeiyang.tech/zh-cn/about/</loc><lastmod>2021-10-25T13:32:15-07:00</lastmod><xhtml:link
+            <loc>https://shuaiqifeiyang.tech/zh-cn/tags/app/</loc><lastmod>2021-10-26T20:19:10-07:00</lastmod><xhtml:link
                         rel="alternate"
                         hreflang="en"
-                        href="https://shuaiqifeiyang.tech/about/"
+                        href="https://shuaiqifeiyang.tech/tags/app/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="zh-cn"
-                    href="https://shuaiqifeiyang.tech/zh-cn/about/"
+                    href="https://shuaiqifeiyang.tech/zh-cn/tags/app/"
                     /></url><url>
-            <loc>https://shuaiqifeiyang.tech/zh-cn/tags/algorithm/</loc><lastmod>2021-10-24T09:06:32-07:00</lastmod><xhtml:link
+            <loc>https://shuaiqifeiyang.tech/zh-cn/categories/</loc><lastmod>2021-10-26T20:19:10-07:00</lastmod><xhtml:link
+                        rel="alternate"
+                        hreflang="en"
+                        href="https://shuaiqifeiyang.tech/categories/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="zh-cn"
+                    href="https://shuaiqifeiyang.tech/zh-cn/categories/"
+                    /></url><url>
+            <loc>https://shuaiqifeiyang.tech/zh-cn/tags/game/</loc><lastmod>2021-10-26T20:19:10-07:00</lastmod><xhtml:link
+                        rel="alternate"
+                        hreflang="en"
+                        href="https://shuaiqifeiyang.tech/tags/game/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="zh-cn"
+                    href="https://shuaiqifeiyang.tech/zh-cn/tags/game/"
+                    /></url><url>
+            <loc>https://shuaiqifeiyang.tech/zh-cn/posts/</loc><lastmod>2021-10-26T20:19:10-07:00</lastmod><xhtml:link
+                        rel="alternate"
+                        hreflang="en"
+                        href="https://shuaiqifeiyang.tech/posts/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="zh-cn"
+                    href="https://shuaiqifeiyang.tech/zh-cn/posts/"
+                    /></url><url>
+            <loc>https://shuaiqifeiyang.tech/zh-cn/categories/projects/</loc><lastmod>2021-10-26T20:19:10-07:00</lastmod><xhtml:link
+                        rel="alternate"
+                        hreflang="en"
+                        href="https://shuaiqifeiyang.tech/categories/projects/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="zh-cn"
+                    href="https://shuaiqifeiyang.tech/zh-cn/categories/projects/"
+                    /></url><url>
+            <loc>https://shuaiqifeiyang.tech/zh-cn/</loc><lastmod>2021-10-26T20:19:10-07:00</lastmod><xhtml:link
+                        rel="alternate"
+                        hreflang="en"
+                        href="https://shuaiqifeiyang.tech/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="zh-cn"
+                    href="https://shuaiqifeiyang.tech/zh-cn/"
+                    /></url><url>
+            <loc>https://shuaiqifeiyang.tech/zh-cn/tags/</loc><lastmod>2021-10-26T20:19:10-07:00</lastmod><xhtml:link
+                        rel="alternate"
+                        hreflang="en"
+                        href="https://shuaiqifeiyang.tech/tags/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="zh-cn"
+                    href="https://shuaiqifeiyang.tech/zh-cn/tags/"
+                    /></url><url>
+            <loc>https://shuaiqifeiyang.tech/zh-cn/posts/projects/word-pyramid/</loc><lastmod>2021-10-26T20:19:10-07:00</lastmod><xhtml:link
+                        rel="alternate"
+                        hreflang="en"
+                        href="https://shuaiqifeiyang.tech/posts/projects/word-pyramid/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="zh-cn"
+                    href="https://shuaiqifeiyang.tech/zh-cn/posts/projects/word-pyramid/"
+                    /></url><url>
+            <loc>https://shuaiqifeiyang.tech/zh-cn/posts/leetcode-frequency/leetcode-frequency-1-20/</loc><lastmod>2021-10-26T20:05:49-07:00</lastmod><xhtml:link
+                        rel="alternate"
+                        hreflang="en"
+                        href="https://shuaiqifeiyang.tech/posts/leetcode-frequency/leetcode-frequency-1-20/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="zh-cn"
+                    href="https://shuaiqifeiyang.tech/zh-cn/posts/leetcode-frequency/leetcode-frequency-1-20/"
+                    /></url><url>
+            <loc>https://shuaiqifeiyang.tech/zh-cn/tags/algorithm/</loc><lastmod>2021-10-26T20:05:49-07:00</lastmod><xhtml:link
                         rel="alternate"
                         hreflang="en"
                         href="https://shuaiqifeiyang.tech/tags/algorithm/"
@@ -20,14 +92,23 @@
                     hreflang="zh-cn"
                     href="https://shuaiqifeiyang.tech/zh-cn/tags/algorithm/"
                     /></url><url>
-            <loc>https://shuaiqifeiyang.tech/zh-cn/categories/</loc><lastmod>2021-10-24T09:06:32-07:00</lastmod><xhtml:link
+            <loc>https://shuaiqifeiyang.tech/zh-cn/categories/leetcode-frequency/</loc><lastmod>2021-10-26T20:05:49-07:00</lastmod><xhtml:link
                         rel="alternate"
                         hreflang="en"
-                        href="https://shuaiqifeiyang.tech/categories/"
+                        href="https://shuaiqifeiyang.tech/categories/leetcode-frequency/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="zh-cn"
-                    href="https://shuaiqifeiyang.tech/zh-cn/categories/"
+                    href="https://shuaiqifeiyang.tech/zh-cn/categories/leetcode-frequency/"
+                    /></url><url>
+            <loc>https://shuaiqifeiyang.tech/zh-cn/about/</loc><lastmod>2021-10-25T13:32:15-07:00</lastmod><xhtml:link
+                        rel="alternate"
+                        hreflang="en"
+                        href="https://shuaiqifeiyang.tech/about/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="zh-cn"
+                    href="https://shuaiqifeiyang.tech/zh-cn/about/"
                     /></url><url>
             <loc>https://shuaiqifeiyang.tech/zh-cn/categories/csci-570-analysis-of-algorithm/</loc><lastmod>2021-10-24T09:06:32-07:00</lastmod><xhtml:link
                         rel="alternate"
@@ -46,33 +127,6 @@
                     rel="alternate"
                     hreflang="zh-cn"
                     href="https://shuaiqifeiyang.tech/zh-cn/posts/algorithm/max-flow/"
-                    /></url><url>
-            <loc>https://shuaiqifeiyang.tech/zh-cn/posts/</loc><lastmod>2021-10-24T09:06:32-07:00</lastmod><xhtml:link
-                        rel="alternate"
-                        hreflang="en"
-                        href="https://shuaiqifeiyang.tech/posts/"
-                        /><xhtml:link
-                    rel="alternate"
-                    hreflang="zh-cn"
-                    href="https://shuaiqifeiyang.tech/zh-cn/posts/"
-                    /></url><url>
-            <loc>https://shuaiqifeiyang.tech/zh-cn/</loc><lastmod>2021-10-24T09:06:32-07:00</lastmod><xhtml:link
-                        rel="alternate"
-                        hreflang="en"
-                        href="https://shuaiqifeiyang.tech/"
-                        /><xhtml:link
-                    rel="alternate"
-                    hreflang="zh-cn"
-                    href="https://shuaiqifeiyang.tech/zh-cn/"
-                    /></url><url>
-            <loc>https://shuaiqifeiyang.tech/zh-cn/tags/</loc><lastmod>2021-10-24T09:06:32-07:00</lastmod><xhtml:link
-                        rel="alternate"
-                        hreflang="en"
-                        href="https://shuaiqifeiyang.tech/tags/"
-                        /><xhtml:link
-                    rel="alternate"
-                    hreflang="zh-cn"
-                    href="https://shuaiqifeiyang.tech/zh-cn/tags/"
                     /></url><url>
             <loc>https://shuaiqifeiyang.tech/zh-cn/categories/misc/</loc><lastmod>2019-07-25T19:08:14-07:00</lastmod><xhtml:link
                         rel="alternate"

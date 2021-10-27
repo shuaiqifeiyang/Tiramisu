@@ -4,7 +4,21 @@
         <link>https://shuaiqifeiyang.tech/zh-cn/posts/</link>
         <description>所有文章 | Shuaiqifeiyang&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>shuaiqifeiyang@gmail.com</managingEditor>
-            <webMaster>shuaiqifeiyang@gmail.com</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 24 Oct 2021 09:06:32 -0700</lastBuildDate><atom:link href="https://shuaiqifeiyang.tech/zh-cn/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>shuaiqifeiyang@gmail.com</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 26 Oct 2021 20:19:10 -0700</lastBuildDate><atom:link href="https://shuaiqifeiyang.tech/zh-cn/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Word Pyramid</title>
+    <link>https://shuaiqifeiyang.tech/zh-cn/posts/projects/word-pyramid/</link>
+    <pubDate>Tue, 26 Oct 2021 20:19:10 -0700</pubDate>
+    <author>作者</author>
+    <guid>https://shuaiqifeiyang.tech/zh-cn/posts/projects/word-pyramid/</guid>
+    <description><![CDATA[<p>一款背单词的教育游戏</p>]]></description>
+</item><item>
+    <title>1-20</title>
+    <link>https://shuaiqifeiyang.tech/zh-cn/posts/leetcode-frequency/leetcode-frequency-1-20/</link>
+    <pubDate>Tue, 26 Oct 2021 20:05:49 -0700</pubDate>
+    <author>作者</author>
+    <guid>https://shuaiqifeiyang.tech/zh-cn/posts/leetcode-frequency/leetcode-frequency-1-20/</guid>
+    <description><![CDATA[点评Leetcode高频题1-20]]></description>
+</item><item>
     <title>Max Flow</title>
     <link>https://shuaiqifeiyang.tech/zh-cn/posts/algorithm/max-flow/</link>
     <pubDate>Sun, 24 Oct 2021 09:06:32 -0700</pubDate>
