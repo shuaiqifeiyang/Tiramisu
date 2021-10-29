@@ -1,8 +1,9 @@
 ---
-title: "1-20"
+title: "Leetcode高频题1-20"
 date: 2021-10-26T20:05:49-07:00
-draft: true
-tags: ["Algorithm"]
+draft: false
+tags: ["Algorithm", "Leetcode"]
 categories: ["Leetcode frequency"]
 ---
-点评Leetcode高频题1-20
+复习Leetcode高频题1-20
+<!--more-->

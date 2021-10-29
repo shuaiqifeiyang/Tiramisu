@@ -1,5 +1,5 @@
 ---
-title: "Max Flow"
+title: "Maximum Flow"
 date: 2021-10-25T09:37:16-07:00
 draft: false
 tags: ["Algorithm"]
@@ -92,4 +92,14 @@ Let $G_f(\Delta)$ be the subset of the residual graph consisting only of edges w
 &emsp;&emsp;Endwhile  
 &emsp;Return f  
 
-Time Complexity of Fork-Fulkerson Algorithm is $O(m^2log_2C)$
+Time Complexity of scaling version of Fork-Fulkerson Algorithm is $O(m^2log_2C)$
+
+## 5. Applications of Maximum Flow
+### 5.1. The Bipartite Matching Problem
+**Definition**:
+1. bipartite graph $G = (V , E)$ is an undirected graph whose node set can be partitioned as $V = X \cup Y$, with the property that every edge $e \in E$ has one end in $X$ and the other end in $Y$.
+2. A matching $M$ in $G$ is a subset of the edges $M \subseteq E$ such that each node appears in at most one edge in $M$.
+3. The Bipartite Matching Problem is that of finding a matching in $G$ of largest possible size.
+
+**Turn this problem into a maximum flow problem**:  
+![](./img/max-flow1.png)

@@ -198,7 +198,7 @@ theme = "LoveIt"
         Matrix = ""
         Bilibili = ""
         Leetcode = "shuaiqifeiyang"
-        Email = "xxxx@xxxx.com"
+        Email = "shuaiqifeiyang@gmail.com"
         RSS = false
         #[languages.en.params.social.Mastodon]
         #  id = "@xxxx"
@@ -438,6 +438,7 @@ theme = "LoveIt"
     [params.footer]
       hugo=false
       author=false
+      since = 2019
       icp="<a href='https://beian.miit.gov.cn/#/Integrated/index'>浙ICP备2021000092</a>"
     [params.page.math]
       enable = false
@@ -462,6 +463,16 @@ theme = "LoveIt"
       # the maximum number of lines of displayed code by default
       # 默认展开显示的代码行数
       maxShownLines = 100
+    [params.page.toc]
+      # whether to enable the table of the contents
+      # 是否使用目录
+      enable = true
+      # whether to keep the static table of the contents in front of the post
+      # 是否保持使用文章前面的静态目录
+      keepStatic = false
+      # whether to make the table of the contents in the sidebar automatically collapsed
+      # 是否使侧边目录自动折叠展开
+      auto = false
 # Markup related configuration in Hugo
 [markup]
   # Syntax Highlighting (https://gohugo.io/content-management/syntax-highlighting)

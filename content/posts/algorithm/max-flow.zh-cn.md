@@ -1,5 +1,5 @@
 ---
-title: "Max Flow"
+title: "最大流"
 date: 2021-10-24T09:06:32-07:00
 draft: false
 tags: ["Algorithm"]
