@@ -27,7 +27,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/shuaiqifeiyang.tech\/posts\/algorithm\/max-flow\/"
-        },"genre": "posts","keywords": "Algorithm","wordcount":  945 ,
+        },"genre": "posts","keywords": "Algorithm","wordcount":  1227 ,
         "url": "https:\/\/shuaiqifeiyang.tech\/posts\/algorithm\/max-flow\/","datePublished": "2021-10-25T09:37:16-07:00","dateModified": "2021-10-25T09:37:16-07:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "Author"},"author": {
@@ -126,6 +126,10 @@
     <li><a href="#5-applications-of-maximum-flow">5. Applications of Maximum Flow</a>
       <ul>
         <li><a href="#51-the-bipartite-matching-problem">5.1. The Bipartite Matching Problem</a></li>
+        <li><a href="#52-edge-disjoint-path-in-directed-and-undirected-graph">5.2. Edge-Disjoint Path in Directed and Undirected Graph</a></li>
+        <li><a href="#53-node-disjoint-path">5.3. Node-Disjoint Path</a></li>
+        <li><a href="#54-circulations-with-demands">5.4. Circulations with Demands</a></li>
+        <li><a href="#55-circulation-with-demands-and-lower-bounds">5.5 Circulation with Demands and Lower Bounds</a></li>
       </ul>
     </li>
   </ul>
@@ -229,11 +233,68 @@ Let $G_f(\Delta)$ be the subset of the residual graph consisting only of edges w
 <img
         class="lazyload"
         src="/svg/loading.min.svg"
-        data-src="./img/max-flow1.png"
-        data-srcset="./img/max-flow1.png, ./img/max-flow1.png 1.5x, ./img/max-flow1.png 2x"
+        data-src="https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/algorithm/img/max-flow1.png"
+        data-srcset="https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/algorithm/img/max-flow1.png, https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/algorithm/img/max-flow1.png 1.5x, https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/algorithm/img/max-flow1.png 2x"
         data-sizes="auto"
-        alt="./img/max-flow1.png"
-        title="./img/max-flow1.png" /></p></div><div class="post-footer" id="post-footer">
+        alt="https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/algorithm/img/max-flow1.png"
+        title="https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/algorithm/img/max-flow1.png" />
+<strong>Proof</strong>:<br>
+To prove this we should show that $G^\prime$ will have a max flow of value k <strong>if and only if</strong> $G$&rsquo;s maximum size of matching is k.</p>
+<h3 id="52-edge-disjoint-path-in-directed-and-undirected-graph">5.2. Edge-Disjoint Path in Directed and Undirected Graph</h3>
+<p><strong>Edge-Disjoint Path in Directed Graph</strong>: Delete the edges ending at source and edges begining at sink.</p>
+<p><strong>Edge-Disjoint Path in Undirected Graph</strong>: Transfer the original undirected edge to two directed edges with reverse directions. Then this problem is similar to Edge-Disjoint Path in Directed Graph. However, we should pay attention to a case: one path uses directed edge (u, v) and another path uses directed edge (v, u). It is not hard to see that there always exists a maximum flow in any network that uses at most one out of each pair of oppositely directed edges.<br>
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/algorithm/img/max-flow2.png"
+        data-srcset="https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/algorithm/img/max-flow2.png, https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/algorithm/img/max-flow2.png 1.5x, https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/algorithm/img/max-flow2.png 2x"
+        data-sizes="auto"
+        alt="https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/algorithm/img/max-flow2.png"
+        title="https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/algorithm/img/max-flow2.png" /></p>
+<h3 id="53-node-disjoint-path">5.3. Node-Disjoint Path</h3>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/algorithm/img/max-flow3.png"
+        data-srcset="https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/algorithm/img/max-flow3.png, https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/algorithm/img/max-flow3.png 1.5x, https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/algorithm/img/max-flow3.png 2x"
+        data-sizes="auto"
+        alt="https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/algorithm/img/max-flow3.png"
+        title="https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/algorithm/img/max-flow3.png" /></p>
+<h3 id="54-circulations-with-demands">5.4. Circulations with Demands</h3>
+<p><strong>Definition</strong>:</p>
+<ul>
+<li>We are given a directed graph $G=(V,E)$ with capacities on edges</li>
+<li>Associated with each node $v\in V$ a demand $d_v$
+<ul>
+<li>If $d_v&gt;0$, node v has demand of $d_v$ as a sink.</li>
+<li>If $d_v&lt;0$, node v has supply of $d_v$ as a source.</li>
+<li>If $d_v=0$, v is neither a sink and source.</li>
+</ul>
+</li>
+<li>In this setting, we say that a circulation with demands {dv} is a function f that assigns a nonnegative real number to each edge and satisfies the following two conditions.
+<ol>
+<li>(Capacity conditions)For each $e\in E$, we have $0\leq f(e)\leq c_e$.</li>
+<li>(Demand conditions)For each $v\in V$, we have v, $f^{in}(v)−f^{out}(v)=d_v$.</li>
+</ol>
+</li>
+</ul>
+<p><strong>Solution</strong>:
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/algorithm/img/max-flow4.png"
+        data-srcset="https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/algorithm/img/max-flow4.png, https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/algorithm/img/max-flow4.png 1.5x, https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/algorithm/img/max-flow4.png 2x"
+        data-sizes="auto"
+        alt="https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/algorithm/img/max-flow4.png"
+        title="https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/algorithm/img/max-flow4.png" /></p>
+<h3 id="55-circulation-with-demands-and-lower-bounds">5.5 Circulation with Demands and Lower Bounds</h3>
+<p><strong>Definition</strong>:</p>
+<ol>
+<li>(Capacity conditions)For each $e\in E$, we have $l_e\leq f(e)\leq c_e$.</li>
+<li>(Demand conditions)For each $v\in V$, we have v, $f^{in}(v)−f^{out}(v)=d_v$.
+<strong>Solution</strong>:<br>
+Satisfying lower bounds first, then the problem is similar to Circulation with Demands</li>
+</ol></div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
