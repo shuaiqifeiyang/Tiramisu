@@ -4,9 +4,16 @@
         <link>https://shuaiqifeiyang.tech/zh-cn/</link>
         <description>关于 LoveIt 主题</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>shuaiqifeiyang@gmail.com</managingEditor>
-            <webMaster>shuaiqifeiyang@gmail.com</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 26 Oct 2021 20:05:49 -0700</lastBuildDate>
+            <webMaster>shuaiqifeiyang@gmail.com</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 02 Nov 2021 20:19:10 -0700</lastBuildDate>
             <atom:link href="https://shuaiqifeiyang.tech/zh-cn/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>887 Super Egg Drop</title>
+    <link>https://shuaiqifeiyang.tech/zh-cn/posts/leetcode-single/887-super-egg-drop/</link>
+    <pubDate>Tue, 02 Nov 2021 20:19:10 -0700</pubDate>
+    <author>作者</author>
+    <guid>https://shuaiqifeiyang.tech/zh-cn/posts/leetcode-single/887-super-egg-drop/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
     <title>Leetcode高频题1-20</title>
     <link>https://shuaiqifeiyang.tech/zh-cn/posts/leetcode-frequency/leetcode-frequency-1-20/</link>
     <pubDate>Tue, 26 Oct 2021 20:05:49 -0700</pubDate>
