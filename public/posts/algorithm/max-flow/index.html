@@ -27,7 +27,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/shuaiqifeiyang.tech\/posts\/algorithm\/max-flow\/"
-        },"genre": "posts","keywords": "Algorithm","wordcount":  1227 ,
+        },"genre": "posts","keywords": "Algorithm","wordcount":  1240 ,
         "url": "https:\/\/shuaiqifeiyang.tech\/posts\/algorithm\/max-flow\/","datePublished": "2021-10-25T09:37:16-07:00","dateModified": "2021-10-25T09:37:16-07:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "Author"},"author": {
@@ -261,7 +261,8 @@ To prove this we should show that $G^\prime$ will have a max flow of value k <st
         alt="https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/algorithm/img/max-flow3.png"
         title="https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/algorithm/img/max-flow3.png" /></p>
 <h3 id="54-circulations-with-demands">5.4. Circulations with Demands</h3>
-<p><strong>Definition</strong>:</p>
+<p><strong>Definition</strong>:<br>
+<strong>Circulation Network</strong>:</p>
 <ul>
 <li>We are given a directed graph $G=(V,E)$ with capacities on edges</li>
 <li>Associated with each node $v\in V$ a demand $d_v$
@@ -271,13 +272,17 @@ To prove this we should show that $G^\prime$ will have a max flow of value k <st
 <li>If $d_v=0$, v is neither a sink and source.</li>
 </ul>
 </li>
-<li>In this setting, we say that a circulation with demands {dv} is a function f that assigns a nonnegative real number to each edge and satisfies the following two conditions.
+</ul>
+<p><strong>Circulation</strong>:</p>
+<ul>
+<li>We say that a circulation with demands {dv} is a function f that assigns a nonnegative real number to each edge and satisfies the following two conditions.
 <ol>
 <li>(Capacity conditions)For each $e\in E$, we have $0\leq f(e)\leq c_e$.</li>
 <li>(Demand conditions)For each $v\in V$, we have v, $f^{in}(v)−f^{out}(v)=d_v$.</li>
 </ol>
 </li>
 </ul>
+<p>Our problem is if there is a feasible circulation in a circulation network.</p>
 <p><strong>Solution</strong>:
 <img
         class="lazyload"
@@ -291,10 +296,18 @@ To prove this we should show that $G^\prime$ will have a max flow of value k <st
 <p><strong>Definition</strong>:</p>
 <ol>
 <li>(Capacity conditions)For each $e\in E$, we have $l_e\leq f(e)\leq c_e$.</li>
-<li>(Demand conditions)For each $v\in V$, we have v, $f^{in}(v)−f^{out}(v)=d_v$.
-<strong>Solution</strong>:<br>
-Satisfying lower bounds first, then the problem is similar to Circulation with Demands</li>
-</ol></div><div class="post-footer" id="post-footer">
+<li>(Demand conditions)For each $v\in V$, we have v, $f^{in}(v)−f^{out}(v)=d_v$.</li>
+</ol>
+<p><strong>Solution</strong>:<br>
+Satisfying lower bounds first, then the problem is similar to Circulation with Demands
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/algorithm/img/max-flow5.png"
+        data-srcset="https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/algorithm/img/max-flow5.png, https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/algorithm/img/max-flow5.png 1.5x, https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/algorithm/img/max-flow5.png 2x"
+        data-sizes="auto"
+        alt="https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/algorithm/img/max-flow5.png"
+        title="https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/algorithm/img/max-flow5.png" /></p></div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">

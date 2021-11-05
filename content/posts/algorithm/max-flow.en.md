@@ -94,6 +94,8 @@ Let $G_f(\Delta)$ be the subset of the residual graph consisting only of edges w
 
 Time Complexity of scaling version of Fork-Fulkerson Algorithm is $O(m^2log_2C)$
 
+
+
 ## 5. Applications of Maximum Flow
 ### 5.1. The Bipartite Matching Problem
 **Definition**:
@@ -117,14 +119,20 @@ To prove this we should show that $G^\prime$ will have a max flow of value k **i
 
 ### 5.4. Circulations with Demands
 **Definition**:  
+**Circulation Network**:
 *   We are given a directed graph $G=(V,E)$ with capacities on edges
 *   Associated with each node $v\in V$ a demand $d_v$
     *   If $d_v>0$, node v has demand of $d_v$ as a sink.
     *   If $d_v<0$, node v has supply of $d_v$ as a source.
     *   If $d_v=0$, v is neither a sink and source.
-*   In this setting, we say that a circulation with demands {dv} is a function f that assigns a nonnegative real number to each edge and satisfies the following two conditions.
+
+
+**Circulation**:
+*   We say that a circulation with demands {dv} is a function f that assigns a nonnegative real number to each edge and satisfies the following two conditions.
     1. (Capacity conditions)For each $e\in E$, we have $0\leq f(e)\leq c_e$.
-    2. (Demand conditions)For each $v\in V$, we have v, $f^{in}(v)−f^{out}(v)=d_v$.
+    2. (Demand conditions)For each $v\in V$, we have v, $f^{in}(v)−f^{out}(v)=d_v$.  
+
+Our problem is if there is a feasible circulation in a circulation network.  
 
 **Solution**:
 ![](https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/algorithm/img/max-flow4.png)
@@ -132,7 +140,9 @@ To prove this we should show that $G^\prime$ will have a max flow of value k **i
 ### 5.5 Circulation with Demands and Lower Bounds
 **Definition**:
  1. (Capacity conditions)For each $e\in E$, we have $l_e\leq f(e)\leq c_e$.
- 2. (Demand conditions)For each $v\in V$, we have v, $f^{in}(v)−f^{out}(v)=d_v$.
+ 2. (Demand conditions)For each $v\in V$, we have v, $f^{in}(v)−f^{out}(v)=d_v$.  
+
 **Solution**:  
 Satisfying lower bounds first, then the problem is similar to Circulation with Demands
+![](https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/algorithm/img/max-flow5.png)
 
