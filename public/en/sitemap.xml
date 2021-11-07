@@ -2,6 +2,52 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
+            <loc>https://shuaiqifeiyang.tech/posts/leetcode-single/2000/2064/</loc><lastmod>2021-11-07T08:43:43-08:00</lastmod><xhtml:link
+                        rel="alternate"
+                        hreflang="zh-cn"
+                        href="https://shuaiqifeiyang.tech/zh-cn/posts/leetcode-single/2000/2064/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="https://shuaiqifeiyang.tech/posts/leetcode-single/2000/2064/"
+                    /></url><url>
+            <loc>https://shuaiqifeiyang.tech/tags/binary-search/</loc><lastmod>2021-11-07T08:43:43-08:00</lastmod></url><url>
+            <loc>https://shuaiqifeiyang.tech/tags/leetcode/</loc><lastmod>2021-11-07T08:43:43-08:00</lastmod><xhtml:link
+                        rel="alternate"
+                        hreflang="zh-cn"
+                        href="https://shuaiqifeiyang.tech/zh-cn/tags/leetcode/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="https://shuaiqifeiyang.tech/tags/leetcode/"
+                    /></url><url>
+            <loc>https://shuaiqifeiyang.tech/posts/</loc><lastmod>2021-11-07T08:43:43-08:00</lastmod><xhtml:link
+                        rel="alternate"
+                        hreflang="zh-cn"
+                        href="https://shuaiqifeiyang.tech/zh-cn/posts/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="https://shuaiqifeiyang.tech/posts/"
+                    /></url><url>
+            <loc>https://shuaiqifeiyang.tech/</loc><lastmod>2021-11-07T08:43:43-08:00</lastmod><xhtml:link
+                        rel="alternate"
+                        hreflang="zh-cn"
+                        href="https://shuaiqifeiyang.tech/zh-cn/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="https://shuaiqifeiyang.tech/"
+                    /></url><url>
+            <loc>https://shuaiqifeiyang.tech/tags/</loc><lastmod>2021-11-07T08:43:43-08:00</lastmod><xhtml:link
+                        rel="alternate"
+                        hreflang="zh-cn"
+                        href="https://shuaiqifeiyang.tech/zh-cn/tags/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="https://shuaiqifeiyang.tech/tags/"
+                    /></url><url>
             <loc>https://shuaiqifeiyang.tech/tags/algorithm/</loc><lastmod>2021-10-26T20:05:37-07:00</lastmod><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
@@ -20,15 +66,6 @@
                     hreflang="en"
                     href="https://shuaiqifeiyang.tech/categories/"
                     /></url><url>
-            <loc>https://shuaiqifeiyang.tech/tags/leetcode/</loc><lastmod>2021-10-26T20:05:37-07:00</lastmod><xhtml:link
-                        rel="alternate"
-                        hreflang="zh-cn"
-                        href="https://shuaiqifeiyang.tech/zh-cn/tags/leetcode/"
-                        /><xhtml:link
-                    rel="alternate"
-                    hreflang="en"
-                    href="https://shuaiqifeiyang.tech/tags/leetcode/"
-                    /></url><url>
             <loc>https://shuaiqifeiyang.tech/categories/leetcode-frequency/</loc><lastmod>2021-10-26T20:05:37-07:00</lastmod><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
@@ -46,33 +83,6 @@
                     rel="alternate"
                     hreflang="en"
                     href="https://shuaiqifeiyang.tech/posts/leetcode-frequency/leetcode-frequency-1-20/"
-                    /></url><url>
-            <loc>https://shuaiqifeiyang.tech/posts/</loc><lastmod>2021-10-26T20:05:37-07:00</lastmod><xhtml:link
-                        rel="alternate"
-                        hreflang="zh-cn"
-                        href="https://shuaiqifeiyang.tech/zh-cn/posts/"
-                        /><xhtml:link
-                    rel="alternate"
-                    hreflang="en"
-                    href="https://shuaiqifeiyang.tech/posts/"
-                    /></url><url>
-            <loc>https://shuaiqifeiyang.tech/</loc><lastmod>2021-10-26T20:05:37-07:00</lastmod><xhtml:link
-                        rel="alternate"
-                        hreflang="zh-cn"
-                        href="https://shuaiqifeiyang.tech/zh-cn/"
-                        /><xhtml:link
-                    rel="alternate"
-                    hreflang="en"
-                    href="https://shuaiqifeiyang.tech/"
-                    /></url><url>
-            <loc>https://shuaiqifeiyang.tech/tags/</loc><lastmod>2021-10-26T20:05:37-07:00</lastmod><xhtml:link
-                        rel="alternate"
-                        hreflang="zh-cn"
-                        href="https://shuaiqifeiyang.tech/zh-cn/tags/"
-                        /><xhtml:link
-                    rel="alternate"
-                    hreflang="en"
-                    href="https://shuaiqifeiyang.tech/tags/"
                     /></url><url>
             <loc>https://shuaiqifeiyang.tech/about/</loc><lastmod>2021-10-25T13:35:02-07:00</lastmod><xhtml:link
                         rel="alternate"
