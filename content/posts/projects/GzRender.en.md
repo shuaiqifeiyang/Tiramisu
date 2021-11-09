@@ -3,7 +3,7 @@ title: "GzRender"
 date: 2021-11-08T16:07:12-08:00
 draft: false
 math:
-    enable: ture
+    enable: true
 tags: ["Graphics", "C++"]
 categories: ["Projects"]
 ---
@@ -35,59 +35,59 @@ $f_{20}(x, y)=(y_2-y_0)x+(x_0-x_2)y+x_2y_0-x_0y_2$
 ### Model Space -> World Space
 $$rotate-z(\theta)=
 \begin{bmatrix}
-cos\theta & -sin\theta & 0 & 0\\
-sin\theta & cos\theta & 0 & 0\\
-0 & 0 & 1 & 0\\
-0 & 0 & 0 & 1
+cos\theta & -sin\theta & 0 & 0\\\\ 
+sin\theta & cos\theta & 0 & 0\\\\ 
+0 & 0 & 1 & 0\\\\ 
+0 & 0 & 0 & 1\\\\ 
 \end{bmatrix}$$
 $$rotate-x(\theta)=
 \begin{bmatrix}
-1 & 0 & 0 & 0\\
-0 & cos\theta & -sin\theta & 0\\
-0 & sin\theta & cos\theta & 0\\
+1 & 0 & 0 & 0\\\\ 
+0 & cos\theta & -sin\theta & 0\\\\ 
+0 & sin\theta & cos\theta & 0\\\\ 
 0 & 0 & 0 & 1
 \end{bmatrix}$$
 $$rotate-y(\theta)=
 \begin{bmatrix}
-cos\theta & 0 & sin\theta & 0\\
-0 & 1 & 0 & 0\\
--sin\theta & 0 & cos\theta & 0\\
+cos\theta & 0 & sin\theta & 0\\\\ 
+0 & 1 & 0 & 0\\\\ 
+-sin\theta & 0 & cos\theta & 0\\\\ 
 0 & 0 & 0 & 1
 \end{bmatrix}$$
 ### World Space -> Camera Space
 Assume $u,v,w$ is three base vectors in Camera Space, and the position of camera is $e$
 $$M_{cam}=
 \begin{bmatrix}
-x_u & y_u & z_u & 0\\
-x_v & y_v & z_v & 0\\
-x_w & y_w & z_w & 0\\
+x_u & y_u & z_u & 0\\\\ 
+x_v & y_v & z_v & 0\\\\ 
+x_w & y_w & z_w & 0\\\\ 
 0 & 0 & 0 & 1
 \end{bmatrix}
 \begin{bmatrix}
-1 & 0 & 0 & -x_e\\
-0 & 1 & 0 & -y_e\\
-0 & 0 & 1 & -z_e\\
+1 & 0 & 0 & -x_e\\\\ 
+0 & 1 & 0 & -y_e\\\\ 
+0 & 0 & 1 & -z_e\\\\ 
 0 & 0 & 0 & 1
 \end{bmatrix}$$
-Assume the gaze direction is $g$, an up vector $t$
+
 $$w=\frac{g}{\parallel g\parallel}$$
 $$u=\frac{t\times w}{\parallel t\times w\parallel}$$
 $$v=w\times v$$
 ### Camera Space -> Perspective Space
 ![](https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/projects/img/GzRender1.png)  
 $$M_{perspective}=\begin{bmatrix}
-1 & 0 & 0 & 0\\
-0 & 1 & 0 & 0\\
-0 & 0 & 1/d & 0\\
+1 & 0 & 0 & 0\\\\ 
+0 & 1 & 0 & 0\\\\ 
+0 & 0 & 1/d & 0\\\\ 
 0 & 0 & 1/d & 1
 \end{bmatrix}$$
 Use fourth dimension to make perspective effect.
 ### Perspective Space -> Screen Space
 $xs$ means the number of pixels in screen width. $ys$ means the number of pixels in screen height
 $$M_{screen}=\begin{bmatrix}
-xs/2 & 0 & 0 & xs/2\\
-0 & -ys/2 & 0 & ys/2\\
-0 & 0 & MAXINT & 0\\
+xs/2 & 0 & 0 & xs/2\\\\ 
+0 & -ys/2 & 0 & ys/2\\\\ 
+0 & 0 & MAXINT & 0\\\\ 
 0 & 0 & 0 & 1
 \end{bmatrix}$$
 ![](https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/projects/img/GzRender3.png)  
