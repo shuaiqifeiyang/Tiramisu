@@ -4,7 +4,21 @@
         <link>https://shuaiqifeiyang.tech/tags/</link>
         <description>Tags - Tag - Shuaiqifeiyang&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>shuaiqifeiyang@gmail.com</managingEditor>
-            <webMaster>shuaiqifeiyang@gmail.com</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 07 Nov 2021 08:43:43 -0800</lastBuildDate><atom:link href="https://shuaiqifeiyang.tech/tags/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>shuaiqifeiyang@gmail.com</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 08 Nov 2021 16:07:12 -0800</lastBuildDate><atom:link href="https://shuaiqifeiyang.tech/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>C&#43;&#43;</title>
+    <link>https://shuaiqifeiyang.tech/tags/c&#43;&#43;/</link>
+    <pubDate>Mon, 08 Nov 2021 16:07:12 -0800</pubDate>
+    <author>Author</author>
+    <guid>https://shuaiqifeiyang.tech/tags/c&#43;&#43;/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Graphics</title>
+    <link>https://shuaiqifeiyang.tech/tags/graphics/</link>
+    <pubDate>Mon, 08 Nov 2021 16:07:12 -0800</pubDate>
+    <author>Author</author>
+    <guid>https://shuaiqifeiyang.tech/tags/graphics/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
     <title>binary search</title>
     <link>https://shuaiqifeiyang.tech/tags/binary-search/</link>
     <pubDate>Sun, 07 Nov 2021 08:43:43 -0800</pubDate>
@@ -45,20 +59,6 @@
     <pubDate>Thu, 25 Jul 2019 19:08:14 -0700</pubDate>
     <author>Author</author>
     <guid>https://shuaiqifeiyang.tech/tags/nginx/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Graphics</title>
-    <link>https://shuaiqifeiyang.tech/tags/graphics/</link>
-    <pubDate>Wed, 09 Jan 2019 22:55:11 -0700</pubDate>
-    <author>Author</author>
-    <guid>https://shuaiqifeiyang.tech/tags/graphics/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>C&#43;&#43;</title>
-    <link>https://shuaiqifeiyang.tech/tags/c&#43;&#43;/</link>
-    <pubDate>Mon, 07 Jan 2019 23:09:08 -0700</pubDate>
-    <author>Author</author>
-    <guid>https://shuaiqifeiyang.tech/tags/c&#43;&#43;/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>

@@ -4,7 +4,14 @@
         <link>https://shuaiqifeiyang.tech/tags/graphics/</link>
         <description>Graphics - Tag - Shuaiqifeiyang&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>shuaiqifeiyang@gmail.com</managingEditor>
-            <webMaster>shuaiqifeiyang@gmail.com</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 09 Jan 2019 22:55:11 -0700</lastBuildDate><atom:link href="https://shuaiqifeiyang.tech/tags/graphics/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>shuaiqifeiyang@gmail.com</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 08 Nov 2021 16:07:12 -0800</lastBuildDate><atom:link href="https://shuaiqifeiyang.tech/tags/graphics/" rel="self" type="application/rss+xml" /><item>
+    <title>GzRender</title>
+    <link>https://shuaiqifeiyang.tech/posts/projects/gzrender/</link>
+    <pubDate>Mon, 08 Nov 2021 16:07:12 -0800</pubDate>
+    <author>Author</author>
+    <guid>https://shuaiqifeiyang.tech/posts/projects/gzrender/</guid>
+    <description><![CDATA[<p>A renderer supporting rasterization, transformation, Phong shading, texture.</p>]]></description>
+</item><item>
     <title>Block</title>
     <link>https://shuaiqifeiyang.tech/posts/projects/block/</link>
     <pubDate>Wed, 09 Jan 2019 22:55:11 -0700</pubDate>
