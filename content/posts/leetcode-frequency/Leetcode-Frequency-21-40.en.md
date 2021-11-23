@@ -231,5 +231,6 @@ Medium
 medium  
 [33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)  
 When the target is in the left part of the array:
-*   `nums[left]<=target && target<nums[mid]`
-*   `nums[left]>nums[mid] && (target>=nums[left] || target<=nums[mid])`
+*   `nums[left]<=target && target<nums[mid]` (left part is in order)
+*   `nums[left]>nums[mid] && (target>=nums[left] || target<=nums[mid])` (left part is not in order)
+
