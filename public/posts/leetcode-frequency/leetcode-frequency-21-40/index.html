@@ -27,7 +27,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/shuaiqifeiyang.tech\/posts\/leetcode-frequency\/leetcode-frequency-21-40\/"
-        },"genre": "posts","wordcount":  804 ,
+        },"genre": "posts","wordcount":  815 ,
         "url": "https:\/\/shuaiqifeiyang.tech\/posts\/leetcode-frequency\/leetcode-frequency-21-40\/","datePublished": "2021-10-29T22:55:16-07:00","dateModified": "2021-10-29T22:55:16-07:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "Author"},"author": {
@@ -388,8 +388,8 @@ The trick is enumerating the next word and check whether it is unvisited instead
 <a href="https://leetcode.com/problems/search-in-rotated-sorted-array/" target="_blank" rel="noopener noreffer">33. Search in Rotated Sorted Array</a><br>
 When the target is in the left part of the array:</p>
 <ul>
-<li><code>nums[left]&lt;=target &amp;&amp; target&lt;nums[mid]</code></li>
-<li><code>nums[left]&gt;nums[mid] &amp;&amp; (target&gt;=nums[left] || target&lt;=nums[mid])</code></li>
+<li><code>nums[left]&lt;=target &amp;&amp; target&lt;nums[mid]</code> (left part is in order)</li>
+<li><code>nums[left]&gt;nums[mid] &amp;&amp; (target&gt;=nums[left] || target&lt;=nums[mid])</code> (left part is not in order)</li>
 </ul></div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">

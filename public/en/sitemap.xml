@@ -2,8 +2,16 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://shuaiqifeiyang.tech/tags/c&#43;&#43;/</loc><lastmod>2021-11-08T16:07:12-08:00</lastmod></url><url>
-            <loc>https://shuaiqifeiyang.tech/categories/</loc><lastmod>2021-11-08T16:07:12-08:00</lastmod><xhtml:link
+            <loc>https://shuaiqifeiyang.tech/tags/algorithm/</loc><lastmod>2021-11-18T14:46:00-08:00</lastmod><xhtml:link
+                        rel="alternate"
+                        hreflang="zh-cn"
+                        href="https://shuaiqifeiyang.tech/zh-cn/tags/algorithm/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="https://shuaiqifeiyang.tech/tags/algorithm/"
+                    /></url><url>
+            <loc>https://shuaiqifeiyang.tech/categories/</loc><lastmod>2021-11-18T14:46:00-08:00</lastmod><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
                         href="https://shuaiqifeiyang.tech/zh-cn/categories/"
@@ -12,9 +20,17 @@
                     hreflang="en"
                     href="https://shuaiqifeiyang.tech/categories/"
                     /></url><url>
-            <loc>https://shuaiqifeiyang.tech/tags/graphics/</loc><lastmod>2021-11-08T16:07:12-08:00</lastmod></url><url>
-            <loc>https://shuaiqifeiyang.tech/posts/projects/gzrender/</loc><lastmod>2021-11-08T16:07:12-08:00</lastmod></url><url>
-            <loc>https://shuaiqifeiyang.tech/posts/</loc><lastmod>2021-11-08T16:07:12-08:00</lastmod><xhtml:link
+            <loc>https://shuaiqifeiyang.tech/categories/csci-570-analysis-of-algorithm/</loc><lastmod>2021-11-18T14:46:00-08:00</lastmod><xhtml:link
+                        rel="alternate"
+                        hreflang="zh-cn"
+                        href="https://shuaiqifeiyang.tech/zh-cn/categories/csci-570-analysis-of-algorithm/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="https://shuaiqifeiyang.tech/categories/csci-570-analysis-of-algorithm/"
+                    /></url><url>
+            <loc>https://shuaiqifeiyang.tech/posts/algorithm/np/</loc><lastmod>2021-11-18T14:46:00-08:00</lastmod></url><url>
+            <loc>https://shuaiqifeiyang.tech/posts/</loc><lastmod>2021-11-18T14:46:00-08:00</lastmod><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
                         href="https://shuaiqifeiyang.tech/zh-cn/posts/"
@@ -23,6 +39,27 @@
                     hreflang="en"
                     href="https://shuaiqifeiyang.tech/posts/"
                     /></url><url>
+            <loc>https://shuaiqifeiyang.tech/</loc><lastmod>2021-11-18T14:46:00-08:00</lastmod><xhtml:link
+                        rel="alternate"
+                        hreflang="zh-cn"
+                        href="https://shuaiqifeiyang.tech/zh-cn/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="https://shuaiqifeiyang.tech/"
+                    /></url><url>
+            <loc>https://shuaiqifeiyang.tech/tags/</loc><lastmod>2021-11-18T14:46:00-08:00</lastmod><xhtml:link
+                        rel="alternate"
+                        hreflang="zh-cn"
+                        href="https://shuaiqifeiyang.tech/zh-cn/tags/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="https://shuaiqifeiyang.tech/tags/"
+                    /></url><url>
+            <loc>https://shuaiqifeiyang.tech/tags/c&#43;&#43;/</loc><lastmod>2021-11-08T16:07:12-08:00</lastmod></url><url>
+            <loc>https://shuaiqifeiyang.tech/tags/graphics/</loc><lastmod>2021-11-08T16:07:12-08:00</lastmod></url><url>
+            <loc>https://shuaiqifeiyang.tech/posts/projects/gzrender/</loc><lastmod>2021-11-08T16:07:12-08:00</lastmod></url><url>
             <loc>https://shuaiqifeiyang.tech/categories/projects/</loc><lastmod>2021-11-08T16:07:12-08:00</lastmod><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
@@ -32,24 +69,7 @@
                     hreflang="en"
                     href="https://shuaiqifeiyang.tech/categories/projects/"
                     /></url><url>
-            <loc>https://shuaiqifeiyang.tech/</loc><lastmod>2021-11-08T16:07:12-08:00</lastmod><xhtml:link
-                        rel="alternate"
-                        hreflang="zh-cn"
-                        href="https://shuaiqifeiyang.tech/zh-cn/"
-                        /><xhtml:link
-                    rel="alternate"
-                    hreflang="en"
-                    href="https://shuaiqifeiyang.tech/"
-                    /></url><url>
-            <loc>https://shuaiqifeiyang.tech/tags/</loc><lastmod>2021-11-08T16:07:12-08:00</lastmod><xhtml:link
-                        rel="alternate"
-                        hreflang="zh-cn"
-                        href="https://shuaiqifeiyang.tech/zh-cn/tags/"
-                        /><xhtml:link
-                    rel="alternate"
-                    hreflang="en"
-                    href="https://shuaiqifeiyang.tech/tags/"
-                    /></url><url>
+            <loc>https://shuaiqifeiyang.tech/posts/projects/procedural-modeling-of-cities/</loc><lastmod>2021-11-08T11:24:37-08:00</lastmod></url><url>
             <loc>https://shuaiqifeiyang.tech/posts/leetcode-single/2000/2064/</loc><lastmod>2021-11-07T08:43:43-08:00</lastmod><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
@@ -70,15 +90,6 @@
                     href="https://shuaiqifeiyang.tech/tags/leetcode/"
                     /></url><url>
             <loc>https://shuaiqifeiyang.tech/posts/leetcode-frequency/leetcode-frequency-21-40/</loc><lastmod>2021-10-29T22:55:16-07:00</lastmod></url><url>
-            <loc>https://shuaiqifeiyang.tech/tags/algorithm/</loc><lastmod>2021-10-26T20:05:37-07:00</lastmod><xhtml:link
-                        rel="alternate"
-                        hreflang="zh-cn"
-                        href="https://shuaiqifeiyang.tech/zh-cn/tags/algorithm/"
-                        /><xhtml:link
-                    rel="alternate"
-                    hreflang="en"
-                    href="https://shuaiqifeiyang.tech/tags/algorithm/"
-                    /></url><url>
             <loc>https://shuaiqifeiyang.tech/categories/leetcode-frequency/</loc><lastmod>2021-10-26T20:05:37-07:00</lastmod><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
@@ -105,15 +116,6 @@
                     rel="alternate"
                     hreflang="en"
                     href="https://shuaiqifeiyang.tech/about/"
-                    /></url><url>
-            <loc>https://shuaiqifeiyang.tech/categories/csci-570-analysis-of-algorithm/</loc><lastmod>2021-10-25T09:37:16-07:00</lastmod><xhtml:link
-                        rel="alternate"
-                        hreflang="zh-cn"
-                        href="https://shuaiqifeiyang.tech/zh-cn/categories/csci-570-analysis-of-algorithm/"
-                        /><xhtml:link
-                    rel="alternate"
-                    hreflang="en"
-                    href="https://shuaiqifeiyang.tech/categories/csci-570-analysis-of-algorithm/"
                     /></url><url>
             <loc>https://shuaiqifeiyang.tech/posts/algorithm/max-flow/</loc><lastmod>2021-10-25T09:37:16-07:00</lastmod><xhtml:link
                         rel="alternate"
