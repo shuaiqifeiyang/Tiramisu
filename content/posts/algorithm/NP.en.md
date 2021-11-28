@@ -60,6 +60,21 @@ the certifier is basically an algorithm that takes the certificate and decides w
 
 NP(Non deterministic polynomial) is the set of all problems for which there exists an efficient certifier.
 
+### The Traveling Salesman Problem
+Order the cities into a tour $v_{i_1}, v_{i_2}, \dots ,v_{i_n}$, with $i_1=1$, so as to minimize the total distance $\sum_jd(v_{i_j}, v_{i_{j+1}}) + d(v_{i_n}, v_{i_1})$  
+Decision version of the Traveling Salesman Problem: 
+Given a set of distances on n cities, and a bound D, is there a tour of length at most D?
+
+### The Hamiltonian Cycle Problem
+Given a directed graph $G=(V, E)$, we say that a cycle in G is Hamiltonian Cycle if it visits each vertex exactly once.  
+The Hamiltonian Cycle Problem is then simply the following:
+Given a directed graph G, does it contain a Hamiltonian cycle?  
+Show Hamiltonian Cycle Problem is NP-Complete:  
+Prove Vertex Cover is polynomial reducible to Hamiltonian Cycle Problem
+![](https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/algorithm/img/NP1.png)
+
+![](https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/algorithm/img/NP2.png)
+
 ## Prove a problem is NP-Complete
 * Prove X belongs to NP
 * Choose a problem Y that is known to be NP-Complete
