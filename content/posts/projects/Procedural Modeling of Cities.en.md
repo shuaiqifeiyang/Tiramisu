@@ -1,5 +1,5 @@
 ---
-title: "Procedural"
+title: "Procedural Modeling of Cities"
 date: 2021-11-08T11:24:37-08:00
 draft: false
 math:
@@ -8,8 +8,6 @@ math:
 The implementation of Siggraph01 Procedural Modeling of Cities
 
 <!--more-->
-# Procedural Modeling of Cities
-
 The repository is an implementation of [Siggraph01 Procedural Modeling of Cities](https://cgl.ethz.ch/Downloads/Publications/Papers/2001/p_Par01.pdf). We refer to [this article](http://nothings.org/gamedev/l_systems.html) and simplify L-System in this paper to a Priority Queue implementation.
 
 ## Input
