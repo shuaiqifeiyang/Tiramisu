@@ -1,9 +1,11 @@
 ---
 title: "Procedural Modeling of Cities"
-date: 2021-11-08T11:24:37-08:00
+date: 2021-11-28T11:24:37-08:00
 draft: false
 math:
     enable: true
+tags: ["Graphics", "Unity"]
+categories: ["Projects"]
 ---
 The implementation of Siggraph01 Procedural Modeling of Cities
 

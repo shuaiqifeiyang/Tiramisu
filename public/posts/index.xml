@@ -4,20 +4,13 @@
         <link>https://shuaiqifeiyang.tech/posts/</link>
         <description>All Posts | Shuaiqifeiyang&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>shuaiqifeiyang@gmail.com</managingEditor>
-            <webMaster>shuaiqifeiyang@gmail.com</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 25 Nov 2021 01:14:00 -0800</lastBuildDate><atom:link href="https://shuaiqifeiyang.tech/posts/" rel="self" type="application/rss+xml" /><item>
-    <title>Linear Programming</title>
-    <link>https://shuaiqifeiyang.tech/posts/algorithm/linear-programming/</link>
-    <pubDate>Thu, 25 Nov 2021 01:14:00 -0800</pubDate>
+            <webMaster>shuaiqifeiyang@gmail.com</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 28 Nov 2021 11:24:37 -0800</lastBuildDate><atom:link href="https://shuaiqifeiyang.tech/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Procedural Modeling of Cities</title>
+    <link>https://shuaiqifeiyang.tech/posts/projects/procedural-modeling-of-cities/</link>
+    <pubDate>Sun, 28 Nov 2021 11:24:37 -0800</pubDate>
     <author>Author</author>
-    <guid>https://shuaiqifeiyang.tech/posts/algorithm/linear-programming/</guid>
-    <description><![CDATA[Linear Programming is in P]]></description>
-</item><item>
-    <title>Approximation</title>
-    <link>https://shuaiqifeiyang.tech/posts/algorithm/approximation/</link>
-    <pubDate>Tue, 23 Nov 2021 21:21:19 -0800</pubDate>
-    <author>Author</author>
-    <guid>https://shuaiqifeiyang.tech/posts/algorithm/approximation/</guid>
-    <description><![CDATA[<p>Approximation Algorithm</p>]]></description>
+    <guid>https://shuaiqifeiyang.tech/posts/projects/procedural-modeling-of-cities/</guid>
+    <description><![CDATA[<p>The implementation of Siggraph01 Procedural Modeling of Cities</p>]]></description>
 </item><item>
     <title>NP</title>
     <link>https://shuaiqifeiyang.tech/posts/algorithm/np/</link>
@@ -32,13 +25,6 @@
     <author>Author</author>
     <guid>https://shuaiqifeiyang.tech/posts/projects/gzrender/</guid>
     <description><![CDATA[<p>A renderer supporting rasterization, transformation, Phong shading, texture.</p>]]></description>
-</item><item>
-    <title>Procedural Modeling of Cities</title>
-    <link>https://shuaiqifeiyang.tech/posts/projects/procedural-modeling-of-cities/</link>
-    <pubDate>Mon, 08 Nov 2021 11:24:37 -0800</pubDate>
-    <author>Author</author>
-    <guid>https://shuaiqifeiyang.tech/posts/projects/procedural-modeling-of-cities/</guid>
-    <description><![CDATA[<p>The implementation of Siggraph01 Procedural Modeling of Cities</p>]]></description>
 </item><item>
     <title>2064. Minimized Maximum of Products Distributed to Any Store</title>
     <link>https://shuaiqifeiyang.tech/posts/leetcode-single/2000/2064/</link>
@@ -74,5 +60,19 @@
     <author>Author</author>
     <guid>https://shuaiqifeiyang.tech/posts/projects/word-pyramid/</guid>
     <description><![CDATA[<p>A education game about learning English vocabulary.</p>]]></description>
+</item><item>
+    <title>How to build a Nginx server</title>
+    <link>https://shuaiqifeiyang.tech/posts/mics/how-to-build-nginx-server/</link>
+    <pubDate>Thu, 25 Jul 2019 19:08:14 -0700</pubDate>
+    <author>Author</author>
+    <guid>https://shuaiqifeiyang.tech/posts/mics/how-to-build-nginx-server/</guid>
+    <description><![CDATA[<p>How to install and config Nginx in your server.</p>]]></description>
+</item><item>
+    <title>Block</title>
+    <link>https://shuaiqifeiyang.tech/posts/projects/block/</link>
+    <pubDate>Wed, 09 Jan 2019 22:55:11 -0700</pubDate>
+    <author>Author</author>
+    <guid>https://shuaiqifeiyang.tech/posts/projects/block/</guid>
+    <description><![CDATA[<p>A mini Minecraft game</p>]]></description>
 </item></channel>
 </rss>
