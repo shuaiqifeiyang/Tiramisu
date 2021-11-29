@@ -18,7 +18,7 @@
 <meta name="application-name" content="Telescope">
 <meta name="apple-mobile-web-app-title" content="Telescope"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://shuaiqifeiyang.tech/posts/algorithm/np/" /><link rel="prev" href="https://shuaiqifeiyang.tech/posts/projects/gzrender/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://shuaiqifeiyang.tech/posts/algorithm/np/" /><link rel="prev" href="https://shuaiqifeiyang.tech/posts/projects/gzrender/" /><link rel="next" href="https://shuaiqifeiyang.tech/posts/algorithm/approximation/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
@@ -27,7 +27,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/shuaiqifeiyang.tech\/posts\/algorithm\/np\/"
-        },"genre": "posts","keywords": "Algorithm","wordcount":  513 ,
+        },"genre": "posts","keywords": "Algorithm","wordcount":  640 ,
         "url": "https:\/\/shuaiqifeiyang.tech\/posts\/algorithm\/np\/","datePublished": "2021-11-18T14:46:00-08:00","dateModified": "2021-11-18T14:46:00-08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "Author"},"author": {
@@ -125,6 +125,8 @@
         <li><a href="#vertex-cover">Vertex Cover</a></li>
         <li><a href="#set-cover">Set Cover</a></li>
         <li><a href="#satisfiability-problem-sat">Satisfiability Problem (SAT)</a></li>
+        <li><a href="#the-hamiltonian-cycle-problem">The Hamiltonian Cycle Problem</a></li>
+        <li><a href="#the-traveling-salesman-problem">The Traveling Salesman Problem</a></li>
       </ul>
     </li>
     <li><a href="#prove-a-problem-is-np-complete">Prove a problem is NP-Complete</a></li>
@@ -176,6 +178,33 @@ to show efficient certification:</p>
 the certifier is basically an algorithm that takes the certificate and decides whether or not it is a good solution.</li>
 </ul>
 <p>NP(Non deterministic polynomial) is the set of all problems for which there exists an efficient certifier.</p>
+<h3 id="the-hamiltonian-cycle-problem">The Hamiltonian Cycle Problem</h3>
+<p>Given a directed graph $G=(V, E)$, we say that a cycle in G is Hamiltonian Cycle if it visits each vertex exactly once.<br>
+The Hamiltonian Cycle Problem is then simply the following:
+Given a directed graph G, does it contain a Hamiltonian cycle?<br>
+Show Hamiltonian Cycle Problem is NP-Complete:<br>
+Prove Vertex Cover is polynomial reducible to Hamiltonian Cycle Problem
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/algorithm/img/NP1.png"
+        data-srcset="https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/algorithm/img/NP1.png, https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/algorithm/img/NP1.png 1.5x, https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/algorithm/img/NP1.png 2x"
+        data-sizes="auto"
+        alt="https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/algorithm/img/NP1.png"
+        title="https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/algorithm/img/NP1.png" /></p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/algorithm/img/NP2.png"
+        data-srcset="https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/algorithm/img/NP2.png, https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/algorithm/img/NP2.png 1.5x, https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/algorithm/img/NP2.png 2x"
+        data-sizes="auto"
+        alt="https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/algorithm/img/NP2.png"
+        title="https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/algorithm/img/NP2.png" /></p>
+<h3 id="the-traveling-salesman-problem">The Traveling Salesman Problem</h3>
+<p>Order the cities into a tour $v_{i_1}, v_{i_2}, \dots ,v_{i_n}$, with $i_1=1$, so as to minimize the total distance $\sum_jd(v_{i_j}, v_{i_{j+1}}) + d(v_{i_n}, v_{i_1})$<br>
+Decision version of the Traveling Salesman Problem:
+Given a set of distances on n cities, and a bound D, is there a tour of length at most D?
+TSP is polynomial reducible to Hamiltonian Cycle Problem</p>
 <h2 id="prove-a-problem-is-np-complete">Prove a problem is NP-Complete</h2>
 <ul>
 <li>Prove X belongs to NP</li>
@@ -204,7 +233,8 @@ the certifier is basically an algorithm that takes the certificate and decides w
         </section>
     </div>
 
-    <div class="post-nav"><a href="/posts/projects/gzrender/" class="prev" rel="prev" title="GzRender"><i class="fas fa-angle-left fa-fw"></i>GzRender</a></div>
+    <div class="post-nav"><a href="/posts/projects/gzrender/" class="prev" rel="prev" title="GzRender"><i class="fas fa-angle-left fa-fw"></i>GzRender</a>
+            <a href="/posts/algorithm/approximation/" class="next" rel="next" title="Approximation">Approximation<i class="fas fa-angle-right fa-fw"></i></a></div>
 </div>
 </article></div>
             </main><footer class="footer">
