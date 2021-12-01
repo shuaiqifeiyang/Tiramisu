@@ -27,7 +27,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/shuaiqifeiyang.tech\/posts\/leetcode-frequency\/leetcode-frequency-1-20\/"
-        },"genre": "posts","keywords": "Algorithm, Leetcode","wordcount":  1094 ,
+        },"genre": "posts","keywords": "Algorithm, Leetcode","wordcount":  1093 ,
         "url": "https:\/\/shuaiqifeiyang.tech\/posts\/leetcode-frequency\/leetcode-frequency-1-20\/","datePublished": "2021-10-26T20:05:37-07:00","dateModified": "2021-10-26T20:05:37-07:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "Author"},"author": {
@@ -249,7 +249,7 @@ A trick: it&rsquo;s not necessary to set a &ldquo;visited&rdquo; array, we can c
 <h2 id="linked-list">Linked List</h2>
 <h3 id="2-add-two-numbers">2. Add Two Numbers</h3>
 <p>Medium<br>
-<a href="https://leetcode.com/problems/add-two-numbers/" target="_blank" rel="noopener noreffer">2. Add Two Numbers</a>
+<a href="https://leetcode.com/problems/add-two-numbers/" target="_blank" rel="noopener noreffer">2. Add Two Numbers</a><br>
 The idea is simple, but it&rsquo;s not that easy to wirte elegant code to this problem.</p>
 <h2 id="math">Math</h2>
 <h3 id="1041-robot-bounded-in-circle">1041. Robot Bounded In Circle</h3>
@@ -260,7 +260,7 @@ What we should concerned about is the final direcion and the final position afte
 <li>If the final direction and the initial direction is the same
 <ol>
 <li>If the final position and the initial position is the same. Clearly, the robot is bounded in a circle.</li>
-<li>If the final position is not the initial position. Clearly, the robot is not bounded in a circle because the offset will repeat after next round and so and so on.</li>
+<li>If the final position is not the initial position. Clearly, the robot is not bounded in a circle because the offset will repeat after next round so and so on.</li>
 </ol>
 </li>
 <li>If the final direction and the initial direction is different, the must be a circle. After at most four rounds, the robot will return to the initial position with initial direction. The instructions in these four rounds will cancel each other out.</li>
@@ -322,7 +322,7 @@ This is a problem combining DP and binary search. We should make use of <code>up
 </code></pre></div><h3 id="53-maximum-subarray">53. Maximum Subarray</h3>
 <p>Easy<br>
 <a href="https://leetcode.com/problems/maximum-subarray/" target="_blank" rel="noopener noreffer">53. Maximum Subarray</a><br>
-It&rsquo;s a interesting DP problem.</p>
+It&rsquo;s an interesting DP problem.</p>
 <ul>
 <li>dp[0]=nums[0];</li>
 <li>dp[i]=max(dp[i-1], 0)+nums[i];</li>
@@ -354,7 +354,7 @@ We use a hashset to store the characters in current window. We slide the right b
 <h2 id="heap">Heap</h2>
 <h3 id="253-meeting-rooms-ii">253. Meeting Rooms II</h3>
 <p><a href="https://leetcode.com/problems/meeting-rooms-ii/" target="_blank" rel="noopener noreffer">253. Meeting Rooms II</a><br>
-This is a very interesting problem about heap. Use a min-heap to store the end time. If current start time is greater than the minimum end time, we don&rsquo;t need to add a new room. If the current start time is less than the minimum end time, we need to add a new room. Final result is the size of the stack.</p></div><div class="post-footer" id="post-footer">
+This is a very interesting problem about heap. Use a min-heap to store the end time. If current start time is greater than the minimum end time, we don&rsquo;t need to add a new room. If the current start time is less than the minimum end time, we need to add a new room. Final result is the size of the heap.</p></div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">

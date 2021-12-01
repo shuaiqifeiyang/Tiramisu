@@ -76,7 +76,7 @@ A trick: it's not necessary to set a "visited" array, we can change the value in
 ## Linked List
 ### 2. Add Two Numbers
 Medium  
-[2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)
+[2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)  
 The idea is simple, but it's not that easy to wirte elegant code to this problem.
 
 ## Math
@@ -86,7 +86,7 @@ Medium
 What we should concerned about is the final direcion and the final position after the robot executes these instructions.
 1. If the final direction and the initial direction is the same
    1. If the final position and the initial position is the same. Clearly, the robot is bounded in a circle.
-   2. If the final position is not the initial position. Clearly, the robot is not bounded in a circle because the offset will repeat after next round and so and so on.
+   2. If the final position is not the initial position. Clearly, the robot is not bounded in a circle because the offset will repeat after next round so and so on.
 2. If the final direction and the initial direction is different, the must be a circle. After at most four rounds, the robot will return to the initial position with initial direction. The instructions in these four rounds will cancel each other out.
 ### 7. Reverse Integer
 Medium  
@@ -149,7 +149,7 @@ public:
 ### 53. Maximum Subarray
 Easy  
 [53. Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)  
-It's a interesting DP problem.  
+It's an interesting DP problem.  
 *   dp[0]=nums[0];
 *   dp[i]=max(dp[i-1], 0)+nums[i];
 *   res=max(dp[i]) (0<=i<=nums.size()-1)
@@ -183,4 +183,4 @@ We use a hashset to store the characters in current window. We slide the right b
 ## Heap
 ### 253. Meeting Rooms II
 [253. Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii/)  
-This is a very interesting problem about heap. Use a min-heap to store the end time. If current start time is greater than the minimum end time, we don't need to add a new room. If the current start time is less than the minimum end time, we need to add a new room. Final result is the size of the stack.
+This is a very interesting problem about heap. Use a min-heap to store the end time. If current start time is greater than the minimum end time, we don't need to add a new room. If the current start time is less than the minimum end time, we need to add a new room. Final result is the size of the heap.

@@ -27,7 +27,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/shuaiqifeiyang.tech\/posts\/leetcode-frequency\/leetcode-frequency-21-40\/"
-        },"genre": "posts","wordcount":  815 ,
+        },"genre": "posts","keywords": "Algorithm, Leetcode","wordcount":  866 ,
         "url": "https:\/\/shuaiqifeiyang.tech\/posts\/leetcode-frequency\/leetcode-frequency-21-40\/","datePublished": "2021-10-29T22:55:16-07:00","dateModified": "2021-10-29T22:55:16-07:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "Author"},"author": {
@@ -109,7 +109,7 @@
         </div><article class="page single"><h1 class="single-title animated flipInX">Leetcode Frequency 21-40 Review</h1><div class="post-meta">
             <div class="post-meta-line">
                 
-                </div>
+                <span class="post-category">included in <a href="/categories/leetcode-frequency/"><i class="far fa-folder fa-fw"></i>Leetcode Frequency</a></span></div>
             <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-10-29">2021-10-29</time>&nbsp;
             </div>
         </div><div class="details toc" id="toc-static"  kept="">
@@ -181,7 +181,7 @@
 <h3 id="811-subdomain-visit-count">811. Subdomain Visit Count</h3>
 <p>Medium<br>
 <a href="https://leetcode.com/problems/subdomain-visit-count/" target="_blank" rel="noopener noreffer">811. Subdomain Visit Count</a><br>
-Use hash table to count the number of subdomain. Use STL string.find() and string.substr(int start)</p>
+Use hash table to count the number of subdomain. Use STL <code>int</code> string.find() and string.substr(int start)</p>
 <h3 id="49-group-anagrams">49. Group Anagrams</h3>
 <p>Medium<br>
 <a href="https://leetcode.com/problems/group-anagrams/" target="_blank" rel="noopener noreffer">49. Group Anagrams</a><br>
@@ -224,7 +224,11 @@ To make the string valid with minimum removals, we need to get rid of all parent
 <ul>
 <li>The stack store the index of left parenthesis.</li>
 <li>Extra item in stack presents the left parenthesis that don&rsquo;t have corresponding right parenthesis.</li>
-<li><code>s.erase(remove(s.begin(), s.end(), '*'), s.end()); </code></li>
+<li><code>s.erase(remove(s.begin(), s.end(), '*'), s.end()); </code>
+<ul>
+<li><code>remove</code> returns an iterator to the element that follows the last element not removed.</li>
+</ul>
+</li>
 </ul>
 <h2 id="simulation">Simulation</h2>
 <h3 id="68-text-justification">68. Text Justification</h3>
@@ -255,7 +259,7 @@ A complicated simulation. The idea is simple, but the implementation is hard.</p
             <span class="k">if</span><span class="p">(</span><span class="n">pron</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">first</span><span class="o">&gt;</span><span class="n">num</span><span class="p">){</span>
                 <span class="k">continue</span><span class="p">;</span>
             <span class="p">}</span>
-            <span class="n">string</span> <span class="n">pre</span><span class="o">=</span><span class="n">num</span><span class="o">&gt;=</span><span class="mi">100</span><span class="o">?</span><span class="n">numberToWords</span><span class="p">(</span><span class="n">num</span><span class="o">/</span><span class="n">pron</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">first</span><span class="p">)</span><span class="o">+</span><span class="s">&#34; &#34;</span><span class="o">:</span><span class="s">&#34;&#34;</span><span class="p">;</span>
+            <span class="n">string</span> <span class="n">pre</span><span class="o">=</span><span class="n">pron</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">first</span><span class="o">&gt;=</span><span class="mi">100</span><span class="o">?</span><span class="n">numberToWords</span><span class="p">(</span><span class="n">num</span><span class="o">/</span><span class="n">pron</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">first</span><span class="p">)</span><span class="o">+</span><span class="s">&#34; &#34;</span><span class="o">:</span><span class="s">&#34;&#34;</span><span class="p">;</span>
             <span class="n">string</span> <span class="n">post</span><span class="o">=</span><span class="n">num</span><span class="o">%</span><span class="n">pron</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">first</span><span class="o">==</span><span class="mi">0</span><span class="o">?</span><span class="s">&#34;&#34;</span><span class="o">:</span><span class="s">&#34; &#34;</span><span class="o">+</span><span class="n">numberToWords</span><span class="p">(</span><span class="n">num</span><span class="o">%</span><span class="n">pron</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">first</span><span class="p">);</span>
             <span class="k">return</span> <span class="n">pre</span><span class="o">+</span><span class="n">pron</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">second</span><span class="o">+</span><span class="n">post</span><span class="p">;</span>
         <span class="p">}</span>
@@ -287,8 +291,22 @@ A complicated simulation. The idea is simple, but the implementation is hard.</p
 <span class="p">};</span>
 </code></pre></div><h3 id="829-consecutive-numbers-sum">829. Consecutive Numbers Sum</h3>
 <p>Hard<br>
-<a href="https://leetcode.com/problems/consecutive-numbers-sum/" target="_blank" rel="noopener noreffer">829. Consecutive Numbers Sum</a></p>
-<h2 id="two-pointers">Two Pointers</h2>
+<a href="https://leetcode.com/problems/consecutive-numbers-sum/" target="_blank" rel="noopener noreffer">829. Consecutive Numbers Sum</a><br>
+$N = (x+1)+(x+2)+\cdots+(x+k)$<br>
+$N = xk+\frac{(1+k)k}{2}$<br>
+$x$ must be an integer and $x$ is positive.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C++" data-lang="C++"><span class="k">class</span> <span class="nc">Solution</span> <span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+    <span class="kt">int</span> <span class="n">consecutiveNumbersSum</span><span class="p">(</span><span class="kt">int</span> <span class="n">n</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kt">int</span> <span class="n">res</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+        <span class="kt">int</span> <span class="n">limit</span><span class="o">=</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">n</span><span class="p">);</span>
+        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">k</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">k</span><span class="o">&lt;</span><span class="n">limit</span><span class="o">+</span><span class="mi">1</span><span class="p">;</span><span class="n">k</span><span class="o">++</span><span class="p">){</span>
+            <span class="k">if</span><span class="p">((</span><span class="n">n</span><span class="o">-</span><span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="n">k</span><span class="p">)</span><span class="o">*</span><span class="n">k</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span><span class="o">%</span><span class="n">k</span><span class="o">==</span><span class="mi">0</span><span class="p">)</span> <span class="n">res</span><span class="o">++</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="k">return</span> <span class="n">res</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">};</span>
+</code></pre></div><h2 id="two-pointers">Two Pointers</h2>
 <h3 id="809-expressive-words">809. Expressive Words</h3>
 <p>Medium<br>
 <a href="https://leetcode.com/problems/expressive-words/" target="_blank" rel="noopener noreffer">809. Expressive Words</a><br>
@@ -407,7 +425,7 @@ When the target is in the left part of the array:</p>
     </div>
 
     <div class="post-info-more">
-        <section class="post-tags"></section>
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">Algorithm</a>,&nbsp;<a href="/tags/leetcode/">Leetcode</a></section>
         <section>
             <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
         </section>
@@ -428,5 +446,5 @@ When the target is in the left part of the array:</p>
             </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
                 <i class="fas fa-comment fa-fw"></i>
             </a>
-        </div><script type="text/javascript" src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/algoliasearch/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":100},"comment":{},"search":{"algoliaAppID":"PASDMWALPK","algoliaIndex":"index.en","algoliaSearchKey":"b42948e51daaa93df92381c8e2ac0f93","highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"algolia"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+        </div><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="stylesheet" href="/lib/katex/copy-tex.min.css"><script type="text/javascript" src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/algoliasearch/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js"></script><script type="text/javascript" src="/lib/katex/auto-render.min.js"></script><script type="text/javascript" src="/lib/katex/copy-tex.min.js"></script><script type="text/javascript" src="/lib/katex/mhchem.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":100},"comment":{},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"algoliaAppID":"PASDMWALPK","algoliaIndex":"index.en","algoliaSearchKey":"b42948e51daaa93df92381c8e2ac0f93","highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"algolia"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
 </html>

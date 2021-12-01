@@ -2,6 +2,10 @@
 title: "Leetcode Frequency 21-40 Review"
 date: 2021-10-29T22:55:16-07:00
 draft: false
+tags: ["Algorithm", "Leetcode"]
+categories: ["Leetcode Frequency"]
+math:
+    enable: true
 ---
 Leetcode Top 21-40 high-frequency problem: types, solutions, and summary
 <!--more-->
@@ -9,7 +13,7 @@ Leetcode Top 21-40 high-frequency problem: types, solutions, and summary
 ### 811. Subdomain Visit Count
 Medium  
 [811. Subdomain Visit Count](https://leetcode.com/problems/subdomain-visit-count/)  
-Use hash table to count the number of subdomain. Use STL string.find() and string.substr(int start)
+Use hash table to count the number of subdomain. Use STL `int` string.find() and string.substr(int start)
 
 ### 49. Group Anagrams
 Medium  
@@ -56,6 +60,7 @@ To make the string valid with minimum removals, we need to get rid of all parent
 *   The stack store the index of left parenthesis.
 *   Extra item in stack presents the left parenthesis that don't have corresponding right parenthesis.
 *   `s.erase(remove(s.begin(), s.end(), '*'), s.end()); `
+    *   `remove` returns an iterator to the element that follows the last element not removed.
 
 ## Simulation
 ### 68. Text Justification
@@ -89,7 +94,7 @@ public:
             if(pron[i].first>num){
                 continue;
             }
-            string pre=num>=100?numberToWords(num/pron[i].first)+" ":"";
+            string pre=pron[i].first>=100?numberToWords(num/pron[i].first)+" ":"";
             string post=num%pron[i].first==0?"":" "+numberToWords(num%pron[i].first);
             return pre+pron[i].second+post;
         }
@@ -122,12 +127,25 @@ public:
     }
 };
 ```
-
 ### 829. Consecutive Numbers Sum
 Hard  
 [829. Consecutive Numbers Sum](https://leetcode.com/problems/consecutive-numbers-sum/)  
-
-
+$N = (x+1)+(x+2)+\cdots+(x+k)$  
+$N = xk+\frac{(1+k)k}{2}$  
+$x$ must be an integer and $x$ is positive.
+```C++
+class Solution {
+public:
+    int consecutiveNumbersSum(int n) {
+        int res=0;
+        int limit=sqrt(2*n);
+        for(int k=1;k<limit+1;k++){
+            if((n-(1+k)*k/2)%k==0) res++;
+        }
+        return res;
+    }
+};
+```
 ## Two Pointers
 ### 809. Expressive Words
 Medium  
