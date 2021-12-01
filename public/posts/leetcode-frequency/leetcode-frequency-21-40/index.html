@@ -27,7 +27,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/shuaiqifeiyang.tech\/posts\/leetcode-frequency\/leetcode-frequency-21-40\/"
-        },"genre": "posts","keywords": "Algorithm, Leetcode","wordcount":  866 ,
+        },"genre": "posts","keywords": "Algorithm, Leetcode","wordcount":  1055 ,
         "url": "https:\/\/shuaiqifeiyang.tech\/posts\/leetcode-frequency\/leetcode-frequency-21-40\/","datePublished": "2021-10-29T22:55:16-07:00","dateModified": "2021-10-29T22:55:16-07:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "Author"},"author": {
@@ -136,6 +136,7 @@
         <li><a href="#68-text-justification">68. Text Justification</a></li>
         <li><a href="#54-spiral-matrix">54. Spiral Matrix</a></li>
         <li><a href="#273-integer-to-english-words">273. Integer to English Words</a></li>
+        <li><a href="#17-letter-combinations-of-a-phone-number">17. Letter Combinations of a Phone Number</a></li>
       </ul>
     </li>
     <li><a href="#math">Math</a>
@@ -147,6 +148,7 @@
     <li><a href="#two-pointers">Two Pointers</a>
       <ul>
         <li><a href="#809-expressive-words">809. Expressive Words</a></li>
+        <li><a href="#15-3sum">15. 3Sum</a></li>
       </ul>
     </li>
     <li><a href="#dfs">DFS</a>
@@ -162,6 +164,7 @@
     <li><a href="#bfs">BFS</a>
       <ul>
         <li><a href="#127-word-ladder">127. Word Ladder</a></li>
+        <li><a href="#815-bus-routes">815. Bus Routes</a></li>
       </ul>
     </li>
     <li><a href="#sort">Sort</a>
@@ -172,6 +175,11 @@
     <li><a href="#binary-search">Binary Search</a>
       <ul>
         <li><a href="#33-search-in-rotated-sorted-array">33. Search in Rotated Sorted Array</a></li>
+      </ul>
+    </li>
+    <li><a href="#heap">Heap</a>
+      <ul>
+        <li><a href="#23-merge-k-sorted-lists">23. Merge k Sorted Lists</a></li>
       </ul>
     </li>
   </ul>
@@ -266,7 +274,10 @@ A complicated simulation. The idea is simple, but the implementation is hard.</p
         <span class="k">return</span> <span class="s">&#34;&#34;</span><span class="p">;</span>
     <span class="p">}</span>
 <span class="p">};</span>
-</code></pre></div><h2 id="math">Math</h2>
+</code></pre></div><h3 id="17-letter-combinations-of-a-phone-number">17. Letter Combinations of a Phone Number</h3>
+<p>Medium</p>
+<p><a href="https://leetcode.com/problems/letter-combinations-of-a-phone-number/" target="_blank" rel="noopener noreffer">17. Letter Combinations of a Phone Number</a></p>
+<h2 id="math">Math</h2>
 <h3 id="31-next-permutation">31. Next Permutation</h3>
 <p>Medium<br>
 <a href="https://leetcode.com/problems/next-permutation/" target="_blank" rel="noopener noreffer">31. Next Permutation</a></p>
@@ -350,7 +361,11 @@ It takes experience to make the code of this problem readable.</p>
         <span class="k">return</span> <span class="n">res</span><span class="p">;</span>
     <span class="p">}</span>
 <span class="p">};</span>
-</code></pre></div><h2 id="dfs">DFS</h2>
+</code></pre></div><h3 id="15-3sum">15. 3Sum</h3>
+<p>Medium<br>
+<a href="https://leetcode.com/problems/3sum/" target="_blank" rel="noopener noreffer">15. 3Sum</a><br>
+2sum+one more level of interation $O(n^2)$</p>
+<h2 id="dfs">DFS</h2>
 <h3 id="22-generate-parentheses">22. Generate Parentheses</h3>
 <p>Medium<br>
 <a href="https://leetcode.com/problems/generate-parentheses/" target="_blank" rel="noopener noreffer">22. Generate Parentheses</a><br>
@@ -396,7 +411,45 @@ Use deque to store the index. Iterate over the array. At each step :</p>
 <p>hard<br>
 <a href="https://leetcode.com/problems/word-ladder/" target="_blank" rel="noopener noreffer">127. Word Ladder</a><br>
 The trick is enumerating the next word and check whether it is unvisited instead of compare the currrent word to all unvisited word and check whether they are connected.</p>
-<h2 id="sort">Sort</h2>
+<h3 id="815-bus-routes">815. Bus Routes</h3>
+<p>hard<br>
+<a href="https://leetcode.com/problems/bus-routes/" target="_blank" rel="noopener noreffer">815. Bus Routes</a><br>
+The hard point of this problem is how to build the graph where we execute BFS. One node and its adjacent node are in the same bus route.</p>
+<p><code>routes[i].clear();</code>: this is for</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C++" data-lang="C++"><span class="k">class</span> <span class="nc">Solution</span> <span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+    <span class="kt">int</span> <span class="n">numBusesToDestination</span><span class="p">(</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;&gt;&amp;</span> <span class="n">routes</span><span class="p">,</span> <span class="kt">int</span> <span class="n">source</span><span class="p">,</span> <span class="kt">int</span> <span class="n">target</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">unordered_map</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span> <span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;&gt;</span> <span class="n">g</span><span class="p">;</span>
+        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">routes</span><span class="p">.</span><span class="n">size</span><span class="p">();</span><span class="n">i</span><span class="o">++</span><span class="p">){</span>
+            <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">j</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">j</span><span class="o">&lt;</span><span class="n">routes</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">size</span><span class="p">();</span><span class="n">j</span><span class="o">++</span><span class="p">){</span>
+                <span class="n">g</span><span class="p">[</span><span class="n">routes</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]].</span><span class="n">push_back</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+        <span class="n">unordered_set</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">visited</span><span class="p">;</span>
+        <span class="n">queue</span><span class="o">&lt;</span><span class="n">pair</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span> <span class="kt">int</span><span class="o">&gt;&gt;</span> <span class="n">q</span><span class="p">;</span>
+        <span class="n">q</span><span class="p">.</span><span class="n">push</span><span class="p">({</span><span class="n">source</span><span class="p">,</span> <span class="mi">0</span><span class="p">});</span>
+        
+        <span class="n">visited</span><span class="p">.</span><span class="n">insert</span><span class="p">(</span><span class="n">source</span><span class="p">);</span>
+        <span class="k">while</span><span class="p">(</span><span class="o">!</span><span class="n">q</span><span class="p">.</span><span class="n">empty</span><span class="p">()){</span>
+            <span class="kt">int</span> <span class="n">cur</span><span class="o">=</span><span class="n">q</span><span class="p">.</span><span class="n">front</span><span class="p">().</span><span class="n">first</span><span class="p">;</span>
+            <span class="kt">int</span> <span class="n">step</span><span class="o">=</span><span class="n">q</span><span class="p">.</span><span class="n">front</span><span class="p">().</span><span class="n">second</span><span class="p">;</span>
+            <span class="n">q</span><span class="p">.</span><span class="n">pop</span><span class="p">();</span>
+            <span class="k">if</span><span class="p">(</span><span class="n">cur</span><span class="o">==</span><span class="n">target</span><span class="p">)</span> <span class="k">return</span> <span class="n">step</span><span class="p">;</span>
+            <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="nl">i</span><span class="p">:</span> <span class="n">g</span><span class="p">[</span><span class="n">cur</span><span class="p">]){</span>
+                <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="nl">j</span><span class="p">:</span> <span class="n">routes</span><span class="p">[</span><span class="n">i</span><span class="p">]){</span>
+                    <span class="k">if</span><span class="p">(</span><span class="n">visited</span><span class="p">.</span><span class="n">find</span><span class="p">(</span><span class="n">j</span><span class="p">)</span><span class="o">==</span><span class="n">visited</span><span class="p">.</span><span class="n">end</span><span class="p">()){</span>
+                        <span class="n">q</span><span class="p">.</span><span class="n">push</span><span class="p">({</span><span class="n">j</span><span class="p">,</span> <span class="n">step</span><span class="o">+</span><span class="mi">1</span><span class="p">});</span>
+                        <span class="n">visited</span><span class="p">.</span><span class="n">insert</span><span class="p">(</span><span class="n">j</span><span class="p">);</span>
+                    <span class="p">}</span>
+                <span class="p">}</span>
+                <span class="c1">// 这里是关键！！！
+</span><span class="c1"></span>                <span class="n">routes</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">clear</span><span class="p">();</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+        <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">};</span>
+</code></pre></div><h2 id="sort">Sort</h2>
 <h3 id="215-kth-largest-element-in-an-array">215. Kth Largest Element in an Array</h3>
 <p>Medium<br>
 <a href="https://leetcode.com/problems/kth-largest-element-in-an-array/" target="_blank" rel="noopener noreffer">215. Kth Largest Element in an Array</a></p>
@@ -408,7 +461,40 @@ When the target is in the left part of the array:</p>
 <ul>
 <li><code>nums[left]&lt;=target &amp;&amp; target&lt;nums[mid]</code> (left part is in order)</li>
 <li><code>nums[left]&gt;nums[mid] &amp;&amp; (target&gt;=nums[left] || target&lt;=nums[mid])</code> (left part is not in order)</li>
-</ul></div><div class="post-footer" id="post-footer">
+</ul>
+<h2 id="heap">Heap</h2>
+<h3 id="23-merge-k-sorted-lists">23. Merge k Sorted Lists</h3>
+<p>Hard<br>
+<a href="https://leetcode.com/problems/merge-k-sorted-lists/" target="_blank" rel="noopener noreffer">23. Merge k Sorted Lists</a></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C++" data-lang="C++"><span class="k">class</span> <span class="nc">Solution</span> <span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+    <span class="c1">// 改变heap排序方式的方法!
+</span><span class="c1"></span>    <span class="k">struct</span> <span class="nc">cmp</span><span class="p">{</span>
+        <span class="kt">bool</span> <span class="nf">operator</span><span class="p">()(</span><span class="n">ListNode</span><span class="o">*</span> <span class="n">a</span><span class="p">,</span> <span class="n">ListNode</span><span class="o">*</span> <span class="n">b</span><span class="p">){</span>
+            <span class="k">return</span> <span class="n">a</span><span class="o">-&gt;</span><span class="n">val</span> <span class="o">&gt;</span> <span class="n">b</span><span class="o">-&gt;</span><span class="n">val</span><span class="p">;</span>
+        <span class="p">}</span> <span class="c1">// 变成minHeap
+</span><span class="c1"></span>    <span class="p">};</span>
+    <span class="n">ListNode</span><span class="o">*</span> <span class="nf">mergeKLists</span><span class="p">(</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">ListNode</span><span class="o">*&gt;&amp;</span> <span class="n">lists</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">priority_queue</span><span class="o">&lt;</span><span class="n">ListNode</span><span class="o">*</span><span class="p">,</span> <span class="n">vector</span><span class="o">&lt;</span><span class="n">ListNode</span><span class="o">*&gt;</span><span class="p">,</span> <span class="n">cmp</span><span class="o">&gt;</span> <span class="n">heap</span><span class="p">;</span>
+        <span class="n">ListNode</span><span class="o">*</span> <span class="n">res</span><span class="o">=</span><span class="k">new</span> <span class="n">ListNode</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+        <span class="n">ListNode</span><span class="o">*</span> <span class="n">ptr</span><span class="o">=</span><span class="n">res</span><span class="p">;</span>
+        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">lists</span><span class="p">.</span><span class="n">size</span><span class="p">();</span><span class="n">i</span><span class="o">++</span><span class="p">){</span>
+            <span class="k">if</span><span class="p">(</span><span class="n">lists</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">==</span><span class="k">nullptr</span><span class="p">)</span> <span class="k">continue</span><span class="p">;</span>
+            <span class="n">heap</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="n">lists</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
+        <span class="p">}</span>
+        <span class="k">while</span><span class="p">(</span><span class="o">!</span><span class="n">heap</span><span class="p">.</span><span class="n">empty</span><span class="p">()){</span>
+            <span class="n">ptr</span><span class="o">-&gt;</span><span class="n">next</span><span class="o">=</span><span class="n">heap</span><span class="p">.</span><span class="n">top</span><span class="p">();</span>
+            <span class="n">ptr</span><span class="o">=</span><span class="n">ptr</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
+            <span class="n">heap</span><span class="p">.</span><span class="n">pop</span><span class="p">();</span>
+            <span class="k">if</span><span class="p">(</span><span class="n">ptr</span><span class="o">-&gt;</span><span class="n">next</span><span class="o">!=</span><span class="k">nullptr</span><span class="p">){</span>
+                <span class="n">heap</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="n">ptr</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">);</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+        
+        <span class="k">return</span> <span class="n">res</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">};</span>
+</code></pre></div></div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">

@@ -102,7 +102,16 @@ public:
     }
 };
 ```
+### 17. Letter Combinations of a Phone Number
+
+Medium
+
+[17. Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/)
+
+
+
 ## Math
+
 ### 31. Next Permutation
 Medium  
 [31. Next Permutation](https://leetcode.com/problems/next-permutation/)  
@@ -193,7 +202,14 @@ public:
 };
 ```
 
+### 15. 3Sum
+
+Medium  
+[15. 3Sum](https://leetcode.com/problems/3sum/)  
+2sum+one more level of interation $O(n^2)$
+
 ## DFS
+
 ### 22. Generate Parentheses
 Medium  
 [22. Generate Parentheses](https://leetcode.com/problems/generate-parentheses/)  
@@ -239,6 +255,50 @@ hard
 [127. Word Ladder](https://leetcode.com/problems/word-ladder/)  
 The trick is enumerating the next word and check whether it is unvisited instead of compare the currrent word to all unvisited word and check whether they are connected. 
 
+### 815. Bus Routes
+
+hard  
+[815. Bus Routes](https://leetcode.com/problems/bus-routes/)  
+The hard point of this problem is how to build the graph where we execute BFS. One node and its adjacent node are in the same bus route.
+
+`routes[i].clear();`: this is for 
+
+```C++
+class Solution {
+public:
+    int numBusesToDestination(vector<vector<int>>& routes, int source, int target) {
+        unordered_map<int, vector<int>> g;
+        for(int i=0;i<routes.size();i++){
+            for(int j=0;j<routes[i].size();j++){
+                g[routes[i][j]].push_back(i);
+            }
+        }
+        unordered_set<int> visited;
+        queue<pair<int, int>> q;
+        q.push({source, 0});
+        
+        visited.insert(source);
+        while(!q.empty()){
+            int cur=q.front().first;
+            int step=q.front().second;
+            q.pop();
+            if(cur==target) return step;
+            for(int i: g[cur]){
+                for(int j: routes[i]){
+                    if(visited.find(j)==visited.end()){
+                        q.push({j, step+1});
+                        visited.insert(j);
+                    }
+                }
+                // 这里是关键！！！
+                routes[i].clear();
+            }
+        }
+        return -1;
+    }
+};
+```
+
 ## Sort
 ### 215. Kth Largest Element in an Array
 Medium  
@@ -249,6 +309,47 @@ Medium
 medium  
 [33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)  
 When the target is in the left part of the array:
+
 *   `nums[left]<=target && target<nums[mid]` (left part is in order)
 *   `nums[left]>nums[mid] && (target>=nums[left] || target<=nums[mid])` (left part is not in order)
+
+## Heap
+
+### 23. Merge k Sorted Lists
+
+Hard  
+[23. Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/)  
+
+```C++
+class Solution {
+public:
+    // 改变heap排序方式的方法!
+    struct cmp{
+        bool operator()(ListNode* a, ListNode* b){
+            return a->val > b->val;
+        } // 变成minHeap
+    };
+    ListNode* mergeKLists(vector<ListNode*>& lists) {
+        priority_queue<ListNode*, vector<ListNode*>, cmp> heap;
+        ListNode* res=new ListNode(0);
+        ListNode* ptr=res;
+        for(int i=0;i<lists.size();i++){
+            if(lists[i]==nullptr) continue;
+            heap.push(lists[i]);
+        }
+        while(!heap.empty()){
+            ptr->next=heap.top();
+            ptr=ptr->next;
+            heap.pop();
+            if(ptr->next!=nullptr){
+                heap.push(ptr->next);
+            }
+        }
+        
+        return res->next;
+    }
+};
+```
+
+
 

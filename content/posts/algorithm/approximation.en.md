@@ -7,7 +7,7 @@ math:
 ---
 Approximation Algorithm
 <!--more-->
-## Load Baancing Problem
+## Load Balancing Problem
 m resources with equal processing power
 n jobs where job j takes $t_j$ to process
 assignment of jobs to resources such that the maximum load on any machine is minimized.
