@@ -27,7 +27,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/shuaiqifeiyang.tech\/posts\/algorithm\/max-flow\/"
-        },"genre": "posts","keywords": "Algorithm","wordcount":  1240 ,
+        },"genre": "posts","keywords": "Algorithm","wordcount":  1300 ,
         "url": "https:\/\/shuaiqifeiyang.tech\/posts\/algorithm\/max-flow\/","datePublished": "2021-10-25T09:37:16-07:00","dateModified": "2021-10-25T09:37:16-07:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "Author"},"author": {
@@ -130,6 +130,7 @@
         <li><a href="#53-node-disjoint-path">5.3. Node-Disjoint Path</a></li>
         <li><a href="#54-circulations-with-demands">5.4. Circulations with Demands</a></li>
         <li><a href="#55-circulation-with-demands-and-lower-bounds">5.5 Circulation with Demands and Lower Bounds</a></li>
+        <li><a href="#56-min-flow-problem">5.6 Min Flow Problem</a></li>
       </ul>
     </li>
   </ul>
@@ -275,7 +276,7 @@ To prove this we should show that $G^\prime$ will have a max flow of value k <st
 </ul>
 <p><strong>Circulation</strong>:</p>
 <ul>
-<li>We say that a circulation with demands {dv} is a function f that assigns a nonnegative real number to each edge and satisfies the following two conditions.
+<li>We say that a circulation with demands ${d_v}$ is a function $f$ that assigns a nonnegative real number to each edge and satisfies the following two conditions.
 <ol>
 <li>(Capacity conditions)For each $e\in E$, we have $0\leq f(e)\leq c_e$.</li>
 <li>(Demand conditions)For each $v\in V$, we have v, $f^{in}(v)−f^{out}(v)=d_v$.</li>
@@ -307,7 +308,16 @@ Satisfying lower bounds first, then the problem is similar to Circulation with D
         data-srcset="https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/algorithm/img/max-flow5.png, https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/algorithm/img/max-flow5.png 1.5x, https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/algorithm/img/max-flow5.png 2x"
         data-sizes="auto"
         alt="https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/algorithm/img/max-flow5.png"
-        title="https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/algorithm/img/max-flow5.png" /></p></div><div class="post-footer" id="post-footer">
+        title="https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/algorithm/img/max-flow5.png" /></p>
+<h3 id="56-min-flow-problem">5.6 Min Flow Problem</h3>
+<p>Every edge has a lower bound. Find a feasible flow of minimum possible value.</p>
+<p>Solution:</p>
+<ul>
+<li>Assign large capacity to all edges and find a feasible flow $f$</li>
+<li>construct $G'$, where all the edges are reversed and the reversed edge $e$ has capacity = $f_e-l_e$</li>
+<li>Find maximum flow $f'$ from $t$ to $s$.</li>
+<li>min flow = $f-f'$</li>
+</ul></div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">

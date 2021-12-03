@@ -113,7 +113,7 @@ To prove this we should show that $G^\prime$ will have a max flow of value k **i
 
 **Edge-Disjoint Path in Undirected Graph**: Transfer the original undirected edge to two directed edges with reverse directions. Then this problem is similar to Edge-Disjoint Path in Directed Graph. However, we should pay attention to a case: one path uses directed edge (u, v) and another path uses directed edge (v, u). It is not hard to see that there always exists a maximum flow in any network that uses at most one out of each pair of oppositely directed edges.  
 ![](https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/algorithm/img/max-flow2.png)
- 
+
 ### 5.3. Node-Disjoint Path
 ![](https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/algorithm/img/max-flow3.png)
 
@@ -128,7 +128,7 @@ To prove this we should show that $G^\prime$ will have a max flow of value k **i
 
 
 **Circulation**:
-*   We say that a circulation with demands {dv} is a function f that assigns a nonnegative real number to each edge and satisfies the following two conditions.
+*   We say that a circulation with demands ${d_v}$ is a function $f$ that assigns a nonnegative real number to each edge and satisfies the following two conditions.
     1. (Capacity conditions)For each $e\in E$, we have $0\leq f(e)\leq c_e$.
     2. (Demand conditions)For each $v\in V$, we have v, $f^{in}(v)−f^{out}(v)=d_v$.  
 
@@ -138,6 +138,7 @@ Our problem is if there is a feasible circulation in a circulation network.
 ![](https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/algorithm/img/max-flow4.png)
 
 ### 5.5 Circulation with Demands and Lower Bounds
+
 **Definition**:
  1. (Capacity conditions)For each $e\in E$, we have $l_e\leq f(e)\leq c_e$.
  2. (Demand conditions)For each $v\in V$, we have v, $f^{in}(v)−f^{out}(v)=d_v$.  
@@ -145,4 +146,15 @@ Our problem is if there is a feasible circulation in a circulation network.
 **Solution**:  
 Satisfying lower bounds first, then the problem is similar to Circulation with Demands
 ![](https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/algorithm/img/max-flow5.png)
+
+### 5.6 Min Flow Problem
+
+Every edge has a lower bound. Find a feasible flow of minimum possible value.
+
+Solution:
+
+* Assign large capacity to all edges and find a feasible flow $f$
+* construct $G'$, where all the edges are reversed and the reversed edge $e$ has capacity = $f_e-l_e$
+* Find maximum flow $f'$ from $t$ to $s$.
+* min flow = $f-f'$
 

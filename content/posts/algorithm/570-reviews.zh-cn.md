@@ -169,6 +169,20 @@ Kruskal中用Union-Find数据结构判断两个点是否已经连起来了。
 
 ## Week5
 
+### Merge-Sort
+
+Time Complexity: O(nlogn)
+
+### Master Theorem
+
+## Week 6
+
+Exam1
+
+## Week 7
+
+
+
 
 
 

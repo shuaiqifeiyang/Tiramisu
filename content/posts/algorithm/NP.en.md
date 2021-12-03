@@ -42,7 +42,7 @@ Given a set $X$ of n Boolean variables $x_1,\dots,x_n$
 A clause is simply a disjunction of distince terms $t_1\lor t_2 \lor \cdots\lor t_l (t_i\in\{x_1,x_2,\dots,x_n,\overline{x_1},\dots,\overline{x_n} \})$.
 We say the clause has length $l$ if it contains $l$ terms
 
-A truth assignment for $X$ is an assignment of the value 0 or 1 to each $x_i$; in other words, it is a function $v: X\rarr \\{0, 1\\}$  
+A truth assignment for $X$ is an assignment of the value 0 or 1 to each $x_i$; in other words, it is a function $v: X\rarr \{0, 1\}$
 An assignment satisfies a clause $C$ if it causes $C$ to evaluate to 1 under the rules of Boolean logic.  
 An assignment satisfies a collection of clauses $C_1,\dots, C_k$ if it causes all of the $C_i$ to evaluate to 1. In this case, we will say that $v$ is a satisfying assignment with respect to $C_1,\dots,C_k$; and that the set of clauses $C_1,\dots,C_k$ is satisfiable.
 
@@ -54,6 +54,7 @@ does there exist a satisfying truth assignment?
 
 **efficient certification**:  
 to show efficient certification:   
+
 * Polynomial length certificate
 * Polynomial time certifier
 the certifier is basically an algorithm that takes the certificate and decides whether or not it is a good solution.
