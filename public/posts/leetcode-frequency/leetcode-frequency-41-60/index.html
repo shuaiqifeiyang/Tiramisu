@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>Leetcode Frequency 41-60 - Shuaiqifeiyang&#39;s blog</title><meta name="Description" content="About LoveIt Theme"><meta property="og:title" content="Leetcode Frequency 41-60" />
+<meta property="og:description" content="Leetcode Top 41-60 high-frequency problems: types, solutions, and summary" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://shuaiqifeiyang.tech/posts/leetcode-frequency/leetcode-frequency-41-60/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-11-30T23:25:26-08:00" />
+<meta property="article:modified_time" content="2021-11-30T23:25:26-08:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Leetcode Frequency 41-60"/>
+<meta name="twitter:description" content="Leetcode Top 41-60 high-frequency problems: types, solutions, and summary"/>
+<meta name="application-name" content="Telescope">
+<meta name="apple-mobile-web-app-title" content="Telescope"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://shuaiqifeiyang.tech/posts/leetcode-frequency/leetcode-frequency-41-60/" /><link rel="prev" href="https://shuaiqifeiyang.tech/posts/projects/procedural-modeling-of-cities/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Leetcode Frequency 41-60",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/shuaiqifeiyang.tech\/posts\/leetcode-frequency\/leetcode-frequency-41-60\/"
+        },"genre": "posts","keywords": "Algorithm, Leetcode","wordcount":  491 ,
+        "url": "https:\/\/shuaiqifeiyang.tech\/posts\/leetcode-frequency\/leetcode-frequency-41-60\/","datePublished": "2021-11-30T23:25:26-08:00","dateModified": "2021-11-30T23:25:26-08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "Author"},"author": {
+                "@type": "Person",
+                "name": "Author"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="" header-mobile=""><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : '' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Shuaiqifeiyang&#39;s blog">Shuaiqifeiyang&#39;s blog</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="/about/"> About </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item language" title="Select Language">English<i class="fas fa-chevron-right fa-fw"></i>
+                        <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/posts/leetcode-frequency/leetcode-frequency-41-60/" selected>English</option></select>
+                    </a><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Shuaiqifeiyang&#39;s blog">Shuaiqifeiyang&#39;s blog</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="/about/" title="">About</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a><a href="javascript:void(0);" class="menu-item" title="Select Language">English<i class="fas fa-chevron-right fa-fw"></i>
+                    <select class="language-select" onchange="location = this.value;"><option value="/posts/leetcode-frequency/leetcode-frequency-41-60/" selected>English</option></select>
+                </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content always-active" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">Leetcode Frequency 41-60</h1><div class="post-meta">
+            <div class="post-meta-line">
+                
+                <span class="post-category">included in <a href="/categories/leetcode-frequency/"><i class="far fa-folder fa-fw"></i>Leetcode Frequency</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-11-30">2021-11-30</time>&nbsp;
+            </div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#trie">Trie</a>
+      <ul>
+        <li><a href="#212-word-search-ii">212. Word Search II</a></li>
+      </ul>
+    </li>
+    <li><a href="#two-pointers">Two Pointers</a>
+      <ul>
+        <li><a href="#680-valid-palindrome-ii">680. Valid Palindrome II</a></li>
+        <li><a href="#11-container-with-most-water">11. Container With Most Water</a></li>
+      </ul>
+    </li>
+    <li><a href="#sort">Sort</a>
+      <ul>
+        <li><a href="#215-kth-largest-element-in-an-array">215. Kth Largest Element in an Array</a></li>
+        <li><a href="#973-k-closest-points-to-origin">973. K Closest Points to Origin</a></li>
+      </ul>
+    </li>
+    <li><a href="#greedy">Greedy</a>
+      <ul>
+        <li><a href="#1326-minimum-number-of-taps-to-open-to-water-a-garden">1326. Minimum Number of Taps to Open to Water a Garden</a></li>
+      </ul>
+    </li>
+    <li><a href="#tree">Tree</a>
+      <ul>
+        <li><a href="#236-lowest-common-ancestor-of-a-binary-tree">236. Lowest Common Ancestor of a Binary Tree</a></li>
+      </ul>
+    </li>
+    <li><a href="#dfs">DFS</a>
+      <ul>
+        <li><a href="#394-decode-string">394. Decode String</a></li>
+        <li><a href="#79-word-search">79. Word Search</a></li>
+      </ul>
+    </li>
+    <li><a href="#heap">Heap</a>
+      <ul>
+        <li><a href="#295-find-median-from-data-stream">295. Find Median from Data Stream</a></li>
+      </ul>
+    </li>
+    <li><a href="#stack">Stack</a>
+      <ul>
+        <li><a href="#227-basic-calculator-ii">227. Basic Calculator II</a></li>
+      </ul>
+    </li>
+    <li><a href="#hash">Hash</a>
+      <ul>
+        <li><a href="#1396-design-underground-system">1396. Design Underground System</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>Leetcode Top 41-60 high-frequency problems: types, solutions, and summary</p>
+<h2 id="trie">Trie</h2>
+<h3 id="212-word-search-ii">212. Word Search II</h3>
+<p>Hard
+<a href="https://leetcode.com/problems/word-search-ii/" target="_blank" rel="noopener noreffer">212. Word Search II</a>
+Trie Template Code</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C++" data-lang="C++"><span class="k">class</span> <span class="nc">Trie</span> <span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+    <span class="n">Trie</span><span class="o">*</span> <span class="n">routes</span><span class="p">[</span><span class="mi">26</span><span class="p">]</span><span class="o">=</span><span class="p">{</span><span class="k">nullptr</span><span class="p">};</span>
+    <span class="n">string</span> <span class="n">entireWord</span> <span class="o">=</span> <span class="s">&#34;&#34;</span><span class="p">;</span>
+    <span class="n">Trie</span><span class="p">(){</span>
+        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="mi">26</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">){</span>
+            <span class="n">routes</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">=</span><span class="k">nullptr</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="kt">void</span> <span class="nf">insert</span><span class="p">(</span><span class="k">const</span> <span class="n">string</span><span class="o">&amp;</span> <span class="n">word</span><span class="p">,</span> <span class="kt">int</span> <span class="n">pos</span><span class="p">){</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">pos</span><span class="o">==</span><span class="n">word</span><span class="p">.</span><span class="n">size</span><span class="p">()){</span>
+            <span class="n">entireWord</span><span class="o">=</span><span class="n">word</span><span class="p">;</span>
+            <span class="k">return</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">routes</span><span class="p">[</span><span class="n">word</span><span class="p">[</span><span class="n">pos</span><span class="p">]</span><span class="o">-</span><span class="sc">&#39;a&#39;</span><span class="p">]</span><span class="o">==</span><span class="k">nullptr</span><span class="p">){</span>
+            <span class="n">routes</span><span class="p">[</span><span class="n">word</span><span class="p">[</span><span class="n">pos</span><span class="p">]</span><span class="o">-</span><span class="sc">&#39;a&#39;</span><span class="p">]</span><span class="o">=</span><span class="k">new</span> <span class="n">Trie</span><span class="p">();</span>
+        <span class="p">}</span>
+        <span class="n">routes</span><span class="p">[</span><span class="n">word</span><span class="p">[</span><span class="n">pos</span><span class="p">]</span><span class="o">-</span><span class="sc">&#39;a&#39;</span><span class="p">]</span><span class="o">-&gt;</span><span class="n">insert</span><span class="p">(</span><span class="n">word</span><span class="p">,</span> <span class="n">pos</span><span class="o">+</span><span class="mi">1</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">};</span>
+</code></pre></div><p>STL:</p>
+<ul>
+<li>isupper(), toupper(), tolower(): <code>toupper(board[x][y])</code> doesn&rsquo;t change the parameter, <code>board[x][y]=toupprt(board[x][y])</code> changes the value.</li>
+</ul>
+<p>Tricks:</p>
+<ul>
+<li>use upper letters to denote the position has been visited</li>
+<li>set the entireWord to empty string after the word is matched to avoid duplicate words in res.</li>
+</ul>
+<h2 id="two-pointers">Two Pointers</h2>
+<h3 id="680-valid-palindrome-ii">680. Valid Palindrome II</h3>
+<p>Easy
+<a href="https://leetcode.com/problems/valid-palindrome-ii/" target="_blank" rel="noopener noreffer">680. Valid Palindrome II</a></p>
+<p>Use two pointers to check whether the string is Palindrome if delete at most 1 tiem in the string. Time complexity  is O(n)</p>
+<p>Elegant Code:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C++" data-lang="C++"><span class="kt">bool</span> <span class="nf">validPalindrome</span><span class="p">(</span><span class="n">string</span> <span class="n">s</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">j</span> <span class="o">=</span> <span class="n">s</span><span class="p">.</span><span class="n">size</span><span class="p">()</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">j</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">,</span> <span class="n">j</span><span class="o">--</span><span class="p">)</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">!=</span> <span class="n">s</span><span class="p">[</span><span class="n">j</span><span class="p">])</span> <span class="p">{</span>
+      <span class="kt">int</span> <span class="n">i1</span> <span class="o">=</span> <span class="n">i</span><span class="p">,</span> <span class="n">j1</span> <span class="o">=</span> <span class="n">j</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="n">i2</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">j2</span> <span class="o">=</span> <span class="n">j</span><span class="p">;</span>
+      <span class="k">while</span> <span class="p">(</span><span class="n">i1</span> <span class="o">&lt;</span> <span class="n">j1</span> <span class="o">&amp;&amp;</span> <span class="n">s</span><span class="p">[</span><span class="n">i1</span><span class="p">]</span> <span class="o">==</span> <span class="n">s</span><span class="p">[</span><span class="n">j1</span><span class="p">])</span> <span class="p">{</span><span class="n">i1</span><span class="o">++</span><span class="p">;</span> <span class="n">j1</span><span class="o">--</span><span class="p">;};</span>
+      <span class="k">while</span> <span class="p">(</span><span class="n">i2</span> <span class="o">&lt;</span> <span class="n">j2</span> <span class="o">&amp;&amp;</span> <span class="n">s</span><span class="p">[</span><span class="n">i2</span><span class="p">]</span> <span class="o">==</span> <span class="n">s</span><span class="p">[</span><span class="n">j2</span><span class="p">])</span> <span class="p">{</span><span class="n">i2</span><span class="o">++</span><span class="p">;</span> <span class="n">j2</span><span class="o">--</span><span class="p">;};</span>
+      <span class="k">return</span> <span class="n">i1</span> <span class="o">&gt;=</span> <span class="n">j1</span> <span class="o">||</span> <span class="n">i2</span> <span class="o">&gt;=</span> <span class="n">j2</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div><h3 id="11-container-with-most-water">11. Container With Most Water</h3>
+<p>Medium
+<a href="https://leetcode.com/problems/container-with-most-water/" target="_blank" rel="noopener noreffer">11. Container With Most Water</a></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C++" data-lang="C++"><span class="k">class</span> <span class="nc">Solution</span> <span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+    <span class="kt">int</span> <span class="n">maxArea</span><span class="p">(</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;&amp;</span> <span class="n">height</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kt">int</span> <span class="n">left</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">right</span><span class="o">=</span><span class="n">height</span><span class="p">.</span><span class="n">size</span><span class="p">()</span><span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+        <span class="kt">int</span> <span class="n">res</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+        <span class="k">while</span><span class="p">(</span><span class="n">left</span><span class="o">&lt;</span><span class="n">right</span><span class="p">){</span>
+            <span class="n">res</span><span class="o">=</span><span class="n">max</span><span class="p">(</span><span class="n">res</span><span class="p">,</span> <span class="n">min</span><span class="p">(</span><span class="n">height</span><span class="p">[</span><span class="n">left</span><span class="p">],</span> <span class="n">height</span><span class="p">[</span><span class="n">right</span><span class="p">])</span><span class="o">*</span><span class="p">(</span><span class="n">right</span><span class="o">-</span><span class="n">left</span><span class="p">));</span>
+            <span class="k">if</span><span class="p">(</span><span class="n">height</span><span class="p">[</span><span class="n">left</span><span class="p">]</span><span class="o">&lt;</span><span class="n">height</span><span class="p">[</span><span class="n">right</span><span class="p">]){</span>
+                <span class="n">left</span><span class="o">++</span><span class="p">;</span>
+            <span class="p">}</span><span class="k">else</span><span class="p">{</span>
+                <span class="n">right</span><span class="o">--</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+        <span class="k">return</span> <span class="n">res</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">};</span>
+</code></pre></div><h2 id="sort">Sort</h2>
+<h3 id="215-kth-largest-element-in-an-array">215. Kth Largest Element in an Array</h3>
+<p>Medium
+<a href="https://leetcode.com/problems/kth-largest-element-in-an-array/" target="_blank" rel="noopener noreffer">215. Kth Largest Element in an Array</a></p>
+<p>The solution is similar to Quick Sort</p>
+<h3 id="973-k-closest-points-to-origin">973. K Closest Points to Origin</h3>
+<p>Medium
+<a href="https://leetcode.com/problems/k-closest-points-to-origin/" target="_blank" rel="noopener noreffer">973. K Closest Points to Origin</a></p>
+<p>The solution is similar to Quick Sort.</p>
+<h2 id="greedy">Greedy</h2>
+<h3 id="1326-minimum-number-of-taps-to-open-to-water-a-garden">1326. Minimum Number of Taps to Open to Water a Garden</h3>
+<p>Hard
+<a href="https://leetcode.com/problems/minimum-number-of-taps-to-open-to-water-a-garden/" target="_blank" rel="noopener noreffer">1326. Minimum Number of Taps to Open to Water a Garden</a></p>
+<p>Sort the intervals according to its start position. Traversal the array that stores the intervals, we make a variable indicate current furthest position can reach and make another variable indicate next furthest position can reach based on current furhtest position. Essentialy, it is a greedy algorithm, every time we choose the tap thay can reach furthest position.</p>
+<h2 id="tree">Tree</h2>
+<h3 id="236-lowest-common-ancestor-of-a-binary-tree">236. Lowest Common Ancestor of a Binary Tree</h3>
+<p>Medium
+<a href="https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/" target="_blank" rel="noopener noreffer">236. Lowest Common Ancestor of a Binary Tree</a></p>
+<p>Post-Order Traversal the binary tree</p>
+<h2 id="dfs">DFS</h2>
+<h3 id="394-decode-string">394. Decode String</h3>
+<p>Medium
+<a href="https://leetcode.com/problems/decode-string/" target="_blank" rel="noopener noreffer">394. Decode String</a></p>
+<h3 id="79-word-search">79. Word Search</h3>
+<p>Medium
+<a href="https://leetcode.com/problems/word-search/" target="_blank" rel="noopener noreffer">79. Word Search</a></p>
+<h2 id="heap">Heap</h2>
+<h3 id="295-find-median-from-data-stream">295. Find Median from Data Stream</h3>
+<p>Hard
+<a href="https://leetcode.com/problems/find-median-from-data-stream/" target="_blank" rel="noopener noreffer">295. Find Median from Data Stream</a></p>
+<p>Use two heaps, maxheap stores the smaller part of these numbers and minheap stores the larger part of these numbers.</p>
+<h2 id="stack">Stack</h2>
+<h3 id="227-basic-calculator-ii">227. Basic Calculator II</h3>
+<p>Medium
+<a href="https://leetcode.com/problems/basic-calculator-ii/" target="_blank" rel="noopener noreffer">227. Basic Calculator II</a></p>
+<ul>
+<li>string s only consists of operators +, -, *, /</li>
+<li>does not contain parentheses</li>
+</ul>
+<h2 id="hash">Hash</h2>
+<h3 id="1396-design-underground-system">1396. Design Underground System</h3>
+<p>Medium
+<a href="https://leetcode.com/problems/design-underground-system/" target="_blank" rel="noopener noreffer">1396. Design Underground System</a></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C++" data-lang="C++"><span class="c1">// &#34;startStation-&gt;endStation&#34;: &lt;totalTime, totalCnt&gt;
+</span><span class="c1"></span><span class="n">unordered_map</span><span class="o">&lt;</span><span class="n">string</span><span class="p">,</span> <span class="n">pair</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span> <span class="kt">int</span><span class="o">&gt;&gt;</span> <span class="n">journeyData</span><span class="p">;</span>
+<span class="c1">//  CarID: &lt;station, checkin Time&gt;
+</span><span class="c1"></span><span class="n">unordered_map</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span> <span class="n">pair</span><span class="o">&lt;</span><span class="n">string</span><span class="p">,</span> <span class="kt">int</span><span class="o">&gt;&gt;</span> <span class="n">checkinData</span><span class="p">;</span>
+</code></pre></div></div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2021-11-30</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">Algorithm</a>,&nbsp;<a href="/tags/leetcode/">Leetcode</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/projects/procedural-modeling-of-cities/" class="prev" rel="prev" title="Procedural Modeling of Cities"><i class="fas fa-angle-left fa-fw"></i>Procedural Modeling of Cities</a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2019 - 2021</span><span class="icp-splitter">&nbsp;|&nbsp;</span><br class="icp-br"/>
+                    <span class="icp"><a href='https://beian.miit.gov.cn/#/Integrated/index'>浙ICP备2021000092</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="stylesheet" href="/lib/katex/copy-tex.min.css"><script type="text/javascript" src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/algoliasearch/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js"></script><script type="text/javascript" src="/lib/katex/auto-render.min.js"></script><script type="text/javascript" src="/lib/katex/copy-tex.min.js"></script><script type="text/javascript" src="/lib/katex/mhchem.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":100},"comment":{},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"algoliaAppID":"PASDMWALPK","algoliaIndex":"index.en","algoliaSearchKey":"b42948e51daaa93df92381c8e2ac0f93","highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"algolia"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

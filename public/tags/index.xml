@@ -4,7 +4,21 @@
         <link>https://shuaiqifeiyang.tech/tags/</link>
         <description>Tags - Tag - Shuaiqifeiyang&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>shuaiqifeiyang@gmail.com</managingEditor>
-            <webMaster>shuaiqifeiyang@gmail.com</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 28 Nov 2021 11:24:37 -0800</lastBuildDate><atom:link href="https://shuaiqifeiyang.tech/tags/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>shuaiqifeiyang@gmail.com</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 30 Nov 2021 23:25:26 -0800</lastBuildDate><atom:link href="https://shuaiqifeiyang.tech/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>Algorithm</title>
+    <link>https://shuaiqifeiyang.tech/tags/algorithm/</link>
+    <pubDate>Tue, 30 Nov 2021 23:25:26 -0800</pubDate>
+    <author>Author</author>
+    <guid>https://shuaiqifeiyang.tech/tags/algorithm/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Leetcode</title>
+    <link>https://shuaiqifeiyang.tech/tags/leetcode/</link>
+    <pubDate>Tue, 30 Nov 2021 23:25:26 -0800</pubDate>
+    <author>Author</author>
+    <guid>https://shuaiqifeiyang.tech/tags/leetcode/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
     <title>Graphics</title>
     <link>https://shuaiqifeiyang.tech/tags/graphics/</link>
     <pubDate>Sun, 28 Nov 2021 11:24:37 -0800</pubDate>
@@ -19,13 +33,6 @@
     <guid>https://shuaiqifeiyang.tech/tags/unity/</guid>
     <description><![CDATA[]]></description>
 </item><item>
-    <title>Algorithm</title>
-    <link>https://shuaiqifeiyang.tech/tags/algorithm/</link>
-    <pubDate>Thu, 18 Nov 2021 14:46:00 -0800</pubDate>
-    <author>Author</author>
-    <guid>https://shuaiqifeiyang.tech/tags/algorithm/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
     <title>C&#43;&#43;</title>
     <link>https://shuaiqifeiyang.tech/tags/c&#43;&#43;/</link>
     <pubDate>Mon, 08 Nov 2021 16:07:12 -0800</pubDate>
@@ -38,13 +45,6 @@
     <pubDate>Sun, 07 Nov 2021 08:43:43 -0800</pubDate>
     <author>Author</author>
     <guid>https://shuaiqifeiyang.tech/tags/binary-search/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Leetcode</title>
-    <link>https://shuaiqifeiyang.tech/tags/leetcode/</link>
-    <pubDate>Sun, 07 Nov 2021 08:43:43 -0800</pubDate>
-    <author>Author</author>
-    <guid>https://shuaiqifeiyang.tech/tags/leetcode/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>APP</title>

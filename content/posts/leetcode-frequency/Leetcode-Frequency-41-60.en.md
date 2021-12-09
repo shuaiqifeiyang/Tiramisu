@@ -1,9 +1,12 @@
 ---
 title: "Leetcode Frequency 41-60"
 date: 2021-11-30T23:25:26-08:00
-draft: true
+draft: false
+tags: ["Algorithm", "Leetcode"]
+categories: ["Leetcode Frequency"]
+math:
+    enable: true
 ---
-
 Leetcode Top 41-60 high-frequency problems: types, solutions, and summary
 
 <!--more-->
@@ -12,8 +15,8 @@ Leetcode Top 41-60 high-frequency problems: types, solutions, and summary
 
 ### 212. Word Search II
 
-Hard  
-[212. Word Search II](https://leetcode.com/problems/word-search-ii/)  
+Hard
+[212. Word Search II](https://leetcode.com/problems/word-search-ii/)
 Trie Template Code
 
 ```C++
@@ -41,9 +44,9 @@ public:
 
 STL:
 
-* isupper(), toupper(), tolower()
+* isupper(), toupper(), tolower(): `toupper(board[x][y])` doesn't change the parameter, `board[x][y]=toupprt(board[x][y])` changes the value.
 
-Tricks:   
+Tricks:
 
 * use upper letters to denote the position has been visited
 * set the entireWord to empty string after the word is matched to avoid duplicate words in res.
@@ -52,12 +55,12 @@ Tricks:
 
 ### 680. Valid Palindrome II
 
-Easy  
+Easy
 [680. Valid Palindrome II](https://leetcode.com/problems/valid-palindrome-ii/)
 
-Use two pointers to check whether the string is Palindrome. Time complexity  is O(n)
+Use two pointers to check whether the string is Palindrome if delete at most 1 tiem in the string. Time complexity  is O(n)
 
-Elegant Code:  
+Elegant Code:
 
 ```C++
 bool validPalindrome(string s) {
@@ -72,14 +75,105 @@ bool validPalindrome(string s) {
 }
 ```
 
+### 11. Container With Most Water
+
+Medium
+[11. Container With Most Water](https://leetcode.com/problems/container-with-most-water/)
+
+```C++
+class Solution {
+public:
+    int maxArea(vector<int>& height) {
+        int left=0, right=height.size()-1;
+        int res=0;
+        while(left<right){
+            res=max(res, min(height[left], height[right])*(right-left));
+            if(height[left]<height[right]){
+                left++;
+            }else{
+                right--;
+            }
+        }
+        return res;
+    }
+};
+```
+
 ## Sort
+
+### 215. Kth Largest Element in an Array
+
+Medium
+[215. Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)
+
+The solution is similar to Quick Sort
 
 ### 973. K Closest Points to Origin
 
-Medium  
+Medium
 [973. K Closest Points to Origin](https://leetcode.com/problems/k-closest-points-to-origin/)
+
+The solution is similar to Quick Sort.
 
 ## Greedy
 
+### 1326. Minimum Number of Taps to Open to Water a Garden
 
+Hard
+[1326. Minimum Number of Taps to Open to Water a Garden](https://leetcode.com/problems/minimum-number-of-taps-to-open-to-water-a-garden/)
 
+Sort the intervals according to its start position. Traversal the array that stores the intervals, we make a variable indicate current furthest position can reach and make another variable indicate next furthest position can reach based on current furhtest position. Essentialy, it is a greedy algorithm, every time we choose the tap thay can reach furthest position.
+
+## Tree
+
+### 236. Lowest Common Ancestor of a Binary Tree
+
+Medium
+[236. Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)
+
+Post-Order Traversal the binary tree
+
+## DFS
+
+### 394. Decode String
+
+Medium
+[394. Decode String](https://leetcode.com/problems/decode-string/)
+
+### 79. Word Search
+
+Medium
+[79. Word Search](https://leetcode.com/problems/word-search/)
+
+## Heap
+
+### 295. Find Median from Data Stream
+
+Hard
+[295. Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/)
+
+Use two heaps, maxheap stores the smaller part of these numbers and minheap stores the larger part of these numbers.
+
+## Stack
+
+### 227. Basic Calculator II
+
+Medium
+[227. Basic Calculator II](https://leetcode.com/problems/basic-calculator-ii/)
+
+* string s only consists of operators +, -, *, /
+* does not contain parentheses
+
+## Hash
+
+### 1396. Design Underground System
+
+Medium
+[1396. Design Underground System](https://leetcode.com/problems/design-underground-system/)
+
+```C++
+// "startStation->endStation": <totalTime, totalCnt>
+unordered_map<string, pair<int, int>> journeyData;
+//  CarID: <station, checkin Time>
+unordered_map<int, pair<string, int>> checkinData;
+```

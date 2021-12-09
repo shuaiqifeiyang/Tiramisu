@@ -27,7 +27,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/shuaiqifeiyang.tech\/posts\/leetcode-frequency\/leetcode-frequency-21-40\/"
-        },"genre": "posts","keywords": "Algorithm, Leetcode","wordcount":  1055 ,
+        },"genre": "posts","keywords": "Algorithm, Leetcode","wordcount":  1048 ,
         "url": "https:\/\/shuaiqifeiyang.tech\/posts\/leetcode-frequency\/leetcode-frequency-21-40\/","datePublished": "2021-10-29T22:55:16-07:00","dateModified": "2021-10-29T22:55:16-07:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "Author"},"author": {
@@ -121,7 +121,6 @@
   <ul>
     <li><a href="#hash">Hash</a>
       <ul>
-        <li><a href="#811-subdomain-visit-count">811. Subdomain Visit Count</a></li>
         <li><a href="#49-group-anagrams">49. Group Anagrams</a></li>
         <li><a href="#41-first-missing-positive">41. First Missing Positive</a></li>
       </ul>
@@ -186,17 +185,19 @@
 </nav></div>
             </div><div class="content" id="content"><p>Leetcode Top 21-40 high-frequency problem: types, solutions, and summary</p>
 <h2 id="hash">Hash</h2>
-<h3 id="811-subdomain-visit-count">811. Subdomain Visit Count</h3>
-<p>Medium<br>
-<a href="https://leetcode.com/problems/subdomain-visit-count/" target="_blank" rel="noopener noreffer">811. Subdomain Visit Count</a><br>
+<ol start="811">
+<li>Subdomain Visit Count</li>
+</ol>
+<p>Medium
+<a href="https://leetcode.com/problems/subdomain-visit-count/" target="_blank" rel="noopener noreffer">811. Subdomain Visit Count</a>
 Use hash table to count the number of subdomain. Use STL <code>int</code> string.find() and string.substr(int start)</p>
 <h3 id="49-group-anagrams">49. Group Anagrams</h3>
-<p>Medium<br>
-<a href="https://leetcode.com/problems/group-anagrams/" target="_blank" rel="noopener noreffer">49. Group Anagrams</a><br>
+<p>Medium
+<a href="https://leetcode.com/problems/group-anagrams/" target="_blank" rel="noopener noreffer">49. Group Anagrams</a>
 For each strings, we count the number of occurrences of each letter. Then we transfer the data to a string, which will be the key in hash map. For example, a string &ldquo;abab&rdquo;, it&rsquo;s key wtring is &ldquo;a#2#b#2&rdquo;. As a result, we can group anagrams in hash table.</p>
 <h3 id="41-first-missing-positive">41. First Missing Positive</h3>
-<p>Hard<br>
-<a href="https://leetcode.com/problems/first-missing-positive/" target="_blank" rel="noopener noreffer">41. First Missing Positive</a><br>
+<p>Hard
+<a href="https://leetcode.com/problems/first-missing-positive/" target="_blank" rel="noopener noreffer">41. First Missing Positive</a>
 Use original array as the hash map. However, I think the idea of this question is not practical in real production. It&rsquo;s not a good habit to change the parameter passed in from outside.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C++" data-lang="C++"><span class="k">class</span> <span class="nc">Solution</span> <span class="p">{</span>
 <span class="k">public</span><span class="o">:</span>
@@ -212,7 +213,7 @@ Use original array as the hash map. However, I think the idea of this question i
             <span class="p">}</span>
         <span class="p">}</span>
         <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">oneExists</span><span class="p">)</span> <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
-        
+      
         <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">nums</span><span class="p">.</span><span class="n">size</span><span class="p">();</span><span class="n">i</span><span class="o">++</span><span class="p">){</span>
             <span class="n">nums</span><span class="p">[</span><span class="n">abs</span><span class="p">(</span><span class="n">nums</span><span class="p">[</span><span class="n">i</span><span class="p">])</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="n">nums</span><span class="p">[</span><span class="n">abs</span><span class="p">(</span><span class="n">nums</span><span class="p">[</span><span class="n">i</span><span class="p">])</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">&gt;</span><span class="mi">0</span><span class="o">?-</span><span class="n">nums</span><span class="p">[</span><span class="n">abs</span><span class="p">(</span><span class="n">nums</span><span class="p">[</span><span class="n">i</span><span class="p">])</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">:</span><span class="n">nums</span><span class="p">[</span><span class="n">abs</span><span class="p">(</span><span class="n">nums</span><span class="p">[</span><span class="n">i</span><span class="p">])</span><span class="o">-</span><span class="mi">1</span><span class="p">];</span>
         <span class="p">}</span>
@@ -226,9 +227,7 @@ Use original array as the hash map. However, I think the idea of this question i
 <span class="p">};</span>
 </code></pre></div><h2 id="stack">Stack</h2>
 <h3 id="1249-minimum-remove-to-make-valid-parentheses">1249. Minimum Remove to Make Valid Parentheses</h3>
-<p>Medium<br>
-<a href="https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/" target="_blank" rel="noopener noreffer">1249. Minimum Remove to Make Valid Parentheses</a><br>
-To make the string valid with minimum removals, we need to get rid of all parentheses that do not have a matching pair. We use stack to mark removed parentheses with &lsquo;*&rsquo;, and erase all of them in the end.</p>
+<p>Medium<a href="https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/" target="_blank" rel="noopener noreffer">1249. Minimum Remove to Make Valid Parentheses</a>To make the string valid with minimum removals, we need to get rid of all parentheses that do not have a matching pair. We use stack to mark removed parentheses with &lsquo;*&rsquo;, and erase all of them in the end.</p>
 <ul>
 <li>The stack store the index of left parenthesis.</li>
 <li>Extra item in stack presents the left parenthesis that don&rsquo;t have corresponding right parenthesis.</li>
@@ -240,14 +239,14 @@ To make the string valid with minimum removals, we need to get rid of all parent
 </ul>
 <h2 id="simulation">Simulation</h2>
 <h3 id="68-text-justification">68. Text Justification</h3>
-<p>Hard<br>
-<a href="https://leetcode.com/problems/text-justification/" target="_blank" rel="noopener noreffer">68. Text Justification</a><br>
+<p>Hard
+<a href="https://leetcode.com/problems/text-justification/" target="_blank" rel="noopener noreffer">68. Text Justification</a>
 A complicated simulation. The idea is simple, but the implementation is hard.</p>
 <h3 id="54-spiral-matrix">54. Spiral Matrix</h3>
-<p>Medium<br>
+<p>Medium
 <a href="https://leetcode.com/problems/spiral-matrix/" target="_blank" rel="noopener noreffer">54. Spiral Matrix</a></p>
 <h3 id="273-integer-to-english-words">273. Integer to English Words</h3>
-<p>Hard<br>
+<p>Hard
 <a href="https://leetcode.com/problems/integer-to-english-words/" target="_blank" rel="noopener noreffer">273. Integer to English Words</a></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C++" data-lang="C++"><span class="k">class</span> <span class="nc">Solution</span> <span class="p">{</span>
 <span class="k">private</span><span class="o">:</span>
@@ -279,7 +278,7 @@ A complicated simulation. The idea is simple, but the implementation is hard.</p
 <p><a href="https://leetcode.com/problems/letter-combinations-of-a-phone-number/" target="_blank" rel="noopener noreffer">17. Letter Combinations of a Phone Number</a></p>
 <h2 id="math">Math</h2>
 <h3 id="31-next-permutation">31. Next Permutation</h3>
-<p>Medium<br>
+<p>Medium
 <a href="https://leetcode.com/problems/next-permutation/" target="_blank" rel="noopener noreffer">31. Next Permutation</a></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C++" data-lang="C++"><span class="k">class</span> <span class="nc">Solution</span> <span class="p">{</span>
 <span class="k">public</span><span class="o">:</span>
@@ -301,10 +300,10 @@ A complicated simulation. The idea is simple, but the implementation is hard.</p
     <span class="p">}</span>
 <span class="p">};</span>
 </code></pre></div><h3 id="829-consecutive-numbers-sum">829. Consecutive Numbers Sum</h3>
-<p>Hard<br>
-<a href="https://leetcode.com/problems/consecutive-numbers-sum/" target="_blank" rel="noopener noreffer">829. Consecutive Numbers Sum</a><br>
-$N = (x+1)+(x+2)+\cdots+(x+k)$<br>
-$N = xk+\frac{(1+k)k}{2}$<br>
+<p>Hard
+<a href="https://leetcode.com/problems/consecutive-numbers-sum/" target="_blank" rel="noopener noreffer">829. Consecutive Numbers Sum</a>
+$N = (x+1)+(x+2)+\cdots+(x+k)$
+$N = xk+\frac{(1+k)k}{2}$
 $x$ must be an integer and $x$ is positive.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C++" data-lang="C++"><span class="k">class</span> <span class="nc">Solution</span> <span class="p">{</span>
 <span class="k">public</span><span class="o">:</span>
@@ -319,8 +318,8 @@ $x$ must be an integer and $x$ is positive.</p>
 <span class="p">};</span>
 </code></pre></div><h2 id="two-pointers">Two Pointers</h2>
 <h3 id="809-expressive-words">809. Expressive Words</h3>
-<p>Medium<br>
-<a href="https://leetcode.com/problems/expressive-words/" target="_blank" rel="noopener noreffer">809. Expressive Words</a><br>
+<p>Medium
+<a href="https://leetcode.com/problems/expressive-words/" target="_blank" rel="noopener noreffer">809. Expressive Words</a>
 It takes experience to make the code of this problem readable.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C++" data-lang="C++"><span class="k">class</span> <span class="nc">Solution</span> <span class="p">{</span>
 <span class="k">public</span><span class="o">:</span>
@@ -362,22 +361,20 @@ It takes experience to make the code of this problem readable.</p>
     <span class="p">}</span>
 <span class="p">};</span>
 </code></pre></div><h3 id="15-3sum">15. 3Sum</h3>
-<p>Medium<br>
-<a href="https://leetcode.com/problems/3sum/" target="_blank" rel="noopener noreffer">15. 3Sum</a><br>
+<p>Medium
+<a href="https://leetcode.com/problems/3sum/" target="_blank" rel="noopener noreffer">15. 3Sum</a>
 2sum+one more level of interation $O(n^2)$</p>
 <h2 id="dfs">DFS</h2>
 <h3 id="22-generate-parentheses">22. Generate Parentheses</h3>
-<p>Medium<br>
-<a href="https://leetcode.com/problems/generate-parentheses/" target="_blank" rel="noopener noreffer">22. Generate Parentheses</a><br>
-We use two parameters <code>left</code> and <code>right</code> to indicate the number of left parenthese and the number of right parentheses in current string.<br>
-If left &lt; n, we can add a &lsquo;(&rsquo;.<br>
-If left &gt; right, we can add a &lsquo;)&rsquo;.<br>
+<p>Medium
+<a href="https://leetcode.com/problems/generate-parentheses/" target="_blank" rel="noopener noreffer">22. Generate Parentheses</a>
+We use two parameters <code>left</code> and <code>right</code> to indicate the number of left parenthese and the number of right parentheses in current string.
+If left &lt; n, we can add a &lsquo;(&rsquo;.
+If left &gt; right, we can add a &lsquo;)&rsquo;.
 When the size of string is 2*n, we store this one in our result array.</p>
 <h2 id="deque">Deque</h2>
 <h3 id="239-sliding-window-maximum">239. Sliding Window Maximum</h3>
-<p>Hard<br>
-<a href="https://leetcode.com/problems/sliding-window-maximum/" target="_blank" rel="noopener noreffer">239. Sliding Window Maximum</a><br>
-Use deque to store the index. Iterate over the array. At each step :</p>
+<p>Hard<a href="https://leetcode.com/problems/sliding-window-maximum/" target="_blank" rel="noopener noreffer">239. Sliding Window Maximum</a>Use deque to store the index. Iterate over the array. At each step :</p>
 <ul>
 <li>Clean the deque :
 <ul>
@@ -408,12 +405,12 @@ Use deque to store the index. Iterate over the array. At each step :</p>
 <span class="p">};</span>
 </code></pre></div><h2 id="bfs">BFS</h2>
 <h3 id="127-word-ladder">127. Word Ladder</h3>
-<p>hard<br>
-<a href="https://leetcode.com/problems/word-ladder/" target="_blank" rel="noopener noreffer">127. Word Ladder</a><br>
+<p>hard
+<a href="https://leetcode.com/problems/word-ladder/" target="_blank" rel="noopener noreffer">127. Word Ladder</a>
 The trick is enumerating the next word and check whether it is unvisited instead of compare the currrent word to all unvisited word and check whether they are connected.</p>
 <h3 id="815-bus-routes">815. Bus Routes</h3>
-<p>hard<br>
-<a href="https://leetcode.com/problems/bus-routes/" target="_blank" rel="noopener noreffer">815. Bus Routes</a><br>
+<p>hard
+<a href="https://leetcode.com/problems/bus-routes/" target="_blank" rel="noopener noreffer">815. Bus Routes</a>
 The hard point of this problem is how to build the graph where we execute BFS. One node and its adjacent node are in the same bus route.</p>
 <p><code>routes[i].clear();</code>: this is for</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C++" data-lang="C++"><span class="k">class</span> <span class="nc">Solution</span> <span class="p">{</span>
@@ -428,7 +425,7 @@ The hard point of this problem is how to build the graph where we execute BFS. O
         <span class="n">unordered_set</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">visited</span><span class="p">;</span>
         <span class="n">queue</span><span class="o">&lt;</span><span class="n">pair</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span> <span class="kt">int</span><span class="o">&gt;&gt;</span> <span class="n">q</span><span class="p">;</span>
         <span class="n">q</span><span class="p">.</span><span class="n">push</span><span class="p">({</span><span class="n">source</span><span class="p">,</span> <span class="mi">0</span><span class="p">});</span>
-        
+      
         <span class="n">visited</span><span class="p">.</span><span class="n">insert</span><span class="p">(</span><span class="n">source</span><span class="p">);</span>
         <span class="k">while</span><span class="p">(</span><span class="o">!</span><span class="n">q</span><span class="p">.</span><span class="n">empty</span><span class="p">()){</span>
             <span class="kt">int</span> <span class="n">cur</span><span class="o">=</span><span class="n">q</span><span class="p">.</span><span class="n">front</span><span class="p">().</span><span class="n">first</span><span class="p">;</span>
@@ -451,20 +448,18 @@ The hard point of this problem is how to build the graph where we execute BFS. O
 <span class="p">};</span>
 </code></pre></div><h2 id="sort">Sort</h2>
 <h3 id="215-kth-largest-element-in-an-array">215. Kth Largest Element in an Array</h3>
-<p>Medium<br>
+<p>Medium
 <a href="https://leetcode.com/problems/kth-largest-element-in-an-array/" target="_blank" rel="noopener noreffer">215. Kth Largest Element in an Array</a></p>
 <h2 id="binary-search">Binary Search</h2>
 <h3 id="33-search-in-rotated-sorted-array">33. Search in Rotated Sorted Array</h3>
-<p>medium<br>
-<a href="https://leetcode.com/problems/search-in-rotated-sorted-array/" target="_blank" rel="noopener noreffer">33. Search in Rotated Sorted Array</a><br>
-When the target is in the left part of the array:</p>
+<p>medium<a href="https://leetcode.com/problems/search-in-rotated-sorted-array/" target="_blank" rel="noopener noreffer">33. Search in Rotated Sorted Array</a>When the target is in the left part of the array:</p>
 <ul>
 <li><code>nums[left]&lt;=target &amp;&amp; target&lt;nums[mid]</code> (left part is in order)</li>
 <li><code>nums[left]&gt;nums[mid] &amp;&amp; (target&gt;=nums[left] || target&lt;=nums[mid])</code> (left part is not in order)</li>
 </ul>
 <h2 id="heap">Heap</h2>
 <h3 id="23-merge-k-sorted-lists">23. Merge k Sorted Lists</h3>
-<p>Hard<br>
+<p>Hard
 <a href="https://leetcode.com/problems/merge-k-sorted-lists/" target="_blank" rel="noopener noreffer">23. Merge k Sorted Lists</a></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C++" data-lang="C++"><span class="k">class</span> <span class="nc">Solution</span> <span class="p">{</span>
 <span class="k">public</span><span class="o">:</span>
@@ -490,7 +485,7 @@ When the target is in the left part of the array:</p>
                 <span class="n">heap</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="n">ptr</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">);</span>
             <span class="p">}</span>
         <span class="p">}</span>
-        
+      
         <span class="k">return</span> <span class="n">res</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
     <span class="p">}</span>
 <span class="p">};</span>

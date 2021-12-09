@@ -4,7 +4,14 @@
         <link>https://shuaiqifeiyang.tech/tags/algorithm/</link>
         <description>Algorithm - Tag - Shuaiqifeiyang&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>shuaiqifeiyang@gmail.com</managingEditor>
-            <webMaster>shuaiqifeiyang@gmail.com</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 18 Nov 2021 14:46:00 -0800</lastBuildDate><atom:link href="https://shuaiqifeiyang.tech/tags/algorithm/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>shuaiqifeiyang@gmail.com</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 30 Nov 2021 23:25:26 -0800</lastBuildDate><atom:link href="https://shuaiqifeiyang.tech/tags/algorithm/" rel="self" type="application/rss+xml" /><item>
+    <title>Leetcode Frequency 41-60</title>
+    <link>https://shuaiqifeiyang.tech/posts/leetcode-frequency/leetcode-frequency-41-60/</link>
+    <pubDate>Tue, 30 Nov 2021 23:25:26 -0800</pubDate>
+    <author>Author</author>
+    <guid>https://shuaiqifeiyang.tech/posts/leetcode-frequency/leetcode-frequency-41-60/</guid>
+    <description><![CDATA[<p>Leetcode Top 41-60 high-frequency problems: types, solutions, and summary</p>]]></description>
+</item><item>
     <title>NP</title>
     <link>https://shuaiqifeiyang.tech/posts/algorithm/np/</link>
     <pubDate>Thu, 18 Nov 2021 14:46:00 -0800</pubDate>

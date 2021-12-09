@@ -4,7 +4,14 @@
         <link>https://shuaiqifeiyang.tech/posts/</link>
         <description>All Posts | Shuaiqifeiyang&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>shuaiqifeiyang@gmail.com</managingEditor>
-            <webMaster>shuaiqifeiyang@gmail.com</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 28 Nov 2021 11:24:37 -0800</lastBuildDate><atom:link href="https://shuaiqifeiyang.tech/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>shuaiqifeiyang@gmail.com</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 30 Nov 2021 23:25:26 -0800</lastBuildDate><atom:link href="https://shuaiqifeiyang.tech/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Leetcode Frequency 41-60</title>
+    <link>https://shuaiqifeiyang.tech/posts/leetcode-frequency/leetcode-frequency-41-60/</link>
+    <pubDate>Tue, 30 Nov 2021 23:25:26 -0800</pubDate>
+    <author>Author</author>
+    <guid>https://shuaiqifeiyang.tech/posts/leetcode-frequency/leetcode-frequency-41-60/</guid>
+    <description><![CDATA[<p>Leetcode Top 41-60 high-frequency problems: types, solutions, and summary</p>]]></description>
+</item><item>
     <title>Procedural Modeling of Cities</title>
     <link>https://shuaiqifeiyang.tech/posts/projects/procedural-modeling-of-cities/</link>
     <pubDate>Sun, 28 Nov 2021 11:24:37 -0800</pubDate>
@@ -67,12 +74,5 @@
     <author>Author</author>
     <guid>https://shuaiqifeiyang.tech/posts/mics/how-to-build-nginx-server/</guid>
     <description><![CDATA[<p>How to install and config Nginx in your server.</p>]]></description>
-</item><item>
-    <title>Block</title>
-    <link>https://shuaiqifeiyang.tech/posts/projects/block/</link>
-    <pubDate>Wed, 09 Jan 2019 22:55:11 -0700</pubDate>
-    <author>Author</author>
-    <guid>https://shuaiqifeiyang.tech/posts/projects/block/</guid>
-    <description><![CDATA[<p>A mini Minecraft game</p>]]></description>
 </item></channel>
 </rss>

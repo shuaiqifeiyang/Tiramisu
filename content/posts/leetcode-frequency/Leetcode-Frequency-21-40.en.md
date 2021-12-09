@@ -8,22 +8,29 @@ math:
     enable: true
 ---
 Leetcode Top 21-40 high-frequency problem: types, solutions, and summary
+
 <!--more-->
+
 ## Hash
-### 811. Subdomain Visit Count
-Medium  
-[811. Subdomain Visit Count](https://leetcode.com/problems/subdomain-visit-count/)  
+
+811. Subdomain Visit Count
+
+Medium
+[811. Subdomain Visit Count](https://leetcode.com/problems/subdomain-visit-count/)
 Use hash table to count the number of subdomain. Use STL `int` string.find() and string.substr(int start)
 
 ### 49. Group Anagrams
-Medium  
-[49. Group Anagrams](https://leetcode.com/problems/group-anagrams/)  
+
+Medium
+[49. Group Anagrams](https://leetcode.com/problems/group-anagrams/)
 For each strings, we count the number of occurrences of each letter. Then we transfer the data to a string, which will be the key in hash map. For example, a string "abab", it's key wtring is "a#2#b#2". As a result, we can group anagrams in hash table.
 
 ### 41. First Missing Positive
-Hard  
-[41. First Missing Positive](https://leetcode.com/problems/first-missing-positive/)  
+
+Hard
+[41. First Missing Positive](https://leetcode.com/problems/first-missing-positive/)
 Use original array as the hash map. However, I think the idea of this question is not practical in real production. It's not a good habit to change the parameter passed in from outside.
+
 ```C++
 class Solution {
 public:
@@ -39,7 +46,7 @@ public:
             }
         }
         if(!oneExists) return 1;
-        
+      
         for(int i=0;i<nums.size();i++){
             nums[abs(nums[i])-1]=nums[abs(nums[i])-1]>0?-nums[abs(nums[i])-1]:nums[abs(nums[i])-1];
         }
@@ -52,29 +59,36 @@ public:
     }
 };
 ```
+
 ## Stack
+
 ### 1249. Minimum Remove to Make Valid Parentheses
-Medium  
-[1249. Minimum Remove to Make Valid Parentheses](https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/)  
-To make the string valid with minimum removals, we need to get rid of all parentheses that do not have a matching pair. We use stack to mark removed parentheses with '*', and erase all of them in the end. 
-*   The stack store the index of left parenthesis.
-*   Extra item in stack presents the left parenthesis that don't have corresponding right parenthesis.
-*   `s.erase(remove(s.begin(), s.end(), '*'), s.end()); `
-    *   `remove` returns an iterator to the element that follows the last element not removed.
+
+Medium[1249. Minimum Remove to Make Valid Parentheses](https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/)To make the string valid with minimum removals, we need to get rid of all parentheses that do not have a matching pair. We use stack to mark removed parentheses with '*', and erase all of them in the end.
+
+* The stack store the index of left parenthesis.
+* Extra item in stack presents the left parenthesis that don't have corresponding right parenthesis.
+* `s.erase(remove(s.begin(), s.end(), '*'), s.end()); `
+  * `remove` returns an iterator to the element that follows the last element not removed.
 
 ## Simulation
-### 68. Text Justification
-Hard  
-[68. Text Justification](https://leetcode.com/problems/text-justification/)  
-A complicated simulation. The idea is simple, but the implementation is hard.
-### 54. Spiral Matrix
-Medium  
-[54. Spiral Matrix](https://leetcode.com/problems/spiral-matrix/)  
 
+### 68. Text Justification
+
+Hard
+[68. Text Justification](https://leetcode.com/problems/text-justification/)
+A complicated simulation. The idea is simple, but the implementation is hard.
+
+### 54. Spiral Matrix
+
+Medium
+[54. Spiral Matrix](https://leetcode.com/problems/spiral-matrix/)
 
 ### 273. Integer to English Words
-Hard  
-[273. Integer to English Words](https://leetcode.com/problems/integer-to-english-words/)  
+
+Hard
+[273. Integer to English Words](https://leetcode.com/problems/integer-to-english-words/)
+
 ```C++
 class Solution {
 private:
@@ -102,19 +116,20 @@ public:
     }
 };
 ```
+
 ### 17. Letter Combinations of a Phone Number
 
 Medium
 
 [17. Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/)
 
-
-
 ## Math
 
 ### 31. Next Permutation
-Medium  
-[31. Next Permutation](https://leetcode.com/problems/next-permutation/)  
+
+Medium
+[31. Next Permutation](https://leetcode.com/problems/next-permutation/)
+
 ```C++
 class Solution {
 public:
@@ -136,12 +151,15 @@ public:
     }
 };
 ```
+
 ### 829. Consecutive Numbers Sum
-Hard  
-[829. Consecutive Numbers Sum](https://leetcode.com/problems/consecutive-numbers-sum/)  
-$N = (x+1)+(x+2)+\cdots+(x+k)$  
-$N = xk+\frac{(1+k)k}{2}$  
+
+Hard
+[829. Consecutive Numbers Sum](https://leetcode.com/problems/consecutive-numbers-sum/)
+$N = (x+1)+(x+2)+\cdots+(x+k)$
+$N = xk+\frac{(1+k)k}{2}$
 $x$ must be an integer and $x$ is positive.
+
 ```C++
 class Solution {
 public:
@@ -155,11 +173,15 @@ public:
     }
 };
 ```
+
 ## Two Pointers
+
 ### 809. Expressive Words
-Medium  
-[809. Expressive Words](https://leetcode.com/problems/expressive-words/)  
+
+Medium
+[809. Expressive Words](https://leetcode.com/problems/expressive-words/)
 It takes experience to make the code of this problem readable.
+
 ```C++
 class Solution {
 public:
@@ -204,25 +226,27 @@ public:
 
 ### 15. 3Sum
 
-Medium  
-[15. 3Sum](https://leetcode.com/problems/3sum/)  
+Medium
+[15. 3Sum](https://leetcode.com/problems/3sum/)
 2sum+one more level of interation $O(n^2)$
 
 ## DFS
 
 ### 22. Generate Parentheses
-Medium  
-[22. Generate Parentheses](https://leetcode.com/problems/generate-parentheses/)  
-We use two parameters `left` and `right` to indicate the number of left parenthese and the number of right parentheses in current string.  
-If left < n, we can add a '('.  
-If left > right, we can add a ')'.  
+
+Medium
+[22. Generate Parentheses](https://leetcode.com/problems/generate-parentheses/)
+We use two parameters `left` and `right` to indicate the number of left parenthese and the number of right parentheses in current string.
+If left < n, we can add a '('.
+If left > right, we can add a ')'.
 When the size of string is 2*n, we store this one in our result array.
 
 ## Deque
+
 ### 239. Sliding Window Maximum
-Hard  
-[239. Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)  
-Use deque to store the index. Iterate over the array. At each step :
+
+Hard[239. Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)Use deque to store the index. Iterate over the array. At each step :
+
 * Clean the deque :
   * Keep only the indexes of elements from the current sliding window.
   * Remove indexes of all elements smaller than the current one, since they will not be the maximum ones.
@@ -249,19 +273,22 @@ public:
     }
 };
 ```
+
 ## BFS
+
 ### 127. Word Ladder
-hard  
-[127. Word Ladder](https://leetcode.com/problems/word-ladder/)  
-The trick is enumerating the next word and check whether it is unvisited instead of compare the currrent word to all unvisited word and check whether they are connected. 
+
+hard
+[127. Word Ladder](https://leetcode.com/problems/word-ladder/)
+The trick is enumerating the next word and check whether it is unvisited instead of compare the currrent word to all unvisited word and check whether they are connected.
 
 ### 815. Bus Routes
 
-hard  
-[815. Bus Routes](https://leetcode.com/problems/bus-routes/)  
+hard
+[815. Bus Routes](https://leetcode.com/problems/bus-routes/)
 The hard point of this problem is how to build the graph where we execute BFS. One node and its adjacent node are in the same bus route.
 
-`routes[i].clear();`: this is for 
+`routes[i].clear();`: this is for
 
 ```C++
 class Solution {
@@ -276,7 +303,7 @@ public:
         unordered_set<int> visited;
         queue<pair<int, int>> q;
         q.push({source, 0});
-        
+      
         visited.insert(source);
         while(!q.empty()){
             int cur=q.front().first;
@@ -300,25 +327,27 @@ public:
 ```
 
 ## Sort
+
 ### 215. Kth Largest Element in an Array
-Medium  
-[215. Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)  
+
+Medium
+[215. Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)
 
 ## Binary Search
-### 33. Search in Rotated Sorted Array
-medium  
-[33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)  
-When the target is in the left part of the array:
 
-*   `nums[left]<=target && target<nums[mid]` (left part is in order)
-*   `nums[left]>nums[mid] && (target>=nums[left] || target<=nums[mid])` (left part is not in order)
+### 33. Search in Rotated Sorted Array
+
+medium[33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)When the target is in the left part of the array:
+
+* `nums[left]<=target && target<nums[mid]` (left part is in order)
+* `nums[left]>nums[mid] && (target>=nums[left] || target<=nums[mid])` (left part is not in order)
 
 ## Heap
 
 ### 23. Merge k Sorted Lists
 
-Hard  
-[23. Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/)  
+Hard
+[23. Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/)
 
 ```C++
 class Solution {
@@ -345,11 +374,8 @@ public:
                 heap.push(ptr->next);
             }
         }
-        
+      
         return res->next;
     }
 };
 ```
-
-
-
