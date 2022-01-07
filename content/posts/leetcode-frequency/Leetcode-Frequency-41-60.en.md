@@ -1,5 +1,5 @@
 ---
-title: "Leetcode Frequency 41-60"
+title: "Leetcode Frequency 41-60 Review"
 date: 2021-11-30T23:25:26-08:00
 draft: false
 tags: ["Algorithm", "Leetcode"]
@@ -164,6 +164,15 @@ Medium
 * string s only consists of operators +, -, *, /
 * does not contain parentheses
 
+### 224. Basic Calculator
+
+Hard
+[224. Basic Calculator](https://leetcode.com/problems/basic-calculator/)
+
+* `s` consists of digits, `'+'`, `'-'`, `'('`, `')'`, and `' '`.
+
+Usc stack to store operator.
+
 ## Hash
 
 ### 1396. Design Underground System
@@ -177,3 +186,22 @@ unordered_map<string, pair<int, int>> journeyData;
 //  CarID: <station, checkin Time>
 unordered_map<int, pair<string, int>> checkinData;
 ```
+
+## Simulation
+
+### 696. Count Binary Substrings
+
+Easy
+[696. Count Binary Substrings](https://leetcode.com/problems/count-binary-substrings/)
+
+We need to calculate the length of same-character contiguous block with the string.
+
+### 443. String Compresssion
+
+Medium
+[443. String Compression](https://leetcode.com/problems/string-compression/)
+
+### 12. Roman to Integer
+
+Easy
+[12. Roman to Integer]()

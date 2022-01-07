@@ -27,7 +27,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/shuaiqifeiyang.tech\/posts\/leetcode-frequency\/leetcode-frequency-1-20\/"
-        },"genre": "posts","keywords": "Algorithm, Leetcode","wordcount":  1093 ,
+        },"genre": "posts","keywords": "Algorithm, Leetcode","wordcount":  1090 ,
         "url": "https:\/\/shuaiqifeiyang.tech\/posts\/leetcode-frequency\/leetcode-frequency-1-20\/","datePublished": "2021-10-26T20:05:37-07:00","dateModified": "2021-10-26T20:05:37-07:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "Author"},"author": {
@@ -191,35 +191,35 @@
             </div><div class="content" id="content"><p>Leetcode Top 20 high-frequency problem: types, solutions, and summary</p>
 <h2 id="hash-table">Hash Table</h2>
 <h3 id="1-two-sum">1. Two Sum</h3>
-<p>Easy<br>
+<p>Easy
 <a href="https://leetcode.com/problems/two-sum/" target="_blank" rel="noopener noreffer">1. Two Sum</a></p>
 <h3 id="146-lru-cache">146. LRU Cache</h3>
-<p>Medium<br>
-<a href="https://leetcode.com/problems/lru-cache/" target="_blank" rel="noopener noreffer">146. LRU Cache</a><br>
+<p>Medium
+<a href="https://leetcode.com/problems/lru-cache/" target="_blank" rel="noopener noreffer">146. LRU Cache</a>
 We use a double linked list to store keys and values in nodes, we put the recently used node at the head of the double linked list. In this way, we can move a node in the middle of linkedlist to the begin of linkedlist in O(1) time, if we know the position of node. So we use a hashmap to store key and the key&rsquo;s postion, in C++, a node&rsquo;s position in a double linked list is iterator.</p>
 <p>If we want to get key&rsquo;s value from LRU Cache, firstly we check the hash map. If the key not exists, we return -1. If the key exists, we get the value in double linked list. Then, we move the node to the head of linked list.</p>
 <p>If we want to put key&rsquo;s value in the LRU Cache, firstly we still check the hash map. If the key exists, we erase the key in double linked list. Then, we insert a new node with new value in the head of the double linked list. Last but not least, if the size of LRU Cache, which equals to the size of hash map exceeds the capacity, we delete the last node in doule linked list, and erase the node&rsquo;s key in hash map.</p>
 <h3 id="560-subarray-sum-equals-k">560. Subarray Sum Equals K</h3>
-<p>Medium<br>
-<a href="https://leetcode.com/problems/subarray-sum-equals-k/" target="_blank" rel="noopener noreffer">560. Subarray Sum Equals K</a><br>
+<p>Medium
+<a href="https://leetcode.com/problems/subarray-sum-equals-k/" target="_blank" rel="noopener noreffer">560. Subarray Sum Equals K</a>
 Use hash table to store the prefix sum that has been present. Current sum minus prefix sum is the subarray&rsquo;s sum.</p>
 <h2 id="sorting">Sorting</h2>
 <h3 id="56-merge-intervals">56. Merge Intervals</h3>
-<p>Medium<br>
+<p>Medium
 <a href="https://leetcode.com/problems/merge-intervals/" target="_blank" rel="noopener noreffer">56. Merge Intervals</a></p>
 <h2 id="binary-search">Binary Search</h2>
 <h3 id="4-median-of-two-sorted-arrays">4. Median of Two Sorted Arrays</h3>
-<p>Hard<br>
+<p>Hard
 <a href="https://leetcode.com/problems/median-of-two-sorted-arrays/" target="_blank" rel="noopener noreffer">4. Median of Two Sorted Arrays</a></p>
 <h2 id="two-pointers">Two Pointers</h2>
 <h3 id="42-trapping-rain-water">42. Trapping Rain Water</h3>
-<p>Hard<br>
-<a href="https://leetcode.com/problems/trapping-rain-water/solution/" target="_blank" rel="noopener noreffer">42. Trapping Rain Water</a><br>
-Firstly, Find maximum of height of bar from the left end up to an index i in the array left_max.<br>
-Secondly, find maximum of height of bar from the right end up to an index i in the array right_max.<br>
-Iterate over the height array and add min(left_max[i], right_max[i])<br>
-Time Complexity: O(N)<br>
-Space Complexoty: O(N)<br>
+<p>Hard
+<a href="https://leetcode.com/problems/trapping-rain-water/solution/" target="_blank" rel="noopener noreffer">42. Trapping Rain Water</a>
+Firstly, Find maximum of height of bar from the left end up to an index i in the array left_max.
+Secondly, find maximum of height of bar from the right end up to an index i in the array right_max.
+Iterate over the height array and add min(left_max[i], right_max[i])
+Time Complexity: O(N)
+Space Complexoty: O(N)
 Acatually, there is another algorithm space efficiently.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C++" data-lang="C++"><span class="k">class</span> <span class="nc">Solution</span> <span class="p">{</span>
 <span class="k">public</span><span class="o">:</span>
@@ -243,18 +243,17 @@ Acatually, there is another algorithm space efficiently.</p>
 <span class="p">};</span>
 </code></pre></div><h2 id="dfs">DFS</h2>
 <h3 id="200-number-of-islands">200. Number of Islands</h3>
-<p>Medium<br>
-<a href="https://leetcode.com/problems/number-of-islands/" target="_blank" rel="noopener noreffer">200. Number of Islands</a><br>
+<p>Medium
+<a href="https://leetcode.com/problems/number-of-islands/" target="_blank" rel="noopener noreffer">200. Number of Islands</a>
 A trick: it&rsquo;s not necessary to set a &ldquo;visited&rdquo; array, we can change the value in the array to indicate whether the position has been visited.</p>
 <h2 id="linked-list">Linked List</h2>
 <h3 id="2-add-two-numbers">2. Add Two Numbers</h3>
-<p>Medium<br>
-<a href="https://leetcode.com/problems/add-two-numbers/" target="_blank" rel="noopener noreffer">2. Add Two Numbers</a><br>
+<p>Medium
+<a href="https://leetcode.com/problems/add-two-numbers/" target="_blank" rel="noopener noreffer">2. Add Two Numbers</a>
 The idea is simple, but it&rsquo;s not that easy to wirte elegant code to this problem.</p>
 <h2 id="math">Math</h2>
 <h3 id="1041-robot-bounded-in-circle">1041. Robot Bounded In Circle</h3>
-<p>Medium<br>
-<a href="https://leetcode.com/problems/robot-bounded-in-circle/" target="_blank" rel="noopener noreffer">1041. Robot Bounded In Circle</a>
+<p>Medium<a href="https://leetcode.com/problems/robot-bounded-in-circle/" target="_blank" rel="noopener noreffer">1041. Robot Bounded In Circle</a>
 What we should concerned about is the final direcion and the final position after the robot executes these instructions.</p>
 <ol>
 <li>If the final direction and the initial direction is the same
@@ -263,11 +262,11 @@ What we should concerned about is the final direcion and the final position afte
 <li>If the final position is not the initial position. Clearly, the robot is not bounded in a circle because the offset will repeat after next round so and so on.</li>
 </ol>
 </li>
-<li>If the final direction and the initial direction is different, the must be a circle. After at most four rounds, the robot will return to the initial position with initial direction. The instructions in these four rounds will cancel each other out.</li>
+<li>If the final direction and the initial direction is different, there must be a circle. After at most four rounds, the robot will return to the initial position with initial direction. The instructions in these four rounds will cancel each other out.</li>
 </ol>
 <h3 id="7-reverse-integer">7. Reverse Integer</h3>
-<p>Medium<br>
-<a href="https://leetcode.com/problems/reverse-integer/" target="_blank" rel="noopener noreffer">7. Reverse Integer</a><br>
+<p>Medium
+<a href="https://leetcode.com/problems/reverse-integer/" target="_blank" rel="noopener noreffer">7. Reverse Integer</a>
 In this problem, we should be concerned about integer overflow</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C++" data-lang="C++"><span class="k">class</span> <span class="nc">Solution</span> <span class="p">{</span>
 <span class="k">public</span><span class="o">:</span>
@@ -285,12 +284,12 @@ In this problem, we should be concerned about integer overflow</p>
     <span class="p">}</span>
 <span class="p">};</span>
 </code></pre></div><h3 id="423-reconstruct-original-digits-from-english">423. Reconstruct Original Digits from English</h3>
-<p><a href="https://leetcode.com/problems/reconstruct-original-digits-from-english/" target="_blank" rel="noopener noreffer">423. Reconstruct Original Digits from English</a><br>
+<p><a href="https://leetcode.com/problems/reconstruct-original-digits-from-english/" target="_blank" rel="noopener noreffer">423. Reconstruct Original Digits from English</a>
 It&rsquo;s an interesting math problem testing our ability to observe. We should notice that some letters are only present in specific number.</p>
 <h2 id="dp">DP</h2>
 <h3 id="1235-maximum-profit-in-job-scheduling">1235. Maximum Profit in Job Scheduling</h3>
-<p>Hard<br>
-<a href="https://leetcode.com/problems/maximum-profit-in-job-scheduling/" target="_blank" rel="noopener noreffer">1235. Maximum Profit in Job Scheduling</a><br>
+<p>Hard
+<a href="https://leetcode.com/problems/maximum-profit-in-job-scheduling/" target="_blank" rel="noopener noreffer">1235. Maximum Profit in Job Scheduling</a>
 This is a problem combining DP and binary search. We should make use of <code>upper_bound</code> in STL to make our code more concise.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C++" data-lang="C++"><span class="k">class</span> <span class="nc">Solution</span> <span class="p">{</span>
 <span class="k">public</span><span class="o">:</span>
@@ -320,9 +319,7 @@ This is a problem combining DP and binary search. We should make use of <code>up
     <span class="p">}</span>
 <span class="p">};</span>
 </code></pre></div><h3 id="53-maximum-subarray">53. Maximum Subarray</h3>
-<p>Easy<br>
-<a href="https://leetcode.com/problems/maximum-subarray/" target="_blank" rel="noopener noreffer">53. Maximum Subarray</a><br>
-It&rsquo;s an interesting DP problem.</p>
+<p>Easy<a href="https://leetcode.com/problems/maximum-subarray/" target="_blank" rel="noopener noreffer">53. Maximum Subarray</a>It&rsquo;s an interesting DP problem.</p>
 <ul>
 <li>dp[0]=nums[0];</li>
 <li>dp[i]=max(dp[i-1], 0)+nums[i];</li>
@@ -330,30 +327,30 @@ It&rsquo;s an interesting DP problem.</p>
 </ul>
 <h2 id="simulation">Simulation</h2>
 <h3 id="121-best-time-to-buy-and-sell-stock">121. Best Time to Buy and Sell Stock</h3>
-<p>Easy<br>
-<a href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock/" target="_blank" rel="noopener noreffer">121. Best Time to Buy and Sell Stock</a><br>
+<p>Easy
+<a href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock/" target="_blank" rel="noopener noreffer">121. Best Time to Buy and Sell Stock</a>
 Iterate the array and use a variable as the minimum value from the left to the current position in the array. So the current max profit is currrent value minus the minimum value.</p>
 <h3 id="5-longest-palindromic-substring">5. Longest Palindromic Substring</h3>
-<p>Medium<br>
-<a href="https://leetcode.com/problems/longest-palindromic-substring/" target="_blank" rel="noopener noreffer">5. Longest Palindromic Substring</a><br>
+<p>Medium
+<a href="https://leetcode.com/problems/longest-palindromic-substring/" target="_blank" rel="noopener noreffer">5. Longest Palindromic Substring</a>
 A palindrome can be expanded from its center. Use global variable to make code more concise and readable</p>
 <h3 id="14-longest-common-prefix">14. Longest Common Prefix</h3>
-<p>Easy<br>
-<a href="https://leetcode.com/problems/longest-common-prefix/" target="_blank" rel="noopener noreffer">14. Longest Common Prefix</a><br>
+<p>Easy
+<a href="https://leetcode.com/problems/longest-common-prefix/" target="_blank" rel="noopener noreffer">14. Longest Common Prefix</a>
 Brute force is OK for this problem.</p>
 <h2 id="stack">Stack</h2>
 <h3 id="20-valid-parentheses">20. Valid Parentheses</h3>
-<p>Easy<br>
-<a href="https://leetcode.com/problems/valid-parentheses/" target="_blank" rel="noopener noreffer">20. Valid Parentheses</a><br>
+<p>Easy
+<a href="https://leetcode.com/problems/valid-parentheses/" target="_blank" rel="noopener noreffer">20. Valid Parentheses</a>
 If we meet the left part of brace, square brackets or parenthese, push it to the stack. If we meet right part, check the top of stack. If the top of the stack is the corresponding left part, pop out the top of the stack. Otherwise, it&rsquo;s not a valid parenthese. Finally, if there are some items left in the stack, it&rsquo;s also not a valid string.</p>
 <h2 id="sliding-window">Sliding Window</h2>
 <h3 id="3-longest-substring-without-repeating-characters">3. Longest Substring Without Repeating Characters</h3>
-<p>Medium<br>
-<a href="https://leetcode.com/problems/longest-substring-without-repeating-characters/" target="_blank" rel="noopener noreffer">3. Longest Substring Without Repeating Characters</a><br>
+<p>Medium
+<a href="https://leetcode.com/problems/longest-substring-without-repeating-characters/" target="_blank" rel="noopener noreffer">3. Longest Substring Without Repeating Characters</a>
 We use a hashset to store the characters in current window. We slide the right bound of the window to right until there are duplicate characters in current window. Then we slide left bound of current window until there are not duplicate characters in window.</p>
 <h2 id="heap">Heap</h2>
 <h3 id="253-meeting-rooms-ii">253. Meeting Rooms II</h3>
-<p><a href="https://leetcode.com/problems/meeting-rooms-ii/" target="_blank" rel="noopener noreffer">253. Meeting Rooms II</a><br>
+<p><a href="https://leetcode.com/problems/meeting-rooms-ii/" target="_blank" rel="noopener noreffer">253. Meeting Rooms II</a>
 This is a very interesting problem about heap. Use a min-heap to store the end time. If current start time is greater than the minimum end time, we don&rsquo;t need to add a new room. If the current start time is less than the minimum end time, we need to add a new room. Final result is the size of the heap.</p></div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
@@ -382,7 +379,7 @@ This is a very interesting problem about heap. Use a min-heap to store the end t
 </div>
 </article></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2019 - 2021</span><span class="icp-splitter">&nbsp;|&nbsp;</span><br class="icp-br"/>
+        <div class="footer-container"><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2019 - 2022</span><span class="icp-splitter">&nbsp;|&nbsp;</span><br class="icp-br"/>
                     <span class="icp"><a href='https://beian.miit.gov.cn/#/Integrated/index'>浙ICP备2021000092</a></span></div>
         </div>
     </footer></div>

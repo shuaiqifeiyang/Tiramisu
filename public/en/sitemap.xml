@@ -2,6 +2,45 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
+            <loc>https://shuaiqifeiyang.tech/categories/</loc><lastmod>2022-01-07T09:35:29-08:00</lastmod><xhtml:link
+                        rel="alternate"
+                        hreflang="zh-cn"
+                        href="https://shuaiqifeiyang.tech/zh-cn/categories/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="https://shuaiqifeiyang.tech/categories/"
+                    /></url><url>
+            <loc>https://shuaiqifeiyang.tech/posts/mics/tcp-socket-server-node/</loc><lastmod>2022-01-07T09:35:29-08:00</lastmod></url><url>
+            <loc>https://shuaiqifeiyang.tech/categories/mics/</loc><lastmod>2022-01-07T09:35:29-08:00</lastmod></url><url>
+            <loc>https://shuaiqifeiyang.tech/tags/nodejs/</loc><lastmod>2022-01-07T09:35:29-08:00</lastmod></url><url>
+            <loc>https://shuaiqifeiyang.tech/posts/</loc><lastmod>2022-01-07T09:35:29-08:00</lastmod><xhtml:link
+                        rel="alternate"
+                        hreflang="zh-cn"
+                        href="https://shuaiqifeiyang.tech/zh-cn/posts/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="https://shuaiqifeiyang.tech/posts/"
+                    /></url><url>
+            <loc>https://shuaiqifeiyang.tech/</loc><lastmod>2022-01-07T09:35:29-08:00</lastmod><xhtml:link
+                        rel="alternate"
+                        hreflang="zh-cn"
+                        href="https://shuaiqifeiyang.tech/zh-cn/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="https://shuaiqifeiyang.tech/"
+                    /></url><url>
+            <loc>https://shuaiqifeiyang.tech/tags/</loc><lastmod>2022-01-07T09:35:29-08:00</lastmod><xhtml:link
+                        rel="alternate"
+                        hreflang="zh-cn"
+                        href="https://shuaiqifeiyang.tech/zh-cn/tags/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="https://shuaiqifeiyang.tech/tags/"
+                    /></url><url>
             <loc>https://shuaiqifeiyang.tech/tags/algorithm/</loc><lastmod>2021-11-30T23:25:26-08:00</lastmod><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
@@ -10,15 +49,6 @@
                     rel="alternate"
                     hreflang="en"
                     href="https://shuaiqifeiyang.tech/tags/algorithm/"
-                    /></url><url>
-            <loc>https://shuaiqifeiyang.tech/categories/</loc><lastmod>2021-11-30T23:25:26-08:00</lastmod><xhtml:link
-                        rel="alternate"
-                        hreflang="zh-cn"
-                        href="https://shuaiqifeiyang.tech/zh-cn/categories/"
-                        /><xhtml:link
-                    rel="alternate"
-                    hreflang="en"
-                    href="https://shuaiqifeiyang.tech/categories/"
                     /></url><url>
             <loc>https://shuaiqifeiyang.tech/tags/leetcode/</loc><lastmod>2021-11-30T23:25:26-08:00</lastmod><xhtml:link
                         rel="alternate"
@@ -39,33 +69,6 @@
                     href="https://shuaiqifeiyang.tech/categories/leetcode-frequency/"
                     /></url><url>
             <loc>https://shuaiqifeiyang.tech/posts/leetcode-frequency/leetcode-frequency-41-60/</loc><lastmod>2021-11-30T23:25:26-08:00</lastmod></url><url>
-            <loc>https://shuaiqifeiyang.tech/posts/</loc><lastmod>2021-11-30T23:25:26-08:00</lastmod><xhtml:link
-                        rel="alternate"
-                        hreflang="zh-cn"
-                        href="https://shuaiqifeiyang.tech/zh-cn/posts/"
-                        /><xhtml:link
-                    rel="alternate"
-                    hreflang="en"
-                    href="https://shuaiqifeiyang.tech/posts/"
-                    /></url><url>
-            <loc>https://shuaiqifeiyang.tech/</loc><lastmod>2021-11-30T23:25:26-08:00</lastmod><xhtml:link
-                        rel="alternate"
-                        hreflang="zh-cn"
-                        href="https://shuaiqifeiyang.tech/zh-cn/"
-                        /><xhtml:link
-                    rel="alternate"
-                    hreflang="en"
-                    href="https://shuaiqifeiyang.tech/"
-                    /></url><url>
-            <loc>https://shuaiqifeiyang.tech/tags/</loc><lastmod>2021-11-30T23:25:26-08:00</lastmod><xhtml:link
-                        rel="alternate"
-                        hreflang="zh-cn"
-                        href="https://shuaiqifeiyang.tech/zh-cn/tags/"
-                        /><xhtml:link
-                    rel="alternate"
-                    hreflang="en"
-                    href="https://shuaiqifeiyang.tech/tags/"
-                    /></url><url>
             <loc>https://shuaiqifeiyang.tech/tags/graphics/</loc><lastmod>2021-11-28T11:24:37-08:00</lastmod></url><url>
             <loc>https://shuaiqifeiyang.tech/posts/projects/procedural-modeling-of-cities/</loc><lastmod>2021-11-28T11:24:37-08:00</lastmod></url><url>
             <loc>https://shuaiqifeiyang.tech/categories/projects/</loc><lastmod>2021-11-28T11:24:37-08:00</lastmod><xhtml:link
@@ -155,6 +158,11 @@
                     hreflang="en"
                     href="https://shuaiqifeiyang.tech/posts/projects/word-pyramid/"
                     /></url><url>
+            <loc>https://shuaiqifeiyang.tech/tags/networks/</loc><lastmod>2020-01-07T09:58:03-08:00</lastmod></url><url>
+            <loc>https://shuaiqifeiyang.tech/categories/networks/</loc><lastmod>2020-01-07T09:58:03-08:00</lastmod></url><url>
+            <loc>https://shuaiqifeiyang.tech/posts/networks/osi-tcpip/</loc><lastmod>2020-01-07T09:58:03-08:00</lastmod></url><url>
+            <loc>https://shuaiqifeiyang.tech/posts/frontend/reactjs/</loc><lastmod>2020-01-03T22:28:15-08:00</lastmod></url><url>
+            <loc>https://shuaiqifeiyang.tech/posts/os/</loc><lastmod>2019-12-13T22:27:52-08:00</lastmod></url><url>
             <loc>https://shuaiqifeiyang.tech/posts/mics/how-to-build-nginx-server/</loc><lastmod>2019-07-25T19:08:14-07:00</lastmod><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
