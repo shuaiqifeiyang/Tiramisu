@@ -23,7 +23,7 @@ This game is developed with ReactJS.
 
 Where we put chips like this:
 
-![](./img/roulette1.png)
+![](https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/projects/img/roulette1.png)
 
 In CSS, Grid layout perfectly fits out needs. We use `grid-template-areas` divide each area. Then we use `grid-area` place blocks to corresponding area.
 
