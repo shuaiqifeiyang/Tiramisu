@@ -8,6 +8,7 @@ tags: ["Algorithm"]
 categories: ["CSCI-570 Analysis of Algorithm"]
 ---
 570 复习
+
 <!--more-->
 
 ## Week1
@@ -20,7 +21,7 @@ Perfect matching: 男女一对一
 
 Instability：假设m和w匹配，m'和w'匹配，如果m更喜欢w‘，w’更喜欢m，这个时候称（m，w‘）为instability
 
-Matching S is stable if 
+Matching S is stable if
 
 * it is perfect
 * there are no instabilities.
@@ -59,14 +60,14 @@ Matching S is stable if
 * 如果图中有一个环有奇数个节点，那么这个图不可能是bipartite
 * 先通过运行BFS把BFS Tree中相邻层的节点标记为Red和Blue，然后遍历边，如果有一条边的两个端点是同一个颜色，说明不是bipartite。整个的算法复杂度是$O(m+n)$
 
-**判断一个`有向图`是否是Strong Connected**：
+**判断一个 `有向图`是否是Strong Connected**：
 
 * If there is a path from any point to any other point in the graph, 那么这个图就叫有向图
 * 先任选一个点s运行BFS或者DFS，判断是不是所有的其他点都可以到达。再将图中所有的边反转，又从s点运行DFS或者DFS，判断是不是所有的其他点都可以到达
 
 **判断在DAG中是否存在一条Path访问所有的节点**：
 
-* 现在O(m+n)的时间复杂度内得到这个`有向图`的拓扑排序，然后判断拓扑顺序中相邻两个节点之间是否有边
+* 现在O(m+n)的时间复杂度内得到这个 `有向图`的拓扑排序，然后判断拓扑顺序中相邻两个节点之间是否有边
 
 ### Interval Scheduling Problem
 
@@ -150,8 +151,6 @@ Kruskal中用Union-Find数据结构判断两个点是否已经连起来了。
 
 将所有的edge按照cost排序，从cost大的开始删除图中的边，直到最后的结果是一个树
 
-
-
 * 假设所有边的cost都是不一样的，Let S be any subset of nodes that is neither empty nor equal to all of V, and let edge e=(v, w) be the min cost edge with one end in S and the other end in V-S. Then every MST contains the edge e.
 
 ### Clustering
@@ -166,26 +165,3 @@ Kruskal中用Union-Find数据结构判断两个点是否已经连起来了。
 
 * 反转道路的方向
 * 当有多个起点的时候引入一个新的起点，然后将新的起点指向多个原来的起点
-
-## Week5
-
-### Merge-Sort
-
-Time Complexity: O(nlogn)
-
-### Master Theorem
-
-## Week 6
-
-Exam1
-
-## Week 7
-
-
-
-
-
-
-
-
-

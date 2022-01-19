@@ -29,7 +29,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/shuaiqifeiyang.tech\/posts\/frontend\/reactjs\/"
-        },"genre": "posts","wordcount":  111 ,
+        },"genre": "posts","keywords": "React","wordcount":  550 ,
         "url": "https:\/\/shuaiqifeiyang.tech\/posts\/frontend\/reactjs\/","datePublished": "2020-01-03T22:28:15-08:00","dateModified": "2020-01-03T22:28:15-08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "Author"},"author": {
@@ -119,11 +119,22 @@
                     <span>Contents</span>
                     <span><i class="details-icon fas fa-angle-right"></i></span>
                 </div>
-                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents"></nav></div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#2-jsx">2. JSX</a></li>
+    <li><a href="#3-rendering-elements">3. Rendering Elements</a></li>
+    <li><a href="#4-components-and-props">4. Components and Props</a></li>
+    <li><a href="#5-state-and-lifecycle">5. State and Lifecycle</a></li>
+    <li><a href="#6-handling-events">6. Handling Events</a></li>
+    <li><a href="#7-conditional-rendering">7. Conditional Rendering</a></li>
+    <li><a href="#8-lists-and-keys">8. Lists and Keys</a></li>
+    <li><a href="#9-forms">9. Forms</a></li>
+  </ul>
+</nav></div>
             </div><div class="content" id="content"><p>Notes of ReactJS document
 `</p>
 <p>`</p>
-<h1 id="jsx">JSX</h1>
+<h2 id="2-jsx">2. JSX</h2>
 <ul>
 <li>
 <p>Embedding Expressions in JSX using curly braces</p>
@@ -152,10 +163,190 @@
 <p>JSX represents objects.</p>
 </li>
 </ul>
-<h1 id="rendering-elements">Rendering Elements</h1>
+<h2 id="3-rendering-elements">3. Rendering Elements</h2>
 <ul>
 <li>Elements are the smallest building blocks of React apps.</li>
-<li></li>
+</ul>
+<h2 id="4-components-and-props">4. Components and Props</h2>
+<ul>
+<li>Always start component names with a capital letter.</li>
+<li>All React components must act like pure functions with respect to their props.</li>
+</ul>
+<h2 id="5-state-and-lifecycle">5. State and Lifecycle</h2>
+<ul>
+<li>
+<p>There things about <code>setState()</code></p>
+<ul>
+<li>
+<p>Do not modify state directly</p>
+</li>
+<li>
+<p>State updates may be asynchronous</p>
+<ul>
+<li>use function to update state that relies on previous state</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="k">this</span><span class="p">.</span><span class="nx">setState</span><span class="p">((</span><span class="nx">state</span><span class="p">,</span> <span class="nx">props</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">({</span>
+  <span class="nx">counter</span><span class="o">:</span> <span class="nx">state</span><span class="p">.</span><span class="nx">counter</span> <span class="o">+</span> <span class="nx">props</span><span class="p">.</span><span class="nx">increment</span>
+<span class="p">}));</span>
+</code></pre></div></li>
+<li>
+<p>State updated are merged</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="6-handling-events">6. Handling Events</h2>
+<ul>
+<li>camelCase</li>
+<li>pass a function as the event handler</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="p">&lt;</span><span class="nt">button</span> <span class="na">onClick</span><span class="o">=</span><span class="p">{</span><span class="nx">activateLasers</span><span class="p">}&gt;</span>
+  <span class="nx">Activate</span> <span class="nx">Lasers</span>
+<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+</code></pre></div><ul>
+<li>
+<p>call <code>preventDefault</code> explicitly to prevent default behavior</p>
+</li>
+<li>
+<p>Three ways to handle this in React</p>
+<ul>
+<li>use bind in constructor</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="nx">constructor</span><span class="p">(</span><span class="nx">props</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kr">super</span><span class="p">(</span><span class="nx">props</span><span class="p">);</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">state</span> <span class="o">=</span> <span class="p">{</span><span class="nx">isToggleOn</span><span class="o">:</span> <span class="kc">true</span><span class="p">};</span>
+
+    <span class="c1">// This binding is necessary to make `this` work in the callback
+</span><span class="c1"></span>    <span class="k">this</span><span class="p">.</span><span class="nx">handleClick</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">handleClick</span><span class="p">.</span><span class="nx">bind</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
+  <span class="p">}</span>
+</code></pre></div><ul>
+<li>use array function</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx">  <span class="nx">handleClick</span> <span class="o">=</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;this is:&#39;</span><span class="p">,</span> <span class="k">this</span><span class="p">);</span>
+  <span class="p">}</span>
+</code></pre></div><ul>
+<li>use array function in the callback. The potential drawback is <code>if this callback is passed as a prop to lower components, those components might do an extra re-rendering.</code></li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx">  <span class="nx">render</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1">// This syntax ensures `this` is bound within handleClick
+</span><span class="c1"></span>    <span class="k">return</span> <span class="p">(</span>
+      <span class="p">&lt;</span><span class="nt">button</span> <span class="na">onClick</span><span class="o">=</span><span class="p">{()</span> <span class="p">=&gt;</span> <span class="k">this</span><span class="p">.</span><span class="nx">handleClick</span><span class="p">()}&gt;</span>
+        <span class="nx">Click</span> <span class="nx">me</span>
+      <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+    <span class="p">);</span>
+  <span class="p">}</span>
+</code></pre></div></li>
+</ul>
+<h2 id="7-conditional-rendering">7. Conditional Rendering</h2>
+<ul>
+<li>
+<p>Element Variables</p>
+</li>
+<li>
+<p>Inline If with logical &amp;&amp; operator</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="p">{</span><span class="nx">unreadMessages</span><span class="p">.</span><span class="nx">length</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span>
+  <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>
+    <span class="nx">You</span> <span class="nx">have</span> <span class="p">{</span><span class="nx">unreadMessages</span><span class="p">.</span><span class="nx">length</span><span class="p">}</span> <span class="nx">unread</span> <span class="nx">messages</span><span class="p">.</span>
+  <span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+<span class="p">}</span>
+</code></pre></div></li>
+<li>
+<p>Inline if-else with conditional operator</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="p">{</span><span class="nx">isLoggedIn</span>
+  <span class="o">?</span> <span class="p">&lt;</span><span class="nt">LogoutButton</span> <span class="na">onClick</span><span class="o">=</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">handleLogoutClick</span><span class="p">}</span> <span class="p">/&gt;</span>
+  <span class="o">:</span> <span class="p">&lt;</span><span class="nt">LoginButton</span> <span class="na">onClick</span><span class="o">=</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">handleLoginClick</span><span class="p">}</span> <span class="p">/&gt;</span>
+<span class="p">}</span>
+</code></pre></div></li>
+<li>
+<p>Preventing component from rendering: return null</p>
+</li>
+</ul>
+<h2 id="8-lists-and-keys">8. Lists and Keys</h2>
+<ul>
+<li>
+<p>Rendering multiple components</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="kr">const</span> <span class="nx">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">];</span>
+<span class="kr">const</span> <span class="nx">listItems</span> <span class="o">=</span> <span class="nx">numbers</span><span class="p">.</span><span class="nx">map</span><span class="p">((</span><span class="nx">number</span><span class="p">)</span> <span class="p">=&gt;</span>
+  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;{</span><span class="nx">number</span><span class="p">}&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="p">);</span>
+</code></pre></div></li>
+<li>
+<p>Basic list components</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C++" data-lang="C++"><span class="n">function</span> <span class="nf">NumberList</span><span class="p">(</span><span class="n">props</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">const</span> <span class="n">numbers</span> <span class="o">=</span> <span class="n">props</span><span class="p">.</span><span class="n">numbers</span><span class="p">;</span>
+  <span class="k">const</span> <span class="n">listItems</span> <span class="o">=</span> <span class="n">numbers</span><span class="p">.</span><span class="n">map</span><span class="p">((</span><span class="n">number</span><span class="p">)</span> <span class="o">=&gt;</span>
+    <span class="o">&lt;</span><span class="n">li</span> <span class="n">key</span><span class="o">=</span><span class="p">{</span><span class="n">number</span><span class="p">.</span><span class="n">toString</span><span class="p">()}</span><span class="o">&gt;</span>
+      <span class="p">{</span><span class="n">number</span><span class="p">}</span>
+    <span class="o">&lt;/</span><span class="n">li</span><span class="o">&gt;</span>
+  <span class="p">);</span>
+  <span class="k">return</span> <span class="p">(</span>
+    <span class="o">&lt;</span><span class="n">ul</span><span class="o">&gt;</span><span class="p">{</span><span class="n">listItems</span><span class="p">}</span><span class="o">&lt;/</span><span class="n">ul</span><span class="o">&gt;</span>
+  <span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></li>
+<li>
+<p>We don’t recommend using indexes for keys if the order of items may change.</p>
+</li>
+<li>
+<p>if you <a href="https://reactjs.org/docs/components-and-props.html#extracting-components" target="_blank" rel="noopener noreffer">extract</a> a <code>ListItem</code> component, you should keep the key on the <code>&lt;ListItem /&gt;</code> elements in the array rather than on the <code>&lt;li&gt;</code> element in the <code>ListItem</code> itself.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="kd">function</span> <span class="nx">ListItem</span><span class="p">(</span><span class="nx">props</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// Correct! There is no need to specify the key here:
+</span><span class="c1"></span>  <span class="k">return</span> <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;{</span><span class="nx">props</span><span class="p">.</span><span class="nx">value</span><span class="p">}&lt;/</span><span class="nt">li</span><span class="p">&gt;;</span>
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nx">NumberList</span><span class="p">(</span><span class="nx">props</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kr">const</span> <span class="nx">numbers</span> <span class="o">=</span> <span class="nx">props</span><span class="p">.</span><span class="nx">numbers</span><span class="p">;</span>
+  <span class="kr">const</span> <span class="nx">listItems</span> <span class="o">=</span> <span class="nx">numbers</span><span class="p">.</span><span class="nx">map</span><span class="p">((</span><span class="nx">number</span><span class="p">)</span> <span class="p">=&gt;</span>
+    <span class="c1">// Correct! Key should be specified inside the array.
+</span><span class="c1"></span>    <span class="p">&lt;</span><span class="nt">ListItem</span> <span class="na">key</span><span class="o">=</span><span class="p">{</span><span class="nx">number</span><span class="p">.</span><span class="nx">toString</span><span class="p">()}</span> <span class="na">value</span><span class="o">=</span><span class="p">{</span><span class="nx">number</span><span class="p">}</span> <span class="p">/&gt;</span>
+  <span class="p">);</span>
+  <span class="k">return</span> <span class="p">(</span>
+    <span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+      <span class="p">{</span><span class="nx">listItems</span><span class="p">}</span>
+    <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+  <span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></li>
+<li>
+<p>Keys must only be unique among siblings</p>
+</li>
+</ul>
+<h2 id="9-forms">9. Forms</h2>
+<ul>
+<li>
+<p>Input something</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="kr">class</span> <span class="nx">NameForm</span> <span class="kr">extends</span> <span class="nx">React</span><span class="p">.</span><span class="nx">Component</span> <span class="p">{</span>
+  <span class="nx">constructor</span><span class="p">(</span><span class="nx">props</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kr">super</span><span class="p">(</span><span class="nx">props</span><span class="p">);</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">state</span> <span class="o">=</span> <span class="p">{</span><span class="nx">value</span><span class="o">:</span> <span class="s1">&#39;&#39;</span><span class="p">};</span>
+
+    <span class="k">this</span><span class="p">.</span><span class="nx">handleChange</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">handleChange</span><span class="p">.</span><span class="nx">bind</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">handleSubmit</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">handleSubmit</span><span class="p">.</span><span class="nx">bind</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
+  <span class="p">}</span>
+
+  <span class="nx">handleChange</span><span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">setState</span><span class="p">({</span><span class="nx">value</span><span class="o">:</span> <span class="nx">event</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">value</span><span class="p">});</span>
+  <span class="p">}</span>
+
+  <span class="nx">handleSubmit</span><span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;A name was submitted: &#39;</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">value</span><span class="p">);</span>
+    <span class="nx">event</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span>
+  <span class="p">}</span>
+
+  <span class="nx">render</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="p">(</span>
+      <span class="p">&lt;</span><span class="nt">form</span> <span class="na">onSubmit</span><span class="o">=</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">handleSubmit</span><span class="p">}&gt;</span>
+        <span class="p">&lt;</span><span class="nt">label</span><span class="p">&gt;</span>
+          <span class="nx">Name</span><span class="o">:</span>
+          <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span> <span class="na">value</span><span class="o">=</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">value</span><span class="p">}</span> <span class="na">onChange</span><span class="o">=</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">handleChange</span><span class="p">}</span> <span class="p">/&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;submit&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;Submit&#34;</span> <span class="p">/&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+    <span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></li>
 </ul></div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
@@ -173,7 +364,7 @@
     </div>
 
     <div class="post-info-more">
-        <section class="post-tags"></section>
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/react/">React</a></section>
         <section>
             <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
         </section>

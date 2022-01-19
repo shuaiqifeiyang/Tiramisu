@@ -6,10 +6,10 @@
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>shuaiqifeiyang@gmail.com</managingEditor>
             <webMaster>shuaiqifeiyang@gmail.com</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 25 Jul 2019 19:08:14 -0700</lastBuildDate><atom:link href="https://shuaiqifeiyang.tech/tags/nginx/" rel="self" type="application/rss+xml" /><item>
     <title>How to build a Nginx server</title>
-    <link>https://shuaiqifeiyang.tech/posts/mics/how-to-build-nginx-server/</link>
+    <link>https://shuaiqifeiyang.tech/posts/misc/how-to-build-nginx-server/</link>
     <pubDate>Thu, 25 Jul 2019 19:08:14 -0700</pubDate>
     <author>Author</author>
-    <guid>https://shuaiqifeiyang.tech/posts/mics/how-to-build-nginx-server/</guid>
+    <guid>https://shuaiqifeiyang.tech/posts/misc/how-to-build-nginx-server/</guid>
     <description><![CDATA[<p>How to install and config Nginx in your server.</p>]]></description>
 </item></channel>
 </rss>

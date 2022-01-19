@@ -4,14 +4,29 @@
         <link>https://shuaiqifeiyang.tech/</link>
         <description>About LoveIt Theme</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>shuaiqifeiyang@gmail.com</managingEditor>
-            <webMaster>shuaiqifeiyang@gmail.com</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 07 Jan 2022 09:35:29 -0800</lastBuildDate>
+            <webMaster>shuaiqifeiyang@gmail.com</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 19 Jan 2022 12:59:22 -0800</lastBuildDate>
             <atom:link href="https://shuaiqifeiyang.tech/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Roulette</title>
+    <link>https://shuaiqifeiyang.tech/posts/projects/roulette/</link>
+    <pubDate>Wed, 19 Jan 2022 12:59:22 -0800</pubDate>
+    <author>Author</author>
+    <guid>https://shuaiqifeiyang.tech/posts/projects/roulette/</guid>
+    <description><![CDATA[<p>Simulation of Roulette in Las Vegas Casinos</p>]]></description>
+</item><item>
+    <title>ML Basic Concepts</title>
+    <link>https://shuaiqifeiyang.tech/posts/machine-learning/basic-concepts/</link>
+    <pubDate>Thu, 13 Jan 2022 17:46:09 -0800</pubDate>
+    <author>Author</author>
+    <guid>https://shuaiqifeiyang.tech/posts/machine-learning/basic-concepts/</guid>
+    <description><![CDATA[<p>Prerequisite knowledge of CSCI-567 Machine Learning</p>
+<p>`</p>]]></description>
+</item><item>
     <title>How to build a TCP socket server in NodeJS</title>
-    <link>https://shuaiqifeiyang.tech/posts/mics/tcp-socket-server-node/</link>
+    <link>https://shuaiqifeiyang.tech/posts/misc/tcp-socket-server-node/</link>
     <pubDate>Fri, 07 Jan 2022 09:35:29 -0800</pubDate>
     <author>Author</author>
-    <guid>https://shuaiqifeiyang.tech/posts/mics/tcp-socket-server-node/</guid>
+    <guid>https://shuaiqifeiyang.tech/posts/misc/tcp-socket-server-node/</guid>
     <description><![CDATA[<p>Using net module in NodeJS to build a simple TCP socket server</p>]]></description>
 </item><item>
     <title>Leetcode Frequency 41-60 Review</title>
@@ -62,19 +77,5 @@
     <author>Author</author>
     <guid>https://shuaiqifeiyang.tech/posts/leetcode-frequency/leetcode-frequency-1-20/</guid>
     <description><![CDATA[<p>Leetcode Top 20 high-frequency problem: types, solutions, and summary</p>]]></description>
-</item><item>
-    <title>Maximum Flow</title>
-    <link>https://shuaiqifeiyang.tech/posts/algorithm/max-flow/</link>
-    <pubDate>Mon, 25 Oct 2021 09:37:16 -0700</pubDate>
-    <author>Author</author>
-    <guid>https://shuaiqifeiyang.tech/posts/algorithm/max-flow/</guid>
-    <description><![CDATA[<p>This article introduces the maximum flow problem.</p>]]></description>
-</item><item>
-    <title>Word Pyramid</title>
-    <link>https://shuaiqifeiyang.tech/posts/projects/word-pyramid/</link>
-    <pubDate>Fri, 28 Feb 2020 20:19:10 -0700</pubDate>
-    <author>Author</author>
-    <guid>https://shuaiqifeiyang.tech/posts/projects/word-pyramid/</guid>
-    <description><![CDATA[<p>A education game about learning English vocabulary.</p>]]></description>
 </item></channel>
 </rss>

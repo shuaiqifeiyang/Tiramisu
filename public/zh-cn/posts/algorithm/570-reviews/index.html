@@ -27,7 +27,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/shuaiqifeiyang.tech\/zh-cn\/posts\/algorithm\/570-reviews\/"
-        },"genre": "posts","keywords": "Algorithm","wordcount":  2623 ,
+        },"genre": "posts","keywords": "Algorithm","wordcount":  2611 ,
         "url": "https:\/\/shuaiqifeiyang.tech\/zh-cn\/posts\/algorithm\/570-reviews\/","datePublished": "2021-11-29T20:11:38-08:00","dateModified": "2021-11-29T20:11:38-08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "作者"},"author": {
@@ -146,14 +146,6 @@
         <li><a href="#discussion">Discussion</a></li>
       </ul>
     </li>
-    <li><a href="#week5">Week5</a>
-      <ul>
-        <li><a href="#merge-sort">Merge-Sort</a></li>
-        <li><a href="#master-theorem">Master Theorem</a></li>
-      </ul>
-    </li>
-    <li><a href="#week-6">Week 6</a></li>
-    <li><a href="#week-7">Week 7</a></li>
   </ul>
 </nav></div>
             </div><div class="content" id="content"><p>570 复习</p>
@@ -198,14 +190,14 @@
 <li>如果图中有一个环有奇数个节点，那么这个图不可能是bipartite</li>
 <li>先通过运行BFS把BFS Tree中相邻层的节点标记为Red和Blue，然后遍历边，如果有一条边的两个端点是同一个颜色，说明不是bipartite。整个的算法复杂度是$O(m+n)$</li>
 </ul>
-<p><strong>判断一个<code>有向图</code>是否是Strong Connected</strong>：</p>
+<p><strong>判断一个 <code>有向图</code>是否是Strong Connected</strong>：</p>
 <ul>
 <li>If there is a path from any point to any other point in the graph, 那么这个图就叫有向图</li>
 <li>先任选一个点s运行BFS或者DFS，判断是不是所有的其他点都可以到达。再将图中所有的边反转，又从s点运行DFS或者DFS，判断是不是所有的其他点都可以到达</li>
 </ul>
 <p><strong>判断在DAG中是否存在一条Path访问所有的节点</strong>：</p>
 <ul>
-<li>现在O(m+n)的时间复杂度内得到这个<code>有向图</code>的拓扑排序，然后判断拓扑顺序中相邻两个节点之间是否有边</li>
+<li>现在O(m+n)的时间复杂度内得到这个 <code>有向图</code>的拓扑排序，然后判断拓扑顺序中相邻两个节点之间是否有边</li>
 </ul>
 <h3 id="interval-scheduling-problem">Interval Scheduling Problem</h3>
 <p>给定n个间隔，求出最大的不向冲突的间隔个数</p>
@@ -293,14 +285,7 @@
 <ul>
 <li>反转道路的方向</li>
 <li>当有多个起点的时候引入一个新的起点，然后将新的起点指向多个原来的起点</li>
-</ul>
-<h2 id="week5">Week5</h2>
-<h3 id="merge-sort">Merge-Sort</h3>
-<p>Time Complexity: O(nlogn)</p>
-<h3 id="master-theorem">Master Theorem</h3>
-<h2 id="week-6">Week 6</h2>
-<p>Exam1</p>
-<h2 id="week-7">Week 7</h2></div><div class="post-footer" id="post-footer">
+</ul></div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
