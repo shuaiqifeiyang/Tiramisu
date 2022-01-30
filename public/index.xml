@@ -4,9 +4,16 @@
         <link>https://shuaiqifeiyang.tech/</link>
         <description>About LoveIt Theme</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>shuaiqifeiyang@gmail.com</managingEditor>
-            <webMaster>shuaiqifeiyang@gmail.com</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 19 Jan 2022 12:59:22 -0800</lastBuildDate>
+            <webMaster>shuaiqifeiyang@gmail.com</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 28 Jan 2022 18:18:00 -0800</lastBuildDate>
             <atom:link href="https://shuaiqifeiyang.tech/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>NNC</title>
+    <link>https://shuaiqifeiyang.tech/posts/machine-learning/nnc/</link>
+    <pubDate>Fri, 28 Jan 2022 18:18:00 -0800</pubDate>
+    <author>Author</author>
+    <guid>https://shuaiqifeiyang.tech/posts/machine-learning/nnc/</guid>
+    <description><![CDATA[<p>Nearest Neighbor Classifier</p>]]></description>
+</item><item>
     <title>Roulette</title>
     <link>https://shuaiqifeiyang.tech/posts/projects/roulette/</link>
     <pubDate>Wed, 19 Jan 2022 12:59:22 -0800</pubDate>
@@ -19,8 +26,7 @@
     <pubDate>Thu, 13 Jan 2022 17:46:09 -0800</pubDate>
     <author>Author</author>
     <guid>https://shuaiqifeiyang.tech/posts/machine-learning/basic-concepts/</guid>
-    <description><![CDATA[<p>Prerequisite knowledge of CSCI-567 Machine Learning</p>
-<p>`</p>]]></description>
+    <description><![CDATA[<p>Prerequisite knowledge of CSCI-567 Machine Learning</p>]]></description>
 </item><item>
     <title>How to build a TCP socket server in NodeJS</title>
     <link>https://shuaiqifeiyang.tech/posts/misc/tcp-socket-server-node/</link>
@@ -70,12 +76,5 @@
     <author>Author</author>
     <guid>https://shuaiqifeiyang.tech/posts/leetcode-frequency/leetcode-frequency-21-40/</guid>
     <description><![CDATA[<p>Leetcode Top 21-40 high-frequency problem: types, solutions, and summary</p>]]></description>
-</item><item>
-    <title>Leetcode Frequency 1-20 Review</title>
-    <link>https://shuaiqifeiyang.tech/posts/leetcode-frequency/leetcode-frequency-1-20/</link>
-    <pubDate>Tue, 26 Oct 2021 20:05:37 -0700</pubDate>
-    <author>Author</author>
-    <guid>https://shuaiqifeiyang.tech/posts/leetcode-frequency/leetcode-frequency-1-20/</guid>
-    <description><![CDATA[<p>Leetcode Top 20 high-frequency problem: types, solutions, and summary</p>]]></description>
 </item></channel>
 </rss>

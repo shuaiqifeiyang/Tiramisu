@@ -9,7 +9,7 @@ categories: ["CSCI-567 Machine Learning"]
 ---
 Prerequisite knowledge of CSCI-567 Machine Learning
 
-`<!--more-->`
+<!--more-->
 
 **Sample Space**$(\Omega)$: set of all possible outcomes or realizations
 
@@ -25,17 +25,19 @@ Prerequisite knowledge of CSCI-567 Machine Learning
 
 **Random Variable**: A random variable is a measurable function that maps a probability space into a measurable space.
 
+A **random variable** is a [variable whose values depend](https://en.wikipedia.org/wiki/Dependent_and_independent_variables) on [outcomes](https://en.wikipedia.org/wiki/Outcome_(probability)) of a [random](https://en.wikipedia.org/wiki/Randomness) event.
+
 The data are specific realizations of random variables
 
 A statistic is just any function of the data or random variable.
 
 **Distribution Function**
 
-Definition: Suppose $X$ is a random variable, $x$ is a specific value of it, **Cumulative distribution Function** is the function $F:R\rarr[0,1]$ ,where $F(x)=P(X\leq x)$
+Definition: Suppose $X$ is a random variable, $x$ is a specific value of it, **Cumulative Distribution Function** is the function $F:R\rarr[0,1]$ ,where $F(x)=P(X\leq x)$
 
 If $X$ is discrete $\Rightarrow$ probability mass function: $f(x)=P(X=x)$
 
-If $X$ is continuous $\Rightarrow$ ptobability density function for $X$ if there exists a function $F$ such that $f(x)\geq 0$ for all $x$, $\int_{-\infty}^{\infty}f(x)dx=1$ and for every $a\leq b$, 
+If $X$ is continuous $\Rightarrow$ **probability density function** for $X$ if there exists a function $F$ such that $f(x)\geq 0$ for all $x$, $\int_{-\infty}^{\infty}f(x)dx=1$ and for every $a\leq b$, 
 
 $$
 P(a\leq X\leq b)=\int_a^bf(x)dx
@@ -71,7 +73,6 @@ or $F_X(x)=\int_yf_{X,Y}(x,y)dy$ for continuous variable
 $f_{X|Y}(x|y)=P(X=x|Y=y)=\frac{P(X=x,Y=y)}{P(Y=y)}=\frac{f_{X,Y}(x,y)}{F_Y(y)}$
 
 **Law of total Probability**:$X$ takes values $x_1,...,x_n$ and y is a value of Y, we have
-
 $$
 F_Y(y)=\sum_jf_{Y|X}(y|x_j)f_X(x_j)
 $$
@@ -109,7 +110,6 @@ E[\sum_{i=1}^nX_i]=\sum_{i=1}^nE[X_i]
 $$
 
 **Covariance**
-
 $$
 cov(X,Y)=E[(X-\mu_x)(Y-\mu_y)]=E[X\cdot Y]-\mu_x\mu_y
 $$
@@ -117,15 +117,15 @@ $$
 **Correlation coefficients**
 
 $$
-corr(X,Y)=Cov(X,Y)/\sigma_x\sigma_y$$ ($\sigma$: standard deviation)
+corr(X,Y)=Cov(X,Y)/\sigma_x\sigma_y $$ 
+($\sigma$: standard deviation)
 
 **Sample Mean**:
 
-$$\overline{X}=\frac{1}{N}\sum_{i=1}^NX_i
+ $$\overline{X}=\frac{1}{N}\sum_{i=1}^NX_i
 $$
 
 **Sample Variance**:
-
 $$
 S^2=\frac{1}{N-1}\sum_{i=1}^N(X_i-\overline X)^2
 $$
@@ -161,3 +161,37 @@ An estimator is unbiased estimator if $E_\theta[\hat\theta_N]=\theta$
 $$
 se(\hat\theta_N)=\sqrt{Var(\hat\theta_N)}
 $$
+**Information Theory**
+
+Suppose $X$ can have one of the m values: $x_1, x_2,...,x_m$. The probability distribution is $P(X=x_i)=p_i$
+
+Entropy: $H(X)=-\sum_{j=1}^{m}p_i\log p_i$
+
+* "High entropy" means X is from a uniform distribution
+
+* "Low entropy" means X is from varied distribution
+
+**Conditional Entropy**
+
+$H(Y|X)=\sum_{i=1}^{m}p_iH(Y|X=x_i)=-\sum_{i=1}^{m}\sum_{j=1}^{n}p(x_i,y_i)\log p(y_i|x_i)$
+
+**mutual information** (**MI**) of two [random variables](https://en.wikipedia.org/wiki/Random_variable) is a measure of the mutual [dependence](https://en.wikipedia.org/wiki/Statistical_dependence) between the two variables. More specifically, it quantifies the "[amount of information](https://en.wikipedia.org/wiki/Information_content)" (in [units](https://en.wikipedia.org/wiki/Units_of_information) such as [shannons](https://en.wikipedia.org/wiki/Shannon_(unit)) ([bits](https://en.wikipedia.org/wiki/Bit)), [nats](https://en.wikipedia.org/wiki/Nat_(unit)) or [hartleys](https://en.wikipedia.org/wiki/Hartley_(unit))) obtained about one random variable by observing the other random variable. $I(Y;X)=H(Y)-H(Y|X)$
+
+$I(Y;X)=I(X;Y)=H(X)+H(Y)-H(X,Y)$
+
+In [mathematical statistics](https://en.wikipedia.org/wiki/Mathematical_statistics), the **Kullback–Leibler divergence,** $KL(P\parallel Q)$![{\displaystyle D_{\text{KL}}(P\parallel Q)}](https://wikimedia.org/api/rest_v1/media/math/render/svg/039fa82bd08654b4faa2b32ded70c0160554fa07) (also called **relative entropy**), is a [statistical distance](https://en.wikipedia.org/wiki/Statistical_distance): a measure of how one [probability distribution](https://en.wikipedia.org/wiki/Probability_distribution) *Q* is different from a second, reference probability distribution *P*.
+
+$KL(p\parallel q)=\sum p(x)log(p(x)/q(x))$
+
+$I(X;Y)=KL(p(x,y)\parallel p(x)p(y))$
+
+**Convex Functions:**
+
+If for any two points $x_1$ and $x_2$ in its domain $X$ and any $t\in[0,1]$
+
+$f(tx_1+(1-t)x_2)\le tf(x_1)+(1-t)f(x_2)$
+
+**Convex Set:** a set S is convex if and only if for any $x_1, x_2\in S$, $tx_1+(1-t)x_2\in S$ for any $t\in[0,1]$
+
+**Convex Optimization** is a minimization(maximization) of a convex function over a convex set.
+
