@@ -2,7 +2,7 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://shuaiqifeiyang.tech/categories/</loc><lastmod>2022-01-28T18:18:00-08:00</lastmod><xhtml:link
+            <loc>https://shuaiqifeiyang.tech/categories/</loc><lastmod>2022-02-01T21:56:56-08:00</lastmod><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
                         href="https://shuaiqifeiyang.tech/zh-cn/categories/"
@@ -11,10 +11,10 @@
                     hreflang="en"
                     href="https://shuaiqifeiyang.tech/categories/"
                     /></url><url>
-            <loc>https://shuaiqifeiyang.tech/categories/csci-567-machine-learning/</loc><lastmod>2022-01-28T18:18:00-08:00</lastmod></url><url>
-            <loc>https://shuaiqifeiyang.tech/tags/machine-learning/</loc><lastmod>2022-01-28T18:18:00-08:00</lastmod></url><url>
-            <loc>https://shuaiqifeiyang.tech/posts/machine-learning/nnc/</loc><lastmod>2022-01-28T18:18:00-08:00</lastmod></url><url>
-            <loc>https://shuaiqifeiyang.tech/posts/</loc><lastmod>2022-01-28T18:18:00-08:00</lastmod><xhtml:link
+            <loc>https://shuaiqifeiyang.tech/categories/csci-567-machine-learning/</loc><lastmod>2022-02-01T21:56:56-08:00</lastmod></url><url>
+            <loc>https://shuaiqifeiyang.tech/posts/machine-learning/linear-regression/</loc><lastmod>2022-02-01T21:56:56-08:00</lastmod></url><url>
+            <loc>https://shuaiqifeiyang.tech/tags/machine-learning/</loc><lastmod>2022-02-01T21:56:56-08:00</lastmod></url><url>
+            <loc>https://shuaiqifeiyang.tech/posts/</loc><lastmod>2022-02-01T21:56:56-08:00</lastmod><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
                         href="https://shuaiqifeiyang.tech/zh-cn/posts/"
@@ -23,7 +23,7 @@
                     hreflang="en"
                     href="https://shuaiqifeiyang.tech/posts/"
                     /></url><url>
-            <loc>https://shuaiqifeiyang.tech/</loc><lastmod>2022-01-28T18:18:00-08:00</lastmod><xhtml:link
+            <loc>https://shuaiqifeiyang.tech/</loc><lastmod>2022-02-01T21:56:56-08:00</lastmod><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
                         href="https://shuaiqifeiyang.tech/zh-cn/"
@@ -32,7 +32,7 @@
                     hreflang="en"
                     href="https://shuaiqifeiyang.tech/"
                     /></url><url>
-            <loc>https://shuaiqifeiyang.tech/tags/</loc><lastmod>2022-01-28T18:18:00-08:00</lastmod><xhtml:link
+            <loc>https://shuaiqifeiyang.tech/tags/</loc><lastmod>2022-02-01T21:56:56-08:00</lastmod><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
                         href="https://shuaiqifeiyang.tech/zh-cn/tags/"
@@ -41,6 +41,7 @@
                     hreflang="en"
                     href="https://shuaiqifeiyang.tech/tags/"
                     /></url><url>
+            <loc>https://shuaiqifeiyang.tech/posts/machine-learning/nnc/</loc><lastmod>2022-01-28T18:18:00-08:00</lastmod></url><url>
             <loc>https://shuaiqifeiyang.tech/categories/projects/</loc><lastmod>2022-01-19T12:59:22-08:00</lastmod><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
