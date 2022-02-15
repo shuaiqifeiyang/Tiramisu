@@ -119,3 +119,16 @@ Copy a linked list whose node contains an extra pointer which points to a random
 
 A nice solution is to inserting the clone node after its original node. Then the random pointer in the clone node points to its original random pointer's next node, which is exactly the corresponding clone node. Then we extract the clone node from the linked list and recover original node.
 
+## 3. C++ STL
+
+In C++ STL, `list` and `forward_list` encapsulates various operations of linked list. 
+
+### list
+
+```C++
+interator list.insert(iterator position, const value_type& val);
+iterator erase (iterator position); // return an iterator pointing to the element that followed the last element erased by the function call.
+```
+
+
+

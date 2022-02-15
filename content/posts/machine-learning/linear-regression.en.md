@@ -87,3 +87,40 @@ The solution becomes: $\tilde{\boldsymbol{w}}^\ast=(\tilde{\boldsymbol{X}}^T\til
 * Parametric methods: the size of the model does not grow with the size of the training set N
 * Non-parametric methods: the size of the model grows with the size of the training set
 
+## Linear regression with nonlinear basis
+
+* Use a nonlinear mapping: $\phi(\vec x):\vec x\in\mathbb{R}^D\rightarrow\vec z\in\mathbb{R}^M$, transform the data to a more complicated feature space.
+* Then apply linear regression.
+
+**Model**: $f(\vec x)=\vec w^T\phi(\vec x)$, where $\vec w\in\mathbb{R}^M$
+
+**Objective**: $RSS(\vec w)=\sum\limits_{n}(\vec w^T\phi(\vec x_n)-y_n)^2$
+
+**Least square solution**: $\vec w^\ast=(\boldsymbol\Phi^T\boldsymbol\Phi)^{-1}\boldsymbol\Phi^T\vec y$, where $\boldsymbol{\Phi}=\begin{pmatrix}
+\phi(\boldsymbol{x}_1)^T\\\\ 
+\phi(\boldsymbol{x}_2)^T\\\\ 
+\vdots\\\\ 
+\phi(\boldsymbol{x}_3)^T
+\end{pmatrix}\in\mathbb{R}^{N\times M}$
+
+**Underfitting**:
+
+* large training error
+* large test error
+
+**overfitting**:
+
+* small training error
+* large test error
+
+**How to prevent overfitting**:
+
+* use more data
+* control the model complexity
+  * For polynomial basis, the degree M clearly controls the complexity
+  * Use cross-validation to pick hyper-parameter M
+
+**Regularized linear regression**:
+
+$\varepsilon(\vec w)=RSS(\vec w)+\lambda R(\vec w)$
+

@@ -4,7 +4,14 @@
         <link>https://shuaiqifeiyang.tech/posts/</link>
         <description>All Posts | Shuaiqifeiyang&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>shuaiqifeiyang@gmail.com</managingEditor>
-            <webMaster>shuaiqifeiyang@gmail.com</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 01 Feb 2022 21:56:56 -0800</lastBuildDate><atom:link href="https://shuaiqifeiyang.tech/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>shuaiqifeiyang@gmail.com</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 09 Feb 2022 11:38:28 -0800</lastBuildDate><atom:link href="https://shuaiqifeiyang.tech/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Linear Classifier</title>
+    <link>https://shuaiqifeiyang.tech/posts/machine-learning/linear-classiifier/</link>
+    <pubDate>Wed, 09 Feb 2022 11:38:28 -0800</pubDate>
+    <author>Author</author>
+    <guid>https://shuaiqifeiyang.tech/posts/machine-learning/linear-classiifier/</guid>
+    <description><![CDATA[<p>Linear Classifier</p>]]></description>
+</item><item>
     <title>Linear Regression</title>
     <link>https://shuaiqifeiyang.tech/posts/machine-learning/linear-regression/</link>
     <pubDate>Tue, 01 Feb 2022 21:56:56 -0800</pubDate>
@@ -67,12 +74,5 @@
     <author>Author</author>
     <guid>https://shuaiqifeiyang.tech/posts/projects/gzrender/</guid>
     <description><![CDATA[<p>A renderer supporting rasterization, transformation, Phong shading, texture.</p>]]></description>
-</item><item>
-    <title>2064. Minimized Maximum of Products Distributed to Any Store</title>
-    <link>https://shuaiqifeiyang.tech/posts/leetcode-single/2000/2064/</link>
-    <pubDate>Sun, 07 Nov 2021 08:43:43 -0800</pubDate>
-    <author>Author</author>
-    <guid>https://shuaiqifeiyang.tech/posts/leetcode-single/2000/2064/</guid>
-    <description><![CDATA[<p>Binary Search</p>]]></description>
 </item></channel>
 </rss>

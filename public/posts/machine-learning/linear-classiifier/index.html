@@ -5,30 +5,30 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-        <title>Linear Regression - Shuaiqifeiyang&#39;s blog</title><meta name="Description" content="About LoveIt Theme"><meta property="og:title" content="Linear Regression" />
-<meta property="og:description" content="Linear Regression" />
+        <title>Linear Classifier - Shuaiqifeiyang&#39;s blog</title><meta name="Description" content="About LoveIt Theme"><meta property="og:title" content="Linear Classifier" />
+<meta property="og:description" content="Linear Classifier" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://shuaiqifeiyang.tech/posts/machine-learning/linear-regression/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2022-02-01T21:56:56-08:00" />
-<meta property="article:modified_time" content="2022-02-01T21:56:56-08:00" />
+<meta property="og:url" content="https://shuaiqifeiyang.tech/posts/machine-learning/linear-classiifier/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-02-09T11:38:28-08:00" />
+<meta property="article:modified_time" content="2022-02-09T11:38:28-08:00" />
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Linear Regression"/>
-<meta name="twitter:description" content="Linear Regression"/>
+<meta name="twitter:title" content="Linear Classifier"/>
+<meta name="twitter:description" content="Linear Classifier"/>
 <meta name="application-name" content="Telescope">
 <meta name="apple-mobile-web-app-title" content="Telescope"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://shuaiqifeiyang.tech/posts/machine-learning/linear-regression/" /><link rel="prev" href="https://shuaiqifeiyang.tech/posts/machine-learning/nnc/" /><link rel="next" href="https://shuaiqifeiyang.tech/posts/machine-learning/linear-classiifier/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://shuaiqifeiyang.tech/posts/machine-learning/linear-classiifier/" /><link rel="prev" href="https://shuaiqifeiyang.tech/posts/machine-learning/linear-regression/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
-        "headline": "Linear Regression",
+        "headline": "Linear Classifier",
         "inLanguage": "en",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https:\/\/shuaiqifeiyang.tech\/posts\/machine-learning\/linear-regression\/"
-        },"genre": "posts","keywords": "Machine Learning","wordcount":  277 ,
-        "url": "https:\/\/shuaiqifeiyang.tech\/posts\/machine-learning\/linear-regression\/","datePublished": "2022-02-01T21:56:56-08:00","dateModified": "2022-02-01T21:56:56-08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@id": "https:\/\/shuaiqifeiyang.tech\/posts\/machine-learning\/linear-classiifier\/"
+        },"genre": "posts","keywords": "Machine Learning","wordcount":  457 ,
+        "url": "https:\/\/shuaiqifeiyang.tech\/posts\/machine-learning\/linear-classiifier\/","datePublished": "2022-02-09T11:38:28-08:00","dateModified": "2022-02-09T11:38:28-08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "Author"},"author": {
                 "@type": "Person",
@@ -45,7 +45,7 @@
         </div>
         <div class="menu">
             <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="/about/"> About </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item language" title="Select Language">English<i class="fas fa-chevron-right fa-fw"></i>
-                        <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/posts/machine-learning/linear-regression/" selected>English</option></select>
+                        <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/posts/machine-learning/linear-classiifier/" selected>English</option></select>
                     </a><span class="menu-item search" id="search-desktop">
                         <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
                         <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
@@ -92,7 +92,7 @@
                 </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="/about/" title="">About</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
                 <i class="fas fa-adjust fa-fw"></i>
             </a><a href="javascript:void(0);" class="menu-item" title="Select Language">English<i class="fas fa-chevron-right fa-fw"></i>
-                    <select class="language-select" onchange="location = this.value;"><option value="/posts/machine-learning/linear-regression/" selected>English</option></select>
+                    <select class="language-select" onchange="location = this.value;"><option value="/posts/machine-learning/linear-classiifier/" selected>English</option></select>
                 </a></div>
     </div>
 </header>
@@ -106,11 +106,11 @@
                 <div class="container"><div class="toc" id="toc-auto">
             <h2 class="toc-title">Contents</h2>
             <div class="toc-content always-active" id="toc-content-auto"></div>
-        </div><article class="page single"><h1 class="single-title animated flipInX">Linear Regression</h1><div class="post-meta">
+        </div><article class="page single"><h1 class="single-title animated flipInX">Linear Classifier</h1><div class="post-meta">
             <div class="post-meta-line">
                 
                 <span class="post-category">included in <a href="/categories/csci-567-machine-learning/"><i class="far fa-folder fa-fw"></i>CSCI-567 Machine Learning</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-02-01">2022-02-01</time>&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-02-09">2022-02-09</time>&nbsp;
             </div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
@@ -119,111 +119,94 @@
                 </div>
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
   <ul>
-    <li><a href="#linear-regression-with-nonlinear-basis">Linear regression with nonlinear basis</a></li>
+    <li><a href="#loss-function">Loss Function</a></li>
+    <li><a href="#find-ermempirical-risk-minimization"><strong>Find ERM(Empirical Risk Minimization)</strong></a>
+      <ul>
+        <li><a href="#gradient-descent-gd">Gradient Descent (GD)</a></li>
+        <li><a href="#stochastic-gradient-descent-sgd">Stochastic Gradient Descent (SGD)</a></li>
+        <li><a href="#applying-gd-to-perceptron-loss">Applying GD to perceptron loss</a></li>
+        <li><a href="#applying-sgd-to-perception-loss">Applying SGD to perception loss</a></li>
+        <li><a href="#perceptron-algorithm">Perceptron Algorithm</a></li>
+      </ul>
+    </li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content"><p>Linear Regression</p>
-<p><strong>Regression VS Classification</strong></p>
+            </div><div class="content" id="content"><p>Linear Classifier</p>
+<p>Classification:</p>
 <ul>
-<li>continuous vs discrete</li>
-<li>measure prediction error differently</li>
+<li>N samples/instances: $D^{TRAIN}={(\vec x_1, y_1),(\vec x_2, y_2),&hellip;,(\vec x_n, y_n)}$</li>
+<li>Each $\vec x_n \in \mathbb{R}^D$ is called a feature vector</li>
+<li>Each $y_n\in[C]={1,2,&hellip;,C}$ is called a label\class\catrgory</li>
+<li>They are used for learning $f:\mathbb{R}^D\rightarrow[C]$ for future prediction</li>
 </ul>
-<p><strong>Measure error for one prediction</strong></p>
+<p>This post is focus on <strong>binary classification</strong>.</p>
 <ul>
-<li>absolute error: |prediction - sale price|</li>
-<li>squared error: (prediction - sale price)^2</li>
+<li>Number of classes: C=2</li>
+<li>Labels: {-1, +1}</li>
 </ul>
-<p><strong>Formal set up for linear regression</strong></p>
+<p><strong>Model</strong>: $\mathcal F={f(\vec x)=sign(\vec w^T\vec x)|\vec x\in\mathbb{R}^D}$, $sign(\vec w^T\vec x)=\begin{cases} +1\ if\ \vec w^T\vec x&gt;0\\ -1\ if\ \vec w^T\vec x\leq0\ \end{cases}$</p>
+<h2 id="loss-function">Loss Function</h2>
+<p>$z=y_n\vec w^T\vec x$</p>
 <ul>
-<li>input: $\vec x\in\mathbb{R}^D$</li>
-<li>Output: $y\in\mathbb{R}$</li>
-<li>Training data: $D={(\vec{x_n}, y_n),n=1,2,&hellip;,N}$</li>
-<li>Linear model: $f:\mathbb{R}^D\rightarrow\mathbb{R}$, with $f(\vec{x})=w_0+\sum_{d=1}^{D}w_dx_d=w_0+\vec{w}^T\vec{x}$
+<li><strong>perceptron loss</strong>:$l_{\mathrm{perceptron}}(z)=max{0, -z}$</li>
+<li><strong>hinge loss</strong>: $l_\mathrm{hinge}(z)=max{0,1-z}$</li>
+<li><strong>logistic loss</strong>: $l_\mathrm{logistic}=log(1-exp(-z))$</li>
+</ul>
+<h2 id="find-ermempirical-risk-minimization"><strong>Find ERM(Empirical Risk Minimization)</strong></h2>
+<p>$\vec w^\ast=\mathop{argmin}\limits_{\vec w\in\mathbb{R}^D}\sum\limits_{n=1}^Nl(y_n\vec w^T\vec x_n)$</p>
+<p>minimizing perceptron loss does not really make sense (try $\vec w=\vec 0$), but the algorithm derived from this perspective does.</p>
+<h3 id="gradient-descent-gd">Gradient Descent (GD)</h3>
 <ul>
-<li>For notation convenience $f(\vec{x})=\tilde{\boldsymbol{w}}^T\tilde{\boldsymbol{x}}=\tilde{\boldsymbol{x}}^T\tilde{\boldsymbol{w}}$, where $\tilde{\boldsymbol{w}}=[w_0,w_1,w_2,&hellip;,w_D]^T,\tilde{\boldsymbol{x}}=[1,x_1,x_2,&hellip;,x_D]^T$</li>
+<li>Gradient is sometimes referred to as first-order information of a function. Therefore, these methods are called first-order methods.</li>
 </ul>
-</li>
-</ul>
-<p><strong>RSS</strong>(Residual sum of squares)</p>
-<p>$RSS(\tilde{\boldsymbol{w}})=\sum\limits_{n}(f(\vec{x_n})-y_n)^2=\sum\limits_{n}(\tilde{\boldsymbol{w}}^T\tilde{\boldsymbol{x}}_n-y_n)^2=\sum\limits_{n}(\tilde{\boldsymbol{x}}_n^T\tilde{\boldsymbol{w}}-y_n)^2$</p>
-<p><strong>Empirical risk minimizer</strong>/Least squares solution</p>
-<p>$\tilde{\boldsymbol{w}}^\ast=\mathop{argmin}\limits_{\tilde{\boldsymbol{w}}\in\mathbb{R}^{D+1}}\ RSS(\tilde{\boldsymbol{w}})$</p>
-<p><strong>General Least Square Solution</strong></p>
-<p>Object: $RSS(\tilde{\boldsymbol{w}})=\sum\limits_{n}(\tilde{\boldsymbol{w}}^T\tilde{\boldsymbol{x}}_n-y_n)^2$</p>
-<p>$\nabla RSS(\tilde{\boldsymbol{w}})=2\sum\limits_{n}\tilde{\boldsymbol{x}}_n(\tilde{\boldsymbol{w}}^T\tilde{\boldsymbol{x}}_n-y_n)\propto\sum\limits_{n}\tilde{\boldsymbol{x}}_n\tilde{\boldsymbol{x}}_n^T\tilde{\boldsymbol{w}}-\sum\limits_ny_n\tilde{\boldsymbol{x}}_n$</p>
-<p>notation: $\tilde{\boldsymbol{X}}=\begin{pmatrix}
-\tilde{\boldsymbol{x}}_1^T\\
-\tilde{\boldsymbol{x}}_2^T\\
-\vdots\\
-\tilde{\boldsymbol{x}}_N^T
-\end{pmatrix}\in\mathbb{R}^{N\times(D+1)},\tilde{\boldsymbol{y}}=\begin{pmatrix}
-y_1\\
-y_2\\
-\vdots\\
-y_n
-\end{pmatrix}\in\mathbb{R}^{N\times1}$</p>
-<p>$\nabla RSS(\tilde{\boldsymbol{w}})=(\tilde{\boldsymbol{X}}^T\tilde{\boldsymbol{X}})\tilde{\boldsymbol{w}}-\tilde{\boldsymbol{X}}^T\boldsymbol{y}=0$</p>
-<p>$\tilde{\boldsymbol{w}}^\ast=(\tilde{\boldsymbol{X}}^T\tilde{\boldsymbol{X}})^{-1}\tilde{\boldsymbol{X}}^T\boldsymbol{y}$</p>
-<p>When $D=0,(\tilde{\boldsymbol{X}}^T\tilde{\boldsymbol{X}})^{-1}=\frac{1}{N},\tilde{\boldsymbol{X}}^T\boldsymbol{y}=\sum_n y_n,\tilde{\boldsymbol{w}}^\ast=\frac{\sum_n y_n}{N}$</p>
+<p><strong>Goal</strong>: minimize $F(\vec w)$</p>
+<p><strong>Algorithm</strong>: move a bit in the negative gradient direction. $\vec w^{(t+1)}\leftarrow\vec w^{(t)}-\eta\nabla F(\vec w^{(t)})$, where $\eta&gt;0$ is called step size or learning rate.</p>
 <ul>
-<li>Invert the matrix $\tilde{\boldsymbol{X}}^T\tilde{\boldsymbol{X}}$ takes $O(D^3)$</li>
+<li>in theory $\eta$ should be set in terms of some parameters of $F$</li>
+<li>in practice we just try several small values</li>
 </ul>
-<p><strong>What if $\tilde{\boldsymbol{X}}^T\tilde{\boldsymbol{X}}$ is not invertible</strong></p>
+<p>Essentially, GD is Taylor approximation: $F(\vec w)\approx F(\vec w^{(t)})+\nabla F(\vec w^{(t)})^T(\vec w-\vec w^{(t)})$, we use $-\eta\nabla F(\vec w^{(t)})$ represents $\vec w-\vec w^{(t)}$, so $F(\vec w^{(t+1)})\approx F(\vec w^{(t)})-\eta\parallel\nabla F(\vec w^{(t)})\parallel_2^2\leq F(\vec w^{(t)})$</p>
+<h3 id="stochastic-gradient-descent-sgd">Stochastic Gradient Descent (SGD)</h3>
+<p>$\vec w^{(t+1)}\leftarrow\vec w^{(t)}-\eta\tilde\nabla F(\vec w^{(t)})$, where $\tilde\nabla F(\vec w^{(t)})$ is a random variable (called <strong>stochastic gradient</strong>) $\mathbb{E}[\tilde\nabla F(\vec w^{(t)})]=\nabla F(\vec w^{(t)})$</p>
+<p>It could be much faster to obtain a stochastic gradient!</p>
+<p>Convergence guarantees for both GD and SGD on convex objectives.</p>
+<h3 id="applying-gd-to-perceptron-loss">Applying GD to perceptron loss</h3>
+<p>$F(\vec w)=\sum\limits_{n=1}^Nmax{0, -y_n\vec w^T\vec x_n}$</p>
+<p>$\nabla F(\vec w)=\sum\limits_{n=1}^N-\mathbb{I}[y_n\vec w^T\vec x_n\leq0]y_n\vec x_n$, only misclassified examples contribute to the gradient</p>
+<p><strong>GD update</strong>: $\vec w\leftarrow\vec w+\eta\sum\limits_{n=1}^N\mathbb{I}[y_n\vec w^T\vec x_n\leq0]y_n\vec x_n$</p>
+<p>Each update makes one pass of the entire training set</p>
+<h3 id="applying-sgd-to-perception-loss">Applying SGD to perception loss</h3>
+<p>How to construct a stochastic gradient?</p>
+<p>Pick one example $n\in[N]$ uniformly at random, $\tilde\nabla F(\vec w)=-N\mathbb{I}[y_n\vec w^T\vec x_n\leq0]y_n\vec x_n$</p>
+<p><strong>SGD update</strong>: $\vec w\leftarrow\vec w+\eta\mathbb{I}[y_n\vec w^T\vec x_n\leq0]y_n\vec x_n$ ($\eta$ absorbing the constant N) (each update touches only one data point!)</p>
+<h3 id="perceptron-algorithm">Perceptron Algorithm</h3>
+<p>Perceptron algorithm is SGD with $\eta=1$ applied to perceptron loss:</p>
+<p>Repeat:</p>
 <ul>
-<li>When $n&lt;D+1$, not enough data to estimate all parameters.</li>
-<li>$\tilde{\boldsymbol{X}}^T\tilde{\boldsymbol{X}}$ is symmetric</li>
-<li>eigen decomposition:</li>
+<li>Pick a data point $\vec x_n$ uniformly at random</li>
+<li>If $sgn(\vec w^T\vec x_n)\neq y_n$, $\vec w\leftarrow\vec w+y_n\vec x_n$</li>
 </ul>
-<p>$\tilde{\boldsymbol{X}}^T\tilde{\boldsymbol{X}}=\boldsymbol{U}^T\begin{bmatrix}\lambda_1&amp;0&amp;\cdots&amp;0\\0&amp;\lambda_2&amp;\cdots&amp;0\\\vdots&amp;\vdots&amp;\vdots&amp;\vdots\\0&amp;\cdots&amp;\lambda_{D}&amp;0\\0&amp;\cdots&amp;0&amp;\lambda_{D+1}\end{bmatrix}\boldsymbol{U}$</p>
-<p>$(\tilde{\boldsymbol{X}}^T\tilde{\boldsymbol{X}})^{-1}=\boldsymbol{U}^T\begin{bmatrix}1/\lambda_1&amp;0&amp;\cdots&amp;0\\0&amp;1/\lambda_2&amp;\cdots&amp;0\\\vdots&amp;\vdots&amp;\vdots&amp;\vdots\\0&amp;\cdots&amp;1/\lambda_{D}&amp;0\\0&amp;\cdots&amp;0&amp;1/\lambda_{D+1}\end{bmatrix}\boldsymbol{U}$</p>
-<p><strong>Non-invertible means some eigenvalues are zero</strong></p>
-<p><strong>One natural fix: add something positive:</strong></p>
-<p>$\tilde{\boldsymbol{X}}^T\tilde{\boldsymbol{X}}+\lambda\boldsymbol{I}=\boldsymbol{U}^T\begin{bmatrix}\lambda_1+\lambda&amp;0&amp;\cdots&amp;0\\0&amp;\lambda_2+\lambda&amp;\cdots&amp;0\\\vdots&amp;\vdots&amp;\vdots&amp;\vdots\\0&amp;\cdots&amp;\lambda_{D}+\lambda&amp;0\\0&amp;\cdots&amp;0&amp;\lambda_{D+1}+\lambda\end{bmatrix}\boldsymbol{U}$</p>
-<p>The solution becomes: $\tilde{\boldsymbol{w}}^\ast=(\tilde{\boldsymbol{X}}^T\tilde{\boldsymbol{X}}+\lambda\boldsymbol{I})^{-1}\tilde{\boldsymbol{X}}^T\boldsymbol{y}$</p>
-<p><strong>Parametric VS Non-parametric</strong>:</p>
+<p>Note:</p>
 <ul>
-<li>Parametric methods: the size of the model does not grow with the size of the training set N</li>
-<li>Non-parametric methods: the size of the model grows with the size of the training set</li>
+<li>$\vec w$ is always a linear combination of the training examples.</li>
+<li>$\eta=1$ does not really matter in terms of training error.</li>
 </ul>
-<h2 id="linear-regression-with-nonlinear-basis">Linear regression with nonlinear basis</h2>
+<p>If training set is linearly separable</p>
 <ul>
-<li>Use a nonlinear mapping: $\phi(\vec x):\vec x\in\mathbb{R}^D\rightarrow\vec z\in\mathbb{R}^M$, transform the data to a more complicated feature space.</li>
-<li>Then apply linear regression.</li>
+<li>perceptron converges in a finite number of stpes</li>
+<li>training error is 0</li>
 </ul>
-<p><strong>Model</strong>: $f(\vec x)=\vec w^T\phi(\vec x)$, where $\vec w\in\mathbb{R}^M$</p>
-<p><strong>Objective</strong>: $RSS(\vec w)=\sum\limits_{n}(\vec w^T\phi(\vec x_n)-y_n)^2$</p>
-<p><strong>Least square solution</strong>: $\vec w^\ast=(\boldsymbol\Phi^T\boldsymbol\Phi)^{-1}\boldsymbol\Phi^T\vec y$, where $\boldsymbol{\Phi}=\begin{pmatrix}
-\phi(\boldsymbol{x}_1)^T\\
-\phi(\boldsymbol{x}_2)^T\\
-\vdots\\
-\phi(\boldsymbol{x}_3)^T
-\end{pmatrix}\in\mathbb{R}^{N\times M}$</p>
-<p><strong>Underfitting</strong>:</p>
+<p><strong>sigmoid function</strong>: $\sigma(z)=\frac{1}{1+e^{(-z)}}$</p>
 <ul>
-<li>large training error</li>
-<li>large test error</li>
-</ul>
-<p><strong>overfitting</strong>:</p>
-<ul>
-<li>small training error</li>
-<li>large test error</li>
-</ul>
-<p><strong>How to prevent overfitting</strong>:</p>
-<ul>
-<li>use more data</li>
-<li>control the model complexity
-<ul>
-<li>For polynomial basis, the degree M clearly controls the complexity</li>
-<li>Use cross-validation to pick hyper-parameter M</li>
-</ul>
-</li>
-</ul>
-<p><strong>Regularized linear regression</strong>:</p>
-<p>$\varepsilon(\vec w)=RSS(\vec w)+\lambda R(\vec w)$</p></div><div class="post-footer" id="post-footer">
+<li>$\sigma(z)$ is between 0 and 1</li>
+<li>$\sigma(\vec w^T\vec x)&gt;=0.5 \Leftrightarrow\vec w^T\vec x\geq0$, consistent with predicting the label with $sign(\vec w^T\vec x)$</li>
+<li>larger $\vec w^T\vec x\Rightarrow$ larger $\sigma(\vec w^T\vec x)\Rightarrow$ higher confidence in label 1</li>
+<li>$\sigma(z)+\sigma(-z)=1$ for all $z$</li>
+</ul></div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>Updated on 2022-02-01</span>
+                <span>Updated on 2022-02-09</span>
             </div>
             <div class="post-info-license"></div>
         </div>
@@ -242,8 +225,7 @@ y_n
         </section>
     </div>
 
-    <div class="post-nav"><a href="/posts/machine-learning/nnc/" class="prev" rel="prev" title="NNC"><i class="fas fa-angle-left fa-fw"></i>NNC</a>
-            <a href="/posts/machine-learning/linear-classiifier/" class="next" rel="next" title="Linear Classifier">Linear Classifier<i class="fas fa-angle-right fa-fw"></i></a></div>
+    <div class="post-nav"><a href="/posts/machine-learning/linear-regression/" class="prev" rel="prev" title="Linear Regression"><i class="fas fa-angle-left fa-fw"></i>Linear Regression</a></div>
 </div>
 </article></div>
             </main><footer class="footer">
