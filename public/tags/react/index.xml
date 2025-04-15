@@ -1,0 +1,23 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>React - Tag - Shuaiqifeiyang&#39;s blog</title>
+        <link>https://shuaiqifeiyang.tech/tags/react/</link>
+        <description>React - Tag - Shuaiqifeiyang&#39;s blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>shuaiqifeiyang@gmail.com</managingEditor>
+            <webMaster>shuaiqifeiyang@gmail.com</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 19 Jan 2022 12:59:22 -0800</lastBuildDate><atom:link href="https://shuaiqifeiyang.tech/tags/react/" rel="self" type="application/rss+xml" /><item>
+    <title>Roulette</title>
+    <link>https://shuaiqifeiyang.tech/posts/projects/roulette/</link>
+    <pubDate>Wed, 19 Jan 2022 12:59:22 -0800</pubDate>
+    <author>Author</author>
+    <guid>https://shuaiqifeiyang.tech/posts/projects/roulette/</guid>
+    <description><![CDATA[<p>Simulation of Roulette in Las Vegas Casinos</p>]]></description>
+</item><item>
+    <title>ReactJS</title>
+    <link>https://shuaiqifeiyang.tech/posts/frontend/reactjs/</link>
+    <pubDate>Fri, 03 Jan 2020 22:28:15 -0800</pubDate>
+    <author>Author</author>
+    <guid>https://shuaiqifeiyang.tech/posts/frontend/reactjs/</guid>
+    <description><![CDATA[<p>Notes of ReactJS document
+`</p>]]></description>
+</item></channel>
+</rss>

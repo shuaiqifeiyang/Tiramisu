@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>Clustering - Shuaiqifeiyang&#39;s blog</title><meta name="Description" content="About LoveIt Theme"><meta property="og:title" content="Clustering" />
+<meta property="og:description" content="Clustering: one important unsupervised learning problem." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://shuaiqifeiyang.tech/posts/machine-learning/clustering/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-03-09T15:32:34-08:00" />
+<meta property="article:modified_time" content="2022-03-09T15:32:34-08:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Clustering"/>
+<meta name="twitter:description" content="Clustering: one important unsupervised learning problem."/>
+<meta name="application-name" content="Telescope">
+<meta name="apple-mobile-web-app-title" content="Telescope"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://shuaiqifeiyang.tech/posts/machine-learning/clustering/" /><link rel="prev" href="https://shuaiqifeiyang.tech/posts/java/basic/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Clustering",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/shuaiqifeiyang.tech\/posts\/machine-learning\/clustering\/"
+        },"genre": "posts","wordcount":  353 ,
+        "url": "https:\/\/shuaiqifeiyang.tech\/posts\/machine-learning\/clustering\/","datePublished": "2022-03-09T15:32:34-08:00","dateModified": "2022-03-09T15:32:34-08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "Author"},"author": {
+                "@type": "Person",
+                "name": "Author"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="" header-mobile=""><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : '' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Shuaiqifeiyang&#39;s blog">Shuaiqifeiyang&#39;s blog</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="/about/"> About </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item language" title="Select Language">English<i class="fas fa-chevron-right fa-fw"></i>
+                        <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/posts/machine-learning/clustering/" selected>English</option></select>
+                    </a><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Shuaiqifeiyang&#39;s blog">Shuaiqifeiyang&#39;s blog</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="/about/" title="">About</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a><a href="javascript:void(0);" class="menu-item" title="Select Language">English<i class="fas fa-chevron-right fa-fw"></i>
+                    <select class="language-select" onchange="location = this.value;"><option value="/posts/machine-learning/clustering/" selected>English</option></select>
+                </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content always-active" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">Clustering</h1><div class="post-meta">
+            <div class="post-meta-line">
+                
+                </div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-03-09">2022-03-09</time>&nbsp;
+            </div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents"></nav></div>
+            </div><div class="content" id="content"><p>Clustering: one important unsupervised learning problem.</p>
+<ul>
+<li>supervised learning: aim to predict</li>
+<li>unsupervised learning: discover hidden and latent patterns and explore data</li>
+</ul>
+<p><strong>Input</strong>: data points $\vec x_1,\dots,\vec x_N\in\mathbb{R}^D$ and clusters $K$ we want</p>
+<p><strong>Output</strong>: group the data into $K$ clusters, which means:</p>
+<ul>
+<li>find assignments $\gamma_{nk}\in{0, 1}$ for each data point. Only one in ${\gamma_{n1},\gamma_{n2},\dots ,\gamma_{nK}}$ is 1</li>
+<li>find the clusters centers $\vec \mu_1,\dots,\vec \mu_K\in\mathbb{R}^D$</li>
+</ul>
+<p><strong>Clustering can be used to image compression</strong></p>
+<ul>
+<li>each pixel is a point</li>
+<li>perform clustering over these points</li>
+<li>replace each point by the center of the cluster it belongs to</li>
+</ul>
+<p><strong>Use K-means to measure the quality of K Cluster</strong>: $F({\gamma_{nk}, {\vec \mu_k}})=\sum\limits_{n=1}^{N}\sum\limits_{k=1}^{K}\gamma_{nk}\parallel\vec x_n-\vec \mu_k\parallel_2^2$, the sum of distance of each point to its center</p>
+<p>Finding the exact minimizer of K-means is NP-hard</p>
+<p>Instead, use a heuristic that **alternatively minimizes over ${\gamma_{nk}}$ and ${\vec \mu_k}$**</p>
+<p>For $t=1,2,&hellip;$</p>
+<p>find ${\gamma_{nk}^{(t+1)}}=\mathop{argmin}\limits_{{\gamma_{nk}}}\ F({\gamma_{nk}, {\vec \mu_k}})$, this step assigns each point to the closest center</p>
+<p>find ${\vec\mu_{k}^{(t+1)}}=\mathop{argmin}\limits_{{\vec\mu_k}}\ F({\gamma_{nk}^{(t+1)}, {\vec \mu_k}})$, average the points of each cluster</p>
+<p>It will coverage in a finite number of iterations to <strong>a local minimum</strong>, it could take exponentially many iterations to converge.</p>
+<p>Local minimum can be arbitrarily worse. Initialization matters a lot!</p>
+<p><strong>Expectation-Maximization (EM) algorithm</strong></p>
+<p>We want to come up with a probabilistic model $p$ to explain how the data is generated. That is, each point is an independent sample of $\vec x \thicksim p$</p>
+<p>A GMM has the following density function: $p(\vec x)=\sum\limits_{k=1}^{K}w_kN(\vec x|\vec\mu_k,\Sigma_k)$</p>
+<ul>
+<li>$K$: the number of Gaussian components</li>
+<li>$w_1,\dots,w_K$: mixture weights, a distribution over $K$ components</li>
+<li>$\vec\mu_k$ and $\Sigma_k$: mean and covariance matrix of the $k$-th Gaussian</li>
+<li>$N$: the density function for a Gaussian</li>
+</ul>
+<p>by introducing a latent variable $z\in[K]$</p>
+<p>$p(\vec x)=\sum\limits_{k=1}^{K}p(\vec x, z=k)=\sum\limits_{k=1}^{K}p(z=k)p(\vec x|z=k)=\sum\limits_{k=1}^{K}\omega_kN(\vec x|\vec\mu_k,\boldsymbol{\Sigma_k})$</p>
+<p>Learning GMM means finding all the parameters $\theta={\omega_k,\vec\mu_k,\boldsymbol\Sigma_k}_{k=1}^{K}$</p>
+<p><strong>maximum-likelihood estimation(MLE)</strong></p>
+<p>$\mathop{\mathrm{argmax}}\limits_\theta\  \mathrm{ln}\prod\limits_{n=1}^Np(\vec x_n;\theta)=\mathop{\mathrm{argmax}}\limits_\theta\sum\limits_{n=1}^N\mathrm{ln}\ p(\vec x_n;\theta)$</p>
+<p>This is called incomplete likelihood (since $z_n$ are unobserved), and is intractable in general (non-concave problem)</p>
+<p><strong>Expectation-Maximization (EM) algorithm</strong></p>
+<p>EM is a heuristic to solve MLE with latent variables</p>
+<p>find the maximizer of $P(\boldsymbol\theta)=\sum\limits_{n=1}^N\mathrm{ln}\ p(\vec x_n;\boldsymbol\theta)=\sum\limits_{n=1}^N\mathrm{ln}\ \int_{z_n}p(\vec x_n,z_n;\boldsymbol\theta)dz_n$</p>
+<ul>
+<li>$\boldsymbol\theta$ is the parameters for a general probabilistic model</li>
+<li>$\vec x_n$ are observed random variables</li>
+<li>$z_n$ are latent variables</li>
+</ul></div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2022-03-09</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/java/basic/" class="prev" rel="prev" title="Basic"><i class="fas fa-angle-left fa-fw"></i>Basic</a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2019 - 2022</span><span class="icp-splitter">&nbsp;|&nbsp;</span><br class="icp-br"/>
+                    <span class="icp"><a href='https://beian.miit.gov.cn/#/Integrated/index'>浙ICP备2021000092</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><script type="text/javascript" src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":100},"comment":{},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":50,"type":"lunr"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

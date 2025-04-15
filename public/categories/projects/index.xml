@@ -1,0 +1,50 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Projects - Category - Shuaiqifeiyang&#39;s blog</title>
+        <link>https://shuaiqifeiyang.tech/categories/projects/</link>
+        <description>Projects - Category - Shuaiqifeiyang&#39;s blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>shuaiqifeiyang@gmail.com</managingEditor>
+            <webMaster>shuaiqifeiyang@gmail.com</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 19 Jan 2022 12:59:22 -0800</lastBuildDate><atom:link href="https://shuaiqifeiyang.tech/categories/projects/" rel="self" type="application/rss+xml" /><item>
+    <title>Roulette</title>
+    <link>https://shuaiqifeiyang.tech/posts/projects/roulette/</link>
+    <pubDate>Wed, 19 Jan 2022 12:59:22 -0800</pubDate>
+    <author>Author</author>
+    <guid>https://shuaiqifeiyang.tech/posts/projects/roulette/</guid>
+    <description><![CDATA[<p>Simulation of Roulette in Las Vegas Casinos</p>]]></description>
+</item><item>
+    <title>Procedural Modeling of Cities</title>
+    <link>https://shuaiqifeiyang.tech/posts/projects/procedural-modeling-of-cities/</link>
+    <pubDate>Sun, 28 Nov 2021 11:24:37 -0800</pubDate>
+    <author>Author</author>
+    <guid>https://shuaiqifeiyang.tech/posts/projects/procedural-modeling-of-cities/</guid>
+    <description><![CDATA[<p>The implementation of Siggraph01 Procedural Modeling of Cities</p>]]></description>
+</item><item>
+    <title>GzRender</title>
+    <link>https://shuaiqifeiyang.tech/posts/projects/gzrender/</link>
+    <pubDate>Mon, 08 Nov 2021 16:07:12 -0800</pubDate>
+    <author>Author</author>
+    <guid>https://shuaiqifeiyang.tech/posts/projects/gzrender/</guid>
+    <description><![CDATA[<p>A renderer supporting rasterization, transformation, Phong shading, texture.</p>]]></description>
+</item><item>
+    <title>Word Pyramid</title>
+    <link>https://shuaiqifeiyang.tech/posts/projects/word-pyramid/</link>
+    <pubDate>Fri, 28 Feb 2020 20:19:10 -0700</pubDate>
+    <author>Author</author>
+    <guid>https://shuaiqifeiyang.tech/posts/projects/word-pyramid/</guid>
+    <description><![CDATA[<p>A education game about learning English vocabulary.</p>]]></description>
+</item><item>
+    <title>Block</title>
+    <link>https://shuaiqifeiyang.tech/posts/projects/block/</link>
+    <pubDate>Wed, 09 Jan 2019 22:55:11 -0700</pubDate>
+    <author>Author</author>
+    <guid>https://shuaiqifeiyang.tech/posts/projects/block/</guid>
+    <description><![CDATA[<p>A mini Minecraft game</p>]]></description>
+</item><item>
+    <title>ExtractKeyFrame</title>
+    <link>https://shuaiqifeiyang.tech/posts/projects/extractkeyframe/</link>
+    <pubDate>Mon, 07 Jan 2019 23:09:08 -0700</pubDate>
+    <author>Author</author>
+    <guid>https://shuaiqifeiyang.tech/posts/projects/extractkeyframe/</guid>
+    <description><![CDATA[<p>Two algorithm extracting key frames in a video.</p>]]></description>
+</item></channel>
+</rss>

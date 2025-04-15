@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>NP - Shuaiqifeiyang&#39;s blog</title><meta name="Description" content="About LoveIt Theme"><meta property="og:title" content="NP" />
+<meta property="og:description" content="NP and Computational Intractability" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://shuaiqifeiyang.tech/posts/algorithm/np/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-11-18T14:46:00-08:00" />
+<meta property="article:modified_time" content="2021-11-18T14:46:00-08:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="NP"/>
+<meta name="twitter:description" content="NP and Computational Intractability"/>
+<meta name="application-name" content="Telescope">
+<meta name="apple-mobile-web-app-title" content="Telescope"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://shuaiqifeiyang.tech/posts/algorithm/np/" /><link rel="prev" href="https://shuaiqifeiyang.tech/posts/projects/gzrender/" /><link rel="next" href="https://shuaiqifeiyang.tech/posts/projects/procedural-modeling-of-cities/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "NP",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/shuaiqifeiyang.tech\/posts\/algorithm\/np\/"
+        },"genre": "posts","keywords": "Algorithm","wordcount":  640 ,
+        "url": "https:\/\/shuaiqifeiyang.tech\/posts\/algorithm\/np\/","datePublished": "2021-11-18T14:46:00-08:00","dateModified": "2021-11-18T14:46:00-08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "Author"},"author": {
+                "@type": "Person",
+                "name": "Author"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="" header-mobile=""><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : '' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Shuaiqifeiyang&#39;s blog">Shuaiqifeiyang&#39;s blog</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="/about/"> About </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item language" title="Select Language">English<i class="fas fa-chevron-right fa-fw"></i>
+                        <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/posts/algorithm/np/" selected>English</option></select>
+                    </a><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Shuaiqifeiyang&#39;s blog">Shuaiqifeiyang&#39;s blog</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="/about/" title="">About</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a><a href="javascript:void(0);" class="menu-item" title="Select Language">English<i class="fas fa-chevron-right fa-fw"></i>
+                    <select class="language-select" onchange="location = this.value;"><option value="/posts/algorithm/np/" selected>English</option></select>
+                </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content always-active" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">NP</h1><div class="post-meta">
+            <div class="post-meta-line">
+                
+                <span class="post-category">included in <a href="/categories/csci-570-analysis-of-algorithm/"><i class="far fa-folder fa-fw"></i>CSCI-570 Analysis of Algorithm</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-11-18">2021-11-18</time>&nbsp;
+            </div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#some-np-problems">Some NP Problems</a>
+      <ul>
+        <li><a href="#independent-set">Independent Set</a></li>
+        <li><a href="#vertex-cover">Vertex Cover</a></li>
+        <li><a href="#set-cover">Set Cover</a></li>
+        <li><a href="#satisfiability-problem-sat">Satisfiability Problem (SAT)</a></li>
+        <li><a href="#the-hamiltonian-cycle-problem">The Hamiltonian Cycle Problem</a></li>
+        <li><a href="#the-traveling-salesman-problem">The Traveling Salesman Problem</a></li>
+      </ul>
+    </li>
+    <li><a href="#prove-a-problem-is-np-complete">Prove a problem is NP-Complete</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>NP and Computational Intractability</p>
+<p><strong>Definition</strong></p>
+<ul>
+<li>If Problem X is at least as hard as Problem Y, it means that if we could solve X, we could also solve Y.</li>
+<li>$Y\le _{p}X$
+<ul>
+<li>Y is polynomial-time reducible to X</li>
+<li>Y can be solved using a polynomial number of computational steps plus a polynomial number of calls to a blackbox that solves X</li>
+<li>X is at least as hard as Y</li>
+</ul>
+</li>
+</ul>
+<h2 id="some-np-problems">Some NP Problems</h2>
+<h3 id="independent-set">Independent Set</h3>
+<p>Given a graph $G=(V, E)$, we say a set of nodes $S\subseteq V$ is independent if no two nodes in S are joined by an edge.<br>
+Optimization Version: find the maximum size of an independent set.<br>
+Decision Version: whether G has an independent set of size at least a given k.</p>
+<h3 id="vertex-cover">Vertex Cover</h3>
+<p>Given a graph $G=(V, E)$, we say that a set of nodes $S\subseteq V$ is a vertex cover if every edge in E has at least one end in S.</p>
+<p>Let $G=(V, E)$, then $S$ is a independent set if and only if its complement $V-S$ is a vertex cover set.<br>
+Independent Set $\le _{p}$ Vertex Cover.<br>
+Vertex Cover $\le _{p}$ Independent Set.<br>
+Vertex Cover Problem and Independent Set Problem are in the same complexity class.</p>
+<p><strong>Let $G = (V , E)$ be a graph. Then S is an independent set if and only if its complement V − S is a vertex cover.</strong></p>
+<h3 id="set-cover">Set Cover</h3>
+<p>Given a set $U$ of $n$ elements, a collection $S_1$, . . . , $S_m$ of subsets of $U$, and a number $k$, does there exist a collection of at most $k$ of these sets whose union is equal to all of $U$?<br>
+Vertex Cover $\le _{p}$ Set Cover</p>
+<h3 id="satisfiability-problem-sat">Satisfiability Problem (SAT)</h3>
+<p>Given a set $X$ of n Boolean variables $x_1,\dots,x_n$<br>
+A clause is simply a disjunction of distince terms $t_1\lor t_2 \lor \cdots\lor t_l (t_i\in{x_1,x_2,\dots,x_n,\overline{x_1},\dots,\overline{x_n} })$.
+We say the clause has length $l$ if it contains $l$ terms</p>
+<p>A truth assignment for $X$ is an assignment of the value 0 or 1 to each $x_i$; in other words, it is a function $v: X\rarr {0, 1}$
+An assignment satisfies a clause $C$ if it causes $C$ to evaluate to 1 under the rules of Boolean logic.<br>
+An assignment satisfies a collection of clauses $C_1,\dots, C_k$ if it causes all of the $C_i$ to evaluate to 1. In this case, we will say that $v$ is a satisfying assignment with respect to $C_1,\dots,C_k$; and that the set of clauses $C_1,\dots,C_k$ is satisfiable.</p>
+<p><strong>Problem Statement</strong><br>
+Given a set of clauses $C_1,\dots,C_k$ over a set of variables $X={x_1,\dots,x_n}$,
+does there exist a satisfying truth assignment?</p>
+<p><strong>3-SAT</strong>: all clauses contain exactly three terms</p>
+<p><strong>efficient certification</strong>:<br>
+to show efficient certification:</p>
+<ul>
+<li>Polynomial length certificate</li>
+<li>Polynomial time certifier
+the certifier is basically an algorithm that takes the certificate and decides whether or not it is a good solution.</li>
+</ul>
+<p>NP(Non deterministic polynomial) is the set of all problems for which there exists an efficient certifier.</p>
+<h3 id="the-hamiltonian-cycle-problem">The Hamiltonian Cycle Problem</h3>
+<p>Given a directed graph $G=(V, E)$, we say that a cycle in G is Hamiltonian Cycle if it visits each vertex exactly once.<br>
+The Hamiltonian Cycle Problem is then simply the following:
+Given a directed graph G, does it contain a Hamiltonian cycle?<br>
+Show Hamiltonian Cycle Problem is NP-Complete:<br>
+Prove Vertex Cover is polynomial reducible to Hamiltonian Cycle Problem
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/algorithm/img/NP1.png"
+        data-srcset="https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/algorithm/img/NP1.png, https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/algorithm/img/NP1.png 1.5x, https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/algorithm/img/NP1.png 2x"
+        data-sizes="auto"
+        alt="https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/algorithm/img/NP1.png"
+        title="https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/algorithm/img/NP1.png" /></p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/algorithm/img/NP2.png"
+        data-srcset="https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/algorithm/img/NP2.png, https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/algorithm/img/NP2.png 1.5x, https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/algorithm/img/NP2.png 2x"
+        data-sizes="auto"
+        alt="https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/algorithm/img/NP2.png"
+        title="https://raw.githubusercontent.com/shuaiqifeiyang/Tiramisu/main/content/posts/algorithm/img/NP2.png" /></p>
+<h3 id="the-traveling-salesman-problem">The Traveling Salesman Problem</h3>
+<p>Order the cities into a tour $v_{i_1}, v_{i_2}, \dots ,v_{i_n}$, with $i_1=1$, so as to minimize the total distance $\sum_jd(v_{i_j}, v_{i_{j+1}}) + d(v_{i_n}, v_{i_1})$<br>
+Decision version of the Traveling Salesman Problem:
+Given a set of distances on n cities, and a bound D, is there a tour of length at most D?
+TSP is polynomial reducible to Hamiltonian Cycle Problem</p>
+<h2 id="prove-a-problem-is-np-complete">Prove a problem is NP-Complete</h2>
+<ul>
+<li>Prove X belongs to NP</li>
+<li>Choose a problem Y that is known to be NP-Complete</li>
+<li>Prove that Y$\leq_p$X</li>
+</ul></div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2021-11-18</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">Algorithm</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/projects/gzrender/" class="prev" rel="prev" title="GzRender"><i class="fas fa-angle-left fa-fw"></i>GzRender</a>
+            <a href="/posts/projects/procedural-modeling-of-cities/" class="next" rel="next" title="Procedural Modeling of Cities">Procedural Modeling of Cities<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2019 - 2022</span><span class="icp-splitter">&nbsp;|&nbsp;</span><br class="icp-br"/>
+                    <span class="icp"><a href='https://beian.miit.gov.cn/#/Integrated/index'>浙ICP备2021000092</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="stylesheet" href="/lib/katex/copy-tex.min.css"><script type="text/javascript" src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js"></script><script type="text/javascript" src="/lib/katex/auto-render.min.js"></script><script type="text/javascript" src="/lib/katex/copy-tex.min.js"></script><script type="text/javascript" src="/lib/katex/mhchem.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":100},"comment":{},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":50,"type":"lunr"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

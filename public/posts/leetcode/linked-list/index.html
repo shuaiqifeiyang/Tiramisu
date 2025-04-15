@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>Linked List - Shuaiqifeiyang&#39;s blog</title><meta name="Description" content="About LoveIt Theme"><meta property="og:title" content="Linked List" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://shuaiqifeiyang.tech/posts/leetcode/linked-list/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-01-30T10:54:23-08:00" />
+<meta property="article:modified_time" content="2022-01-30T10:54:23-08:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Linked List"/>
+<meta name="twitter:description" content=""/>
+<meta name="application-name" content="Telescope">
+<meta name="apple-mobile-web-app-title" content="Telescope"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://shuaiqifeiyang.tech/posts/leetcode/linked-list/" /><link rel="prev" href="https://shuaiqifeiyang.tech/posts/computer-animation/hw1/" /><link rel="next" href="https://shuaiqifeiyang.tech/posts/machine-learning/linear-regression/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Linked List",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/shuaiqifeiyang.tech\/posts\/leetcode\/linked-list\/"
+        },"genre": "posts","wordcount":  372 ,
+        "url": "https:\/\/shuaiqifeiyang.tech\/posts\/leetcode\/linked-list\/","datePublished": "2022-01-30T10:54:23-08:00","dateModified": "2022-01-30T10:54:23-08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "Author"},"author": {
+                "@type": "Person",
+                "name": "Author"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="" header-mobile=""><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : '' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Shuaiqifeiyang&#39;s blog">Shuaiqifeiyang&#39;s blog</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="/about/"> About </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item language" title="Select Language">English<i class="fas fa-chevron-right fa-fw"></i>
+                        <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/posts/leetcode/linked-list/" selected>English</option></select>
+                    </a><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Shuaiqifeiyang&#39;s blog">Shuaiqifeiyang&#39;s blog</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="/about/" title="">About</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a><a href="javascript:void(0);" class="menu-item" title="Select Language">English<i class="fas fa-chevron-right fa-fw"></i>
+                    <select class="language-select" onchange="location = this.value;"><option value="/posts/leetcode/linked-list/" selected>English</option></select>
+                </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content always-active" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">Linked List</h1><div class="post-meta">
+            <div class="post-meta-line">
+                
+                </div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-01-30">2022-01-30</time>&nbsp;
+            </div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#1-operations-on-linked-list">1. Operations on Linked List</a>
+      <ul>
+        <li><a href="#delete">Delete</a></li>
+        <li><a href="#reverse">Reverse</a></li>
+        <li><a href="#merge">Merge</a></li>
+      </ul>
+    </li>
+    <li><a href="#2-some-tricks">2. Some Tricks</a>
+      <ul>
+        <li><a href="#others">Others</a></li>
+      </ul>
+    </li>
+    <li><a href="#3-c-stl">3. C++ STL</a>
+      <ul>
+        <li><a href="#list">list</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h2 id="1-operations-on-linked-list">1. Operations on Linked List</h2>
+<h3 id="delete">Delete</h3>
+<h3 id="reverse">Reverse</h3>
+<p>e.g. <a href="https://leetcode.com/problems/reverse-linked-list/" target="_blank" rel="noopener noreffer">206. Reverse Linked List</a></p>
+<p>Solution 1: Iterative</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C++" data-lang="C++"><span class="n">ListNode</span><span class="o">*</span> <span class="nf">reverseList</span><span class="p">(</span><span class="n">ListNode</span><span class="o">*</span> <span class="n">head</span><span class="p">)</span> <span class="p">{</span>
+  <span class="n">ListNode</span> <span class="o">*</span><span class="n">pre</span><span class="o">=</span><span class="k">nullptr</span><span class="p">;</span>
+  <span class="k">while</span><span class="p">(</span><span class="n">head</span><span class="p">){</span>
+    <span class="n">ListNode</span><span class="o">*</span> <span class="n">next</span><span class="o">=</span><span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
+    <span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span><span class="o">=</span><span class="n">pre</span><span class="p">;</span>
+    <span class="n">pre</span><span class="o">=</span><span class="n">head</span><span class="p">;</span>
+    <span class="n">head</span><span class="o">=</span><span class="n">next</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="n">pre</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="c1">// Time Complexity: O(n)
+</span><span class="c1">// Space Complexity: O(1)
+</span></code></pre></div><p>Solution 2: Recursive</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C++" data-lang="C++"><span class="n">ListNode</span><span class="o">*</span> <span class="nf">reverseList</span><span class="p">(</span><span class="n">ListNode</span><span class="o">*</span> <span class="n">head</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">head</span><span class="o">==</span><span class="k">nullptr</span> <span class="o">||</span> <span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span><span class="o">==</span><span class="k">nullptr</span><span class="p">)</span> <span class="k">return</span> <span class="n">head</span><span class="p">;</span>
+  <span class="n">ListNode</span><span class="o">*</span> <span class="n">p</span><span class="o">=</span><span class="n">reverseList</span><span class="p">(</span><span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">);</span>
+  <span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span><span class="o">-&gt;</span><span class="n">next</span><span class="o">=</span><span class="n">head</span><span class="p">;</span>
+  <span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span><span class="o">=</span><span class="k">nullptr</span><span class="p">;</span>
+  <span class="k">return</span> <span class="n">p</span><span class="p">;</span>   
+<span class="p">}</span>
+<span class="c1">// Time Complexity: O(n)
+</span><span class="c1">// Space Complexity: O(n)
+</span></code></pre></div><p><code>reverseList(head-&gt;next)</code> returns the reversed linked list, the head of this linked list before reversed is <code>head-&gt;next</code>. Next, we should add <code>head</code> to the end of the reversed linked list. This is exactly what <code>head-&gt;next-&gt;next=head</code> does.</p>
+<p>e.g. <a href="https://leetcode.com/problems/reverse-nodes-in-k-group/" target="_blank" rel="noopener noreffer">25. Reverse Nodes in k-Group</a></p>
+<p><strong>Reverse specific range of a linked list</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C++" data-lang="C++"><span class="n">vector</span><span class="o">&lt;</span><span class="n">ListNode</span><span class="o">*&gt;</span> <span class="n">reverseRange</span><span class="p">(</span><span class="n">ListNode</span><span class="o">*</span> <span class="n">head</span><span class="p">,</span> <span class="n">ListNode</span><span class="o">*</span> <span class="n">tail</span><span class="p">){</span>
+  <span class="n">ListNode</span> <span class="o">*</span><span class="n">pre</span><span class="o">=</span><span class="n">tail</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">,</span> <span class="o">*</span><span class="n">p</span><span class="o">=</span><span class="n">head</span><span class="p">;</span>
+  <span class="k">while</span><span class="p">(</span><span class="n">pre</span><span class="o">!=</span><span class="n">tail</span><span class="p">){</span>
+    <span class="n">ListNode</span> <span class="o">*</span><span class="n">next</span><span class="o">=</span><span class="n">p</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
+    <span class="n">p</span><span class="o">-&gt;</span><span class="n">next</span><span class="o">=</span><span class="n">pre</span><span class="p">;</span>
+    <span class="n">pre</span><span class="o">=</span><span class="n">p</span><span class="p">;</span>
+    <span class="n">p</span><span class="o">=</span><span class="n">next</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="n">vector</span><span class="o">&lt;</span><span class="n">ListNode</span><span class="o">*&gt;</span><span class="p">{</span><span class="n">tail</span><span class="p">,</span> <span class="n">head</span><span class="p">};</span>
+<span class="p">}</span>
+</code></pre></div><h3 id="merge">Merge</h3>
+<p>e.g. <a href="https://leetcode.com/problems/add-two-numbers/" target="_blank" rel="noopener noreffer">2. Add Two Numbers</a></p>
+<p>Two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order and each of their nodes contains a single digit.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C++" data-lang="C++"><span class="n">ListNode</span><span class="o">*</span> <span class="nf">addTwoNumbers</span><span class="p">(</span><span class="n">ListNode</span><span class="o">*</span> <span class="n">l1</span><span class="p">,</span> <span class="n">ListNode</span><span class="o">*</span> <span class="n">l2</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kt">int</span> <span class="n">carry</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+  <span class="n">ListNode</span> <span class="o">*</span><span class="n">ptr1</span><span class="o">=</span><span class="n">l1</span><span class="p">,</span> <span class="o">*</span><span class="n">ptr2</span><span class="o">=</span><span class="n">l2</span><span class="p">;</span>
+  <span class="n">ListNode</span> <span class="o">*</span><span class="n">res</span><span class="o">=</span><span class="k">new</span> <span class="n">ListNode</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="k">nullptr</span><span class="p">);</span>
+  <span class="n">ListNode</span> <span class="o">*</span><span class="n">ptr</span><span class="o">=</span><span class="n">res</span><span class="p">;</span>
+  <span class="k">while</span><span class="p">(</span><span class="n">ptr1</span> <span class="o">||</span> <span class="n">ptr2</span> <span class="o">||</span> <span class="n">carry</span><span class="o">!=</span><span class="mi">0</span><span class="p">){</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">ptr1</span><span class="p">){</span>
+      <span class="n">carry</span><span class="o">+=</span><span class="n">ptr1</span><span class="o">-&gt;</span><span class="n">val</span><span class="p">;</span>
+      <span class="n">ptr1</span><span class="o">=</span><span class="n">ptr1</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">ptr2</span><span class="p">){</span>
+      <span class="n">carry</span><span class="o">+=</span><span class="n">ptr2</span><span class="o">-&gt;</span><span class="n">val</span><span class="p">;</span>
+      <span class="n">ptr2</span><span class="o">=</span><span class="n">ptr2</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="n">ListNode</span> <span class="o">*</span><span class="n">cur</span><span class="o">=</span><span class="k">new</span> <span class="n">ListNode</span><span class="p">(</span><span class="n">carry</span><span class="o">%</span><span class="mi">10</span><span class="p">,</span> <span class="k">nullptr</span><span class="p">);</span>
+    <span class="n">carry</span><span class="o">/=</span><span class="mi">10</span><span class="p">;</span>
+    <span class="n">ptr</span><span class="o">-&gt;</span><span class="n">next</span><span class="o">=</span><span class="n">cur</span><span class="p">;</span>
+    <span class="n">ptr</span><span class="o">=</span><span class="n">ptr</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="n">res</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div><p>Points:</p>
+<ul>
+<li>Use dump node to make code concise. With dump node, inserting the first node to an empty linked list is not a special case.</li>
+<li><code>while(ptr1 || ptr2 || carry!=0)</code> makes the code elegant and concise.</li>
+</ul>
+<p><strong>Similar problems:</strong></p>
+<p><a href="https://leetcode.com/problems/merge-two-sorted-lists/" target="_blank" rel="noopener noreffer">21. Merge Two Sorted Lists</a></p>
+<h2 id="2-some-tricks">2. Some Tricks</h2>
+<h3 id="others">Others</h3>
+<p>e.g. <a href="https://leetcode.com/problems/copy-list-with-random-pointer/" target="_blank" rel="noopener noreffer">138. Copy List with Random Pointer</a></p>
+<p>Copy a linked list whose node contains an extra pointer which points to a random node in this linked list.</p>
+<p>A nice solution is to inserting the clone node after its original node. Then the random pointer in the clone node points to its original random pointer&rsquo;s next node, which is exactly the corresponding clone node. Then we extract the clone node from the linked list and recover original node.</p>
+<h2 id="3-c-stl">3. C++ STL</h2>
+<p>In C++ STL, <code>list</code> and <code>forward_list</code> encapsulates various operations of linked list.</p>
+<h3 id="list">list</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C++" data-lang="C++"><span class="n">interator</span> <span class="n">list</span><span class="p">.</span><span class="n">insert</span><span class="p">(</span><span class="n">iterator</span> <span class="n">position</span><span class="p">,</span> <span class="k">const</span> <span class="n">value_type</span><span class="o">&amp;</span> <span class="n">val</span><span class="p">);</span>
+<span class="n">iterator</span> <span class="nf">erase</span> <span class="p">(</span><span class="n">iterator</span> <span class="n">position</span><span class="p">);</span> <span class="c1">// return an iterator pointing to the element that followed the last element erased by the function call.
+</span></code></pre></div></div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2022-01-30</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/computer-animation/hw1/" class="prev" rel="prev" title="Hw1"><i class="fas fa-angle-left fa-fw"></i>Hw1</a>
+            <a href="/posts/machine-learning/linear-regression/" class="next" rel="next" title="Linear Regression">Linear Regression<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2019 - 2022</span><span class="icp-splitter">&nbsp;|&nbsp;</span><br class="icp-br"/>
+                    <span class="icp"><a href='https://beian.miit.gov.cn/#/Integrated/index'>浙ICP备2021000092</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><script type="text/javascript" src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":100},"comment":{},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":50,"type":"lunr"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>Linear Classifier - Shuaiqifeiyang&#39;s blog</title><meta name="Description" content="About LoveIt Theme"><meta property="og:title" content="Linear Classifier" />
+<meta property="og:description" content="Linear Classifier" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://shuaiqifeiyang.tech/posts/machine-learning/linear-classiifier/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-02-09T11:38:28-08:00" />
+<meta property="article:modified_time" content="2022-02-09T11:38:28-08:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Linear Classifier"/>
+<meta name="twitter:description" content="Linear Classifier"/>
+<meta name="application-name" content="Telescope">
+<meta name="apple-mobile-web-app-title" content="Telescope"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://shuaiqifeiyang.tech/posts/machine-learning/linear-classiifier/" /><link rel="prev" href="https://shuaiqifeiyang.tech/posts/machine-learning/linear-regression/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Linear Classifier",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/shuaiqifeiyang.tech\/posts\/machine-learning\/linear-classiifier\/"
+        },"genre": "posts","keywords": "Machine Learning","wordcount":  457 ,
+        "url": "https:\/\/shuaiqifeiyang.tech\/posts\/machine-learning\/linear-classiifier\/","datePublished": "2022-02-09T11:38:28-08:00","dateModified": "2022-02-09T11:38:28-08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "Author"},"author": {
+                "@type": "Person",
+                "name": "Author"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="" header-mobile=""><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : '' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Shuaiqifeiyang&#39;s blog">Shuaiqifeiyang&#39;s blog</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="/about/"> About </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item language" title="Select Language">English<i class="fas fa-chevron-right fa-fw"></i>
+                        <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/posts/machine-learning/linear-classiifier/" selected>English</option></select>
+                    </a><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Shuaiqifeiyang&#39;s blog">Shuaiqifeiyang&#39;s blog</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="/about/" title="">About</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a><a href="javascript:void(0);" class="menu-item" title="Select Language">English<i class="fas fa-chevron-right fa-fw"></i>
+                    <select class="language-select" onchange="location = this.value;"><option value="/posts/machine-learning/linear-classiifier/" selected>English</option></select>
+                </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content always-active" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">Linear Classifier</h1><div class="post-meta">
+            <div class="post-meta-line">
+                
+                <span class="post-category">included in <a href="/categories/csci-567-machine-learning/"><i class="far fa-folder fa-fw"></i>CSCI-567 Machine Learning</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-02-09">2022-02-09</time>&nbsp;
+            </div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#loss-function">Loss Function</a></li>
+    <li><a href="#find-ermempirical-risk-minimization"><strong>Find ERM(Empirical Risk Minimization)</strong></a>
+      <ul>
+        <li><a href="#gradient-descent-gd">Gradient Descent (GD)</a></li>
+        <li><a href="#stochastic-gradient-descent-sgd">Stochastic Gradient Descent (SGD)</a></li>
+        <li><a href="#applying-gd-to-perceptron-loss">Applying GD to perceptron loss</a></li>
+        <li><a href="#applying-sgd-to-perception-loss">Applying SGD to perception loss</a></li>
+        <li><a href="#perceptron-algorithm">Perceptron Algorithm</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>Linear Classifier</p>
+<p>Classification:</p>
+<ul>
+<li>N samples/instances: $D^{TRAIN}={(\vec x_1, y_1),(\vec x_2, y_2),&hellip;,(\vec x_n, y_n)}$</li>
+<li>Each $\vec x_n \in \mathbb{R}^D$ is called a feature vector</li>
+<li>Each $y_n\in[C]={1,2,&hellip;,C}$ is called a label\class\catrgory</li>
+<li>They are used for learning $f:\mathbb{R}^D\rightarrow[C]$ for future prediction</li>
+</ul>
+<p>This post is focus on <strong>binary classification</strong>.</p>
+<ul>
+<li>Number of classes: C=2</li>
+<li>Labels: {-1, +1}</li>
+</ul>
+<p><strong>Model</strong>: $\mathcal F={f(\vec x)=sign(\vec w^T\vec x)|\vec x\in\mathbb{R}^D}$, $sign(\vec w^T\vec x)=\begin{cases} +1\ if\ \vec w^T\vec x&gt;0\\ -1\ if\ \vec w^T\vec x\leq0\ \end{cases}$</p>
+<h2 id="loss-function">Loss Function</h2>
+<p>$z=y_n\vec w^T\vec x$</p>
+<ul>
+<li><strong>perceptron loss</strong>:$l_{\mathrm{perceptron}}(z)=max{0, -z}$</li>
+<li><strong>hinge loss</strong>: $l_\mathrm{hinge}(z)=max{0,1-z}$</li>
+<li><strong>logistic loss</strong>: $l_\mathrm{logistic}=log(1-exp(-z))$</li>
+</ul>
+<h2 id="find-ermempirical-risk-minimization"><strong>Find ERM(Empirical Risk Minimization)</strong></h2>
+<p>$\vec w^\ast=\mathop{argmin}\limits_{\vec w\in\mathbb{R}^D}\sum\limits_{n=1}^Nl(y_n\vec w^T\vec x_n)$</p>
+<p>minimizing perceptron loss does not really make sense (try $\vec w=\vec 0$), but the algorithm derived from this perspective does.</p>
+<h3 id="gradient-descent-gd">Gradient Descent (GD)</h3>
+<ul>
+<li>Gradient is sometimes referred to as first-order information of a function. Therefore, these methods are called first-order methods.</li>
+</ul>
+<p><strong>Goal</strong>: minimize $F(\vec w)$</p>
+<p><strong>Algorithm</strong>: move a bit in the negative gradient direction. $\vec w^{(t+1)}\leftarrow\vec w^{(t)}-\eta\nabla F(\vec w^{(t)})$, where $\eta&gt;0$ is called step size or learning rate.</p>
+<ul>
+<li>in theory $\eta$ should be set in terms of some parameters of $F$</li>
+<li>in practice we just try several small values</li>
+</ul>
+<p>Essentially, GD is Taylor approximation: $F(\vec w)\approx F(\vec w^{(t)})+\nabla F(\vec w^{(t)})^T(\vec w-\vec w^{(t)})$, we use $-\eta\nabla F(\vec w^{(t)})$ represents $\vec w-\vec w^{(t)}$, so $F(\vec w^{(t+1)})\approx F(\vec w^{(t)})-\eta\parallel\nabla F(\vec w^{(t)})\parallel_2^2\leq F(\vec w^{(t)})$</p>
+<h3 id="stochastic-gradient-descent-sgd">Stochastic Gradient Descent (SGD)</h3>
+<p>$\vec w^{(t+1)}\leftarrow\vec w^{(t)}-\eta\tilde\nabla F(\vec w^{(t)})$, where $\tilde\nabla F(\vec w^{(t)})$ is a random variable (called <strong>stochastic gradient</strong>) $\mathbb{E}[\tilde\nabla F(\vec w^{(t)})]=\nabla F(\vec w^{(t)})$</p>
+<p>It could be much faster to obtain a stochastic gradient!</p>
+<p>Convergence guarantees for both GD and SGD on convex objectives.</p>
+<h3 id="applying-gd-to-perceptron-loss">Applying GD to perceptron loss</h3>
+<p>$F(\vec w)=\sum\limits_{n=1}^Nmax{0, -y_n\vec w^T\vec x_n}$</p>
+<p>$\nabla F(\vec w)=\sum\limits_{n=1}^N-\mathbb{I}[y_n\vec w^T\vec x_n\leq0]y_n\vec x_n$, only misclassified examples contribute to the gradient</p>
+<p><strong>GD update</strong>: $\vec w\leftarrow\vec w+\eta\sum\limits_{n=1}^N\mathbb{I}[y_n\vec w^T\vec x_n\leq0]y_n\vec x_n$</p>
+<p>Each update makes one pass of the entire training set</p>
+<h3 id="applying-sgd-to-perception-loss">Applying SGD to perception loss</h3>
+<p>How to construct a stochastic gradient?</p>
+<p>Pick one example $n\in[N]$ uniformly at random, $\tilde\nabla F(\vec w)=-N\mathbb{I}[y_n\vec w^T\vec x_n\leq0]y_n\vec x_n$</p>
+<p><strong>SGD update</strong>: $\vec w\leftarrow\vec w+\eta\mathbb{I}[y_n\vec w^T\vec x_n\leq0]y_n\vec x_n$ ($\eta$ absorbing the constant N) (each update touches only one data point!)</p>
+<h3 id="perceptron-algorithm">Perceptron Algorithm</h3>
+<p>Perceptron algorithm is SGD with $\eta=1$ applied to perceptron loss:</p>
+<p>Repeat:</p>
+<ul>
+<li>Pick a data point $\vec x_n$ uniformly at random</li>
+<li>If $sgn(\vec w^T\vec x_n)\neq y_n$, $\vec w\leftarrow\vec w+y_n\vec x_n$</li>
+</ul>
+<p>Note:</p>
+<ul>
+<li>$\vec w$ is always a linear combination of the training examples.</li>
+<li>$\eta=1$ does not really matter in terms of training error.</li>
+</ul>
+<p>If training set is linearly separable</p>
+<ul>
+<li>perceptron converges in a finite number of stpes</li>
+<li>training error is 0</li>
+</ul>
+<p><strong>sigmoid function</strong>: $\sigma(z)=\frac{1}{1+e^{(-z)}}$</p>
+<ul>
+<li>$\sigma(z)$ is between 0 and 1</li>
+<li>$\sigma(\vec w^T\vec x)&gt;=0.5 \Leftrightarrow\vec w^T\vec x\geq0$, consistent with predicting the label with $sign(\vec w^T\vec x)$</li>
+<li>larger $\vec w^T\vec x\Rightarrow$ larger $\sigma(\vec w^T\vec x)\Rightarrow$ higher confidence in label 1</li>
+<li>$\sigma(z)+\sigma(-z)=1$ for all $z$</li>
+</ul></div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2022-02-09</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/machine-learning/">Machine Learning</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/machine-learning/linear-regression/" class="prev" rel="prev" title="Linear Regression"><i class="fas fa-angle-left fa-fw"></i>Linear Regression</a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2019 - 2022</span><span class="icp-splitter">&nbsp;|&nbsp;</span><br class="icp-br"/>
+                    <span class="icp"><a href='https://beian.miit.gov.cn/#/Integrated/index'>浙ICP备2021000092</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="stylesheet" href="/lib/katex/copy-tex.min.css"><script type="text/javascript" src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js"></script><script type="text/javascript" src="/lib/katex/auto-render.min.js"></script><script type="text/javascript" src="/lib/katex/copy-tex.min.js"></script><script type="text/javascript" src="/lib/katex/mhchem.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":100},"comment":{},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":50,"type":"lunr"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

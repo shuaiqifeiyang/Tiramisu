@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>NNC - Shuaiqifeiyang&#39;s blog</title><meta name="Description" content="About LoveIt Theme"><meta property="og:title" content="NNC" />
+<meta property="og:description" content="Nearest Neighbor Classifier" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://shuaiqifeiyang.tech/posts/machine-learning/nnc/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-01-28T18:18:00-08:00" />
+<meta property="article:modified_time" content="2022-01-28T18:18:00-08:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="NNC"/>
+<meta name="twitter:description" content="Nearest Neighbor Classifier"/>
+<meta name="application-name" content="Telescope">
+<meta name="apple-mobile-web-app-title" content="Telescope"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://shuaiqifeiyang.tech/posts/machine-learning/nnc/" /><link rel="prev" href="https://shuaiqifeiyang.tech/posts/projects/roulette/" /><link rel="next" href="https://shuaiqifeiyang.tech/posts/machine-learning/linear-regression/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "NNC",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/shuaiqifeiyang.tech\/posts\/machine-learning\/nnc\/"
+        },"genre": "posts","keywords": "Machine Learning","wordcount":  638 ,
+        "url": "https:\/\/shuaiqifeiyang.tech\/posts\/machine-learning\/nnc\/","datePublished": "2022-01-28T18:18:00-08:00","dateModified": "2022-01-28T18:18:00-08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "Author"},"author": {
+                "@type": "Person",
+                "name": "Author"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="" header-mobile=""><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : '' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Shuaiqifeiyang&#39;s blog">Shuaiqifeiyang&#39;s blog</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="/about/"> About </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item language" title="Select Language">English<i class="fas fa-chevron-right fa-fw"></i>
+                        <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/posts/machine-learning/nnc/" selected>English</option></select>
+                    </a><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Shuaiqifeiyang&#39;s blog">Shuaiqifeiyang&#39;s blog</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="/about/" title="">About</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a><a href="javascript:void(0);" class="menu-item" title="Select Language">English<i class="fas fa-chevron-right fa-fw"></i>
+                    <select class="language-select" onchange="location = this.value;"><option value="/posts/machine-learning/nnc/" selected>English</option></select>
+                </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content always-active" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">NNC</h1><div class="post-meta">
+            <div class="post-meta-line">
+                
+                <span class="post-category">included in <a href="/categories/csci-567-machine-learning/"><i class="far fa-folder fa-fw"></i>CSCI-567 Machine Learning</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-01-28">2022-01-28</time>&nbsp;
+            </div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#how-good-is-nnc">How good is NNC?</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>Nearest Neighbor Classifier</p>
+<p><strong>Training Data</strong>:</p>
+<ul>
+<li>N samples/instances: $D^{TRAIN}={(\vec x_1, y_1),(\vec x_2, y_2),&hellip;,(\vec x_n, y_n)}$</li>
+<li>Each $\vec x_n \in \mathbb{R}^D$ is called a feature vector</li>
+<li>Each $y_n\in[C]={1,2,&hellip;,C}$ is called a label\class\catrgory</li>
+<li>They are used for learning $f:\mathbb{R}^D\rightarrow[C]$ for future prediction</li>
+</ul>
+<p><strong>Nearest neighbor</strong>: $\vec x(1)=\vec x_{nn(\vec{x})}$, $nn(\vec x)\in[N]={1,2,&hellip;,N}$where $nn(x)$ is the index to one of the training instances, $nn(\vec{x})=\mathop{argmin}\limits_{n\in[N]}\parallel\vec{x}-\vec{x_n}\parallel_2=\mathop{argmin}\limits_{n\in[N]}\sqrt{\sum\limits_{d=1}^D(x_d-x_{nd})^2}$</p>
+<p><strong>Classification rule</strong>: $y=f(\vec{x})=y_{nn(\vec x)}$</p>
+<p><strong>Decision boundary</strong>: for every point in the space, we can determine its label using the NNC rule. This gives rise to a decision boundary that partitions the space into different regions.</p>
+<p><strong>Accuracy</strong>: the percentage of data points being correctly classified.</p>
+<p><strong>Error Rate</strong>: the percentage of data points being incorrectly classified.</p>
+<p>Accuracy+Error Rate=1</p>
+<p><strong>Accuracy and Error Rate defined on the training data set</strong>:</p>
+<p>$A^{TRAIN}=\frac{1}{N}\sum\limits_n\mathbb{I}[f(\vec{x_n})==y_n]$</p>
+<p>$\varepsilon^{TRAIN}=\frac{1}{N}\sum\limits_n\mathbb{I}[f(\vec{x_n})\neq y_n]$</p>
+<p>$\mathbb{I}(e)$ is the indicator function: $$\mathbb{I}(e)=\begin{cases} 1\ if\ e\ is\ true \\ 0\ if\ e\ is\ false \ \end{cases}$$</p>
+<p>For NNC, $A^{TRAIN}=100%$,$\varepsilon^{TRAIN}=0$</p>
+<p><strong>Test/Evaluation data</strong></p>
+<ul>
+<li>$D^{TEST}={(\vec x_1, y_1),(\vec x_2, y_2),&hellip;,(\vec x_m, y_m)}$</li>
+<li>A fresh dataset, not overlap with training set</li>
+<li>Test accuracy and test error
+<ul>
+<li>$A^{TRAIN}=\frac{1}{M}\sum\limits_m\mathbb{I}[f(\vec{x_m})==y_m]$</li>
+<li>$\varepsilon^{TRAIN}=\frac{1}{M}\sum\limits_m\mathbb{I}[f(\vec{x_m})\neq y_m]$</li>
+</ul>
+</li>
+<li>Test accuracy and test error are better measurement than train accuracy and train error</li>
+</ul>
+<p><strong>Variant of NNC</strong></p>
+<ol>
+<li>
+<p>measure nearness with other distances, for example $L_p$ distance: $\parallel\vec {x}-\vec{x_n}\parallel_p=(\sum\limits_d |x_d-x_{nd}|^p)^\frac{1}{p}$, for $p\geq1$</p>
+</li>
+<li>
+<p>K-nearest neighbor, every neighbor votes for its lable. Predict with the majority</p>
+<ol>
+<li>with K increases, the decision boundary becomes smoother</li>
+</ol>
+</li>
+<li>
+<p>Preprocessing data.</p>
+<p>One issue of NNC: distances depend on units of the features. We can process data so it looks more &ldquo;normalized&rdquo;.</p>
+<ul>
+<li>Compute the means and standard deviations in each feature
+<ul>
+<li>$\bar{x_d}=\frac{1}{N}\sum\limits_n x_{nd}$</li>
+<li>$s_d^2=\frac{1}{N-1}\sum\limits_n(x_{nd}-\bar{x_d})^2$</li>
+</ul>
+</li>
+<li>Scale the feature accordingly
+<ul>
+<li>$x_{nd}\leftarrow\frac{x_{nd}-\bar{x_d}}{s_d}$</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<p><strong>Hyper-parameters in NCC</strong></p>
+<ul>
+<li>The distance measure (e.g. the parameter $p$ for $L_P$ norm)</li>
+<li>K (how many nearest neighbor)</li>
+<li>Different ways of preprocessing data</li>
+</ul>
+<p><strong>Dataset</strong></p>
+<ul>
+<li>Training data are used for learning $f(\cdot)$</li>
+<li>Test data are used for assessing how well $f(\cdot)$ do</li>
+<li>Development/Validation data are used to optimize hyper-parameters.</li>
+</ul>
+<p><strong>Recipe</strong></p>
+<ul>
+<li>For each possible value of the hyperparameter
+<ul>
+<li>Train a model using $D^{TRAIN}$</li>
+<li>Evaluate the performance of the model on $D^{DEV}$</li>
+</ul>
+</li>
+<li>Choose the model with the best performance on $D^{DEV}$</li>
+<li>Evaluate the model on $D^{TEST}$</li>
+</ul>
+<p><strong>S-fold Cross-validation</strong></p>
+<ul>
+<li>When we do not have a development set</li>
+<li>Split the training data in to S equal parts</li>
+<li>Use each part in turn as a development dataset and use the others as a training dataset</li>
+<li>Choose the hyper-parameter leading to best average performance</li>
+<li>Use the best hyper-parameter to train a model using all $D^{TRAIN}$</li>
+</ul>
+<p><strong>Advantage of NNC</strong></p>
+<ul>
+<li>Simple, easy to implement</li>
+</ul>
+<p><strong>Disadvantage of NNC</strong></p>
+<ul>
+<li>Computationally intensive for large scale problems: $O(ND)$ for each prediction.</li>
+<li>Need to carry the training data around. This type of method is called <strong>nonparametric</strong></li>
+<li>Choosing the right hyper-parameters can be involved</li>
+</ul>
+<p><strong>Typical steps of development a machine learning system</strong></p>
+<ul>
+<li>Collect data, split into training, development, and test sets.</li>
+<li>Train a model with a machine learning algorithm. Most often we apply cross-validation to tune hyper-parameters.</li>
+<li>Evaluate using the test data and report performance</li>
+<li>Use the model to predict future/make decisions.</li>
+</ul>
+<h2 id="how-good-is-nnc">How good is NNC?</h2>
+<p><strong>Most standard assumption</strong>: every data point $(\vec{x}, y)$ (from $D^{TRAIN},D^{DEV},D^{TEST}$) is an independent identically distribution (i.i.d) sample of an unknown joint distribution $P$.</p>
+<ul>
+<li>often written as $(\vec{x}, y) \mathop{\sim}\limits^{i.i.d}P$</li>
+</ul>
+<p>Test error of a fixed classifier is therefore a random variable, and the expectation of test error is the expected error\mistake of $f$</p>
+<p>$E[\varepsilon^{TEST}]=\frac{1}{M}\sum\limits_{m=1}^{M}E_{(\vec{x_m}, y_m)\sim P}\mathbb{I}[f(\vec{x_m})\neq y_m]=E_{(\vec{x}, y)\sim P}\mathbb{I}[f(\vec{x})\neq y]$</p>
+<p><strong>Test error is a proxy of expected error. The larger the test set, the better the approximation.</strong></p>
+<p><strong>Expected risk</strong></p>
+<p>More generally, for a loss funcion $L(y^\prime, y)$, the expected risk of $f$ is defined as $R(f)=E_{(\vec x, y)\sim P}L(f(\vec x), y)$</p>
+<ul>
+<li>$L(y^\prime, y)=\mathbb{I}[y^\prime \neq y]$ called <strong>0-1 loss</strong></li>
+</ul>
+<p><strong>Bayes optimal classifier</strong>: $f^\ast(x)=\mathop{argmax}\limits_{c\in[C]}P(c|x)$</p>
+<p><strong>The optimal risk</strong>: $R(f^\ast)=E_{x\sim P_x}[1-max_{c\in[C]}P(c|x)]$ where $P_x$ is the marginal distribution of x.</p>
+<p>It is easy to show $R(f^\ast)\leq R(f)$ for any $f$.</p>
+<p>For special case $C=2$, let $\eta(x)=P(0|x)$, then $R(f^\ast)=E_{x\sim P_x}[min{\eta(x), 1-\eta(x)}]$</p></div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2022-01-28</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/machine-learning/">Machine Learning</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/projects/roulette/" class="prev" rel="prev" title="Roulette"><i class="fas fa-angle-left fa-fw"></i>Roulette</a>
+            <a href="/posts/machine-learning/linear-regression/" class="next" rel="next" title="Linear Regression">Linear Regression<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2019 - 2022</span><span class="icp-splitter">&nbsp;|&nbsp;</span><br class="icp-br"/>
+                    <span class="icp"><a href='https://beian.miit.gov.cn/#/Integrated/index'>浙ICP备2021000092</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="stylesheet" href="/lib/katex/copy-tex.min.css"><script type="text/javascript" src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js"></script><script type="text/javascript" src="/lib/katex/auto-render.min.js"></script><script type="text/javascript" src="/lib/katex/copy-tex.min.js"></script><script type="text/javascript" src="/lib/katex/mhchem.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":100},"comment":{},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":50,"type":"lunr"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

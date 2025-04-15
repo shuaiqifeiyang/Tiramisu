@@ -1,0 +1,52 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Shuaiqifeiyang&#39;s blog</title>
+        <link>https://shuaiqifeiyang.tech/zh-cn/</link>
+        <description>关于 LoveIt 主题</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>shuaiqifeiyang@gmail.com</managingEditor>
+            <webMaster>shuaiqifeiyang@gmail.com</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 29 Nov 2021 20:11:38 -0800</lastBuildDate>
+            <atom:link href="https://shuaiqifeiyang.tech/zh-cn/index.xml" rel="self" type="application/rss+xml" />
+        <item>
+    <title>570 Reviews</title>
+    <link>https://shuaiqifeiyang.tech/zh-cn/posts/algorithm/570-reviews/</link>
+    <pubDate>Mon, 29 Nov 2021 20:11:38 -0800</pubDate>
+    <author>作者</author>
+    <guid>https://shuaiqifeiyang.tech/zh-cn/posts/algorithm/570-reviews/</guid>
+    <description><![CDATA[<p>570 复习</p>]]></description>
+</item><item>
+    <title>2064. Minimized Maximum of Products Distributed to Any Store</title>
+    <link>https://shuaiqifeiyang.tech/zh-cn/posts/leetcode-single/2000/2064/</link>
+    <pubDate>Sun, 07 Nov 2021 08:43:43 -0800</pubDate>
+    <author>作者</author>
+    <guid>https://shuaiqifeiyang.tech/zh-cn/posts/leetcode-single/2000/2064/</guid>
+    <description><![CDATA[<p>二分法</p>]]></description>
+</item><item>
+    <title>887 Super Egg Drop</title>
+    <link>https://shuaiqifeiyang.tech/zh-cn/posts/leetcode-single/800/887-super-egg-drop/</link>
+    <pubDate>Tue, 02 Nov 2021 20:19:10 -0700</pubDate>
+    <author>作者</author>
+    <guid>https://shuaiqifeiyang.tech/zh-cn/posts/leetcode-single/800/887-super-egg-drop/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>最大流</title>
+    <link>https://shuaiqifeiyang.tech/zh-cn/posts/algorithm/max-flow/</link>
+    <pubDate>Sun, 24 Oct 2021 09:06:32 -0700</pubDate>
+    <author>作者</author>
+    <guid>https://shuaiqifeiyang.tech/zh-cn/posts/algorithm/max-flow/</guid>
+    <description><![CDATA[<p>这篇文章介绍了Max Flow问题</p>]]></description>
+</item><item>
+    <title>Word Pyramid</title>
+    <link>https://shuaiqifeiyang.tech/zh-cn/posts/projects/word-pyramid/</link>
+    <pubDate>Fri, 28 Feb 2020 20:19:10 -0700</pubDate>
+    <author>作者</author>
+    <guid>https://shuaiqifeiyang.tech/zh-cn/posts/projects/word-pyramid/</guid>
+    <description><![CDATA[<p>一款背单词的教育游戏</p>]]></description>
+</item><item>
+    <title>搭建Nginx服务器</title>
+    <link>https://shuaiqifeiyang.tech/zh-cn/posts/misc/how-to-build-nginx-server/</link>
+    <pubDate>Thu, 25 Jul 2019 19:08:14 -0700</pubDate>
+    <author>作者</author>
+    <guid>https://shuaiqifeiyang.tech/zh-cn/posts/misc/how-to-build-nginx-server/</guid>
+    <description><![CDATA[<p>在服务器上面安装配置Nginx</p>]]></description>
+</item></channel>
+</rss>

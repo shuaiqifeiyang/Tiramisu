@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>Leetcode Frequency 61-80 - Shuaiqifeiyang&#39;s blog</title><meta name="Description" content="About LoveIt Theme"><meta property="og:title" content="Leetcode Frequency 61-80" />
+<meta property="og:description" content="Leetcode Top 61-80 high-frequency problems: types, solutions, and summary
+`" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://shuaiqifeiyang.tech/posts/leetcode-frequency/leetcode-frequency-61-80/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-12-12T12:33:04-08:00" />
+<meta property="article:modified_time" content="2021-12-12T12:33:04-08:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Leetcode Frequency 61-80"/>
+<meta name="twitter:description" content="Leetcode Top 61-80 high-frequency problems: types, solutions, and summary
+`"/>
+<meta name="application-name" content="Telescope">
+<meta name="apple-mobile-web-app-title" content="Telescope"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://shuaiqifeiyang.tech/posts/leetcode-frequency/leetcode-frequency-61-80/" /><link rel="prev" href="https://shuaiqifeiyang.tech/posts/databases/leetcode/" /><link rel="next" href="https://shuaiqifeiyang.tech/posts/misc/tcp-socket-server-node/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Leetcode Frequency 61-80",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/shuaiqifeiyang.tech\/posts\/leetcode-frequency\/leetcode-frequency-61-80\/"
+        },"genre": "posts","wordcount":  590 ,
+        "url": "https:\/\/shuaiqifeiyang.tech\/posts\/leetcode-frequency\/leetcode-frequency-61-80\/","datePublished": "2021-12-12T12:33:04-08:00","dateModified": "2021-12-12T12:33:04-08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "Author"},"author": {
+                "@type": "Person",
+                "name": "Author"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="" header-mobile=""><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : '' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Shuaiqifeiyang&#39;s blog">Shuaiqifeiyang&#39;s blog</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="/about/"> About </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item language" title="Select Language">English<i class="fas fa-chevron-right fa-fw"></i>
+                        <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/posts/leetcode-frequency/leetcode-frequency-61-80/" selected>English</option></select>
+                    </a><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Shuaiqifeiyang&#39;s blog">Shuaiqifeiyang&#39;s blog</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="/about/" title="">About</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a><a href="javascript:void(0);" class="menu-item" title="Select Language">English<i class="fas fa-chevron-right fa-fw"></i>
+                    <select class="language-select" onchange="location = this.value;"><option value="/posts/leetcode-frequency/leetcode-frequency-61-80/" selected>English</option></select>
+                </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content always-active" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">Leetcode Frequency 61-80</h1><div class="post-meta">
+            <div class="post-meta-line">
+                
+                </div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-12-12">2021-12-12</time>&nbsp;
+            </div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#hash">Hash</a>
+      <ul>
+        <li><a href="#1010-pairs-of-songs-with-total-durations-divisible-by-60">1010. Pairs of Songs With Total Durations Divisible by 60</a></li>
+        <li><a href="#460-lfu-cache">460. LFU Cache</a></li>
+      </ul>
+    </li>
+    <li><a href="#greedy">Greedy</a>
+      <ul>
+        <li><a href="#134-gas-station">134. Gas Station</a></li>
+      </ul>
+    </li>
+    <li><a href="#sort">Sort</a>
+      <ul>
+        <li><a href="#347-top-k-frequent-elements">347. Top K Frequent Elements</a></li>
+      </ul>
+    </li>
+    <li><a href="#topological-sort">Topological Sort</a>
+      <ul>
+        <li><a href="#210-course-schedule-ii">210. Course Schedule II</a></li>
+      </ul>
+    </li>
+    <li><a href="#two-pointers">Two Pointers</a>
+      <ul>
+        <li><a href="#18-4sum">18. 4Sum</a></li>
+      </ul>
+    </li>
+    <li><a href="#linkedlist">LinkedList</a>
+      <ul>
+        <li><a href="#21-merge-two-sorted-lists">21. Merge Two Sorted Lists</a></li>
+        <li><a href="#1570-dot-product-of-two-sparse-vectors">1570. Dot Product of Two Sparse Vectors</a></li>
+      </ul>
+    </li>
+    <li><a href="#dfs">DFS</a>
+      <ul>
+        <li><a href="#529-minesweepper">529. Minesweepper</a></li>
+        <li><a href="#297-serialize-and-deserialize-binary-tree">297. Serialize and Deserialize Binary Tree</a></li>
+        <li><a href="#526-beautiful-arrangement">526. Beautiful Arrangement</a></li>
+      </ul>
+    </li>
+    <li><a href="#dp">DP</a>
+      <ul>
+        <li><a href="#139-word-break">139. Word Break</a></li>
+        <li><a href="#174-dungeon-game">174. Dungeon Game</a></li>
+      </ul>
+    </li>
+    <li><a href="#two-pointers-1">Two Pointers</a>
+      <ul>
+        <li><a href="#244-shortest-word-distance-ii">244. Shortest Word Distance II</a></li>
+      </ul>
+    </li>
+    <li><a href="#binary-search">Binary Search</a>
+      <ul>
+        <li><a href="#981-time-based-key-value-store">981. Time Based Key-Value Store</a></li>
+      </ul>
+    </li>
+    <li><a href="#stack">Stack</a>
+      <ul>
+        <li><a href="#71-simplify-path">71. Simplify Path</a></li>
+      </ul>
+    </li>
+    <li><a href="#heap">Heap</a>
+      <ul>
+        <li><a href="#759-employee-free-time">759. Employee Free Time</a></li>
+      </ul>
+    </li>
+    <li><a href="#math">Math</a>
+      <ul>
+        <li><a href="#9-palindrome-number">9. Palindrome Number</a></li>
+      </ul>
+    </li>
+    <li><a href="#topological-sort-1">Topological Sort</a>
+      <ul>
+        <li><a href="#269-alien-dictionary">269. Alien Dictionary</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>Leetcode Top 61-80 high-frequency problems: types, solutions, and summary</p>
+<p>`</p>
+<p>`</p>
+<h2 id="hash">Hash</h2>
+<h3 id="1010-pairs-of-songs-with-total-durations-divisible-by-60">1010. Pairs of Songs With Total Durations Divisible by 60</h3>
+<p>Medium
+<a href="https://leetcode.com/problems/pairs-of-songs-with-total-durations-divisible-by-60/" target="_blank" rel="noopener noreffer">1010. Pairs of Songs With Total Durations Divisible by 60</a></p>
+<p>This problem is similar to 2 sum. However, in this problem, we don&rsquo;t only have one target number. All numbers that are divisible by 60 are target numbers. We use a hash to store the count of number existed in the array. For every target number, we check if target number minus current number is existed in the array.</p>
+<h3 id="460-lfu-cache">460. LFU Cache</h3>
+<p>Hard
+<a href="https://leetcode.com/problems/lfu-cache/" target="_blank" rel="noopener noreffer">460. LFU Cache</a></p>
+<p>Use 3 hash tables</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C++" data-lang="C++"><span class="n">unordered_map</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span> <span class="n">pair</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span> <span class="kt">int</span><span class="o">&gt;&gt;</span> <span class="n">key2ValueAndFrequency</span><span class="p">;</span>
+<span class="n">unordered_map</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span> <span class="n">list</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;::</span><span class="n">iterator</span><span class="o">&gt;</span> <span class="n">key2Node</span><span class="p">;</span>
+<span class="n">unordered_map</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span> <span class="n">list</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;&gt;</span> <span class="n">frequency2Key</span><span class="p">;</span>
+</code></pre></div><h2 id="greedy">Greedy</h2>
+<h3 id="134-gas-station">134. Gas Station</h3>
+<p>Medium
+<a href="https://leetcode.com/problems/gas-station/" target="_blank" rel="noopener noreffer">134. Gas Station</a></p>
+<p>The problem emphasizes &ldquo;If there exists a solution, it is guaranteed to be unique&rdquo;. We use two variables: <code>total</code> and <code>cur</code>.</p>
+<ul>
+<li><code>total</code> indicates if the sum of gas greater than the sum of cost. If and only if the sum of gas greater than the sum of cost, can we find a start position travel around the circuit.</li>
+<li><code>cur</code> is the remaining gas when we choose a candidate start position. If cur is negative, the candidate start position is invalid and all position between current postion and candidate start position are also invalid.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C++" data-lang="C++"><span class="k">class</span> <span class="nc">Solution</span> <span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+    <span class="kt">int</span> <span class="n">canCompleteCircuit</span><span class="p">(</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;&amp;</span> <span class="n">gas</span><span class="p">,</span> <span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;&amp;</span> <span class="n">cost</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kt">int</span> <span class="n">total</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">cur</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">res</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">gas</span><span class="p">.</span><span class="n">size</span><span class="p">();</span><span class="n">i</span><span class="o">++</span><span class="p">){</span>
+            <span class="n">total</span><span class="o">+=</span><span class="n">gas</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">-</span><span class="n">cost</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+            <span class="n">cur</span><span class="o">+=</span><span class="n">gas</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">-</span><span class="n">cost</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+            <span class="k">if</span><span class="p">(</span><span class="n">cur</span><span class="o">&lt;</span><span class="mi">0</span><span class="p">){</span>
+                <span class="n">cur</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+                <span class="n">res</span><span class="o">=</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+        <span class="k">return</span> <span class="n">total</span><span class="o">&lt;</span><span class="mi">0</span><span class="o">?-</span><span class="mi">1</span><span class="o">:</span><span class="n">res</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">};</span>
+</code></pre></div><h2 id="sort">Sort</h2>
+<h3 id="347-top-k-frequent-elements">347. Top K Frequent Elements</h3>
+<p>Medium
+<a href="https://leetcode.com/problems/top-k-frequent-elements/" target="_blank" rel="noopener noreffer">347. Tok K Frequent Elements</a></p>
+<p>Use a hash map to store the frequency of all elements. Record the maximum frequency and create a buckets. Each bucket stores the elements with same frequency.</p>
+<h2 id="topological-sort">Topological Sort</h2>
+<h3 id="210-course-schedule-ii">210. Course Schedule II</h3>
+<p>Medium
+<a href="https://leetcode.com/problems/course-schedule-ii/" target="_blank" rel="noopener noreffer">210. Course Schedule II</a></p>
+<p>Standard Topological Sort</p>
+<h2 id="two-pointers">Two Pointers</h2>
+<h3 id="18-4sum">18. 4Sum</h3>
+<p>Medium
+<a href="https://leetcode.com/problems/4sum/" target="_blank" rel="noopener noreffer">18. 4Sum</a></p>
+<p>The difficult point is how to avoid collecting duplicate number.</p>
+<h2 id="linkedlist">LinkedList</h2>
+<h3 id="21-merge-two-sorted-lists">21. Merge Two Sorted Lists</h3>
+<p>Easy
+<a href="https://leetcode.com/problems/merge-two-sorted-lists/" target="_blank" rel="noopener noreffer">21. Merge Two Sorted Lists</a></p>
+<h3 id="1570-dot-product-of-two-sparse-vectors">1570. Dot Product of Two Sparse Vectors</h3>
+<p>Medium
+<a href="https://leetcode.com/problems/dot-product-of-two-sparse-vectors/" target="_blank" rel="noopener noreffer">1570. Dot Product of Two Sparse Vectors</a></p>
+<h2 id="dfs">DFS</h2>
+<h3 id="529-minesweepper">529. Minesweepper</h3>
+<p>Medium
+<a href="https://leetcode.com/problems/minesweeper/" target="_blank" rel="noopener noreffer">529. Minesweeper</a></p>
+<h3 id="297-serialize-and-deserialize-binary-tree">297. Serialize and Deserialize Binary Tree</h3>
+<p>Hard
+<a href="https://leetcode.com/problems/serialize-and-deserialize-binary-tree/" target="_blank" rel="noopener noreffer">297. Serialize and Deserialize Binary Tree</a></p>
+<h3 id="526-beautiful-arrangement">526. Beautiful Arrangement</h3>
+<p>Medium
+<a href="https://leetcode.com/problems/beautiful-arrangement/" target="_blank" rel="noopener noreffer">526. Beautiful Arrangement</a></p>
+<h2 id="dp">DP</h2>
+<h3 id="139-word-break">139. Word Break</h3>
+<p>Medium
+<a href="https://leetcode.com/problems/word-break/" target="_blank" rel="noopener noreffer">139. Word Break</a></p>
+<h3 id="174-dungeon-game">174. Dungeon Game</h3>
+<p>Hard
+<a href="https://leetcode.com/problems/dungeon-game/" target="_blank" rel="noopener noreffer">174. Dungeon Game</a></p>
+<p>Go from bottom right to top left</p>
+<h2 id="two-pointers-1">Two Pointers</h2>
+<h3 id="244-shortest-word-distance-ii">244. Shortest Word Distance II</h3>
+<p>Medium
+<a href="https://leetcode.com/problems/shortest-word-distance-ii/" target="_blank" rel="noopener noreffer">244. Shortest Word Distance II</a></p>
+<p>If we have two sorted array, there is a linear time method to calculate the minimum difference between two element from the two array seperately.</p>
+<h2 id="binary-search">Binary Search</h2>
+<h3 id="981-time-based-key-value-store">981. Time Based Key-Value Store</h3>
+<p>Medium
+<a href="https://leetcode.com/problems/time-based-key-value-store/" target="_blank" rel="noopener noreffer">981. Time Based Key-Value Store</a></p>
+<p>The ASCII code of &lsquo;{&rsquo; is greater than all letters.</p>
+<h2 id="stack">Stack</h2>
+<h3 id="71-simplify-path">71. Simplify Path</h3>
+<p>Medium
+<a href="https://leetcode.com/problems/simplify-path/" target="_blank" rel="noopener noreffer">71. Simplify Path</a></p>
+<p>STL string find('\', idx), idx is the first postion to search. If find doesn&rsquo;t a match, return <code>string::pos==-1</code></p>
+<h2 id="heap">Heap</h2>
+<h3 id="759-employee-free-time">759. Employee Free Time</h3>
+<p>Hard
+<a href="https://leetcode.com/problems/employee-free-time/" target="_blank" rel="noopener noreffer">759. Employee Free Time</a></p>
+<p>There are two approach to this problem. One is sort all interval, and the time complexity is O(NlogN). The other one is make use of that every Employee&rsquo;s interval is sorted, so we use priority heap to sort all intervals and the time complexity is O(NlogK), K is the number of employee.</p>
+<h2 id="math">Math</h2>
+<h3 id="9-palindrome-number">9. Palindrome Number</h3>
+<p>Easy
+<a href="https://leetcode.com/problems/palindrome-number/" target="_blank" rel="noopener noreffer">9. Palindrome Number</a></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C++" data-lang="C++"><span class="kt">bool</span> <span class="nf">isPalindrome</span><span class="p">(</span><span class="kt">int</span> <span class="n">x</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">x</span><span class="o">&lt;</span><span class="mi">0</span> <span class="o">||</span> <span class="p">(</span><span class="n">x</span><span class="o">%</span><span class="mi">10</span><span class="o">==</span><span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">x</span><span class="o">!=</span><span class="mi">0</span><span class="p">))</span> <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">revertNumber</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+    <span class="c1">// A way to avoid overflow
+</span><span class="c1"></span>    <span class="k">while</span><span class="p">(</span><span class="n">x</span><span class="o">&gt;</span><span class="n">revertNumber</span><span class="p">){</span>
+        <span class="n">revertNumber</span><span class="o">=</span><span class="n">revertNumber</span><span class="o">*</span><span class="mi">10</span><span class="o">+</span><span class="n">x</span><span class="o">%</span><span class="mi">10</span><span class="p">;</span>
+        <span class="n">x</span><span class="o">/=</span><span class="mi">10</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="n">x</span><span class="o">==</span><span class="n">revertNumber</span> <span class="o">||</span> <span class="n">x</span><span class="o">==</span><span class="n">revertNumber</span><span class="o">/</span><span class="mi">10</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div><h2 id="topological-sort-1">Topological Sort</h2>
+<h3 id="269-alien-dictionary">269. Alien Dictionary</h3>
+<p>Hard
+<a href="https://leetcode.com/problems/alien-dictionary/" target="_blank" rel="noopener noreffer">269. Alien Dictionary</a></p>
+<p>Lots of edge cases:</p>
+<ul>
+<li><code>['abs', 'ab']</code>, there is no solution</li>
+<li></li>
+</ul></div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2021-12-12</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/databases/leetcode/" class="prev" rel="prev" title="Leetcode"><i class="fas fa-angle-left fa-fw"></i>Leetcode</a>
+            <a href="/posts/misc/tcp-socket-server-node/" class="next" rel="next" title="How to build a TCP socket server in NodeJS">How to build a TCP socket server in NodeJS<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2019 - 2022</span><span class="icp-splitter">&nbsp;|&nbsp;</span><br class="icp-br"/>
+                    <span class="icp"><a href='https://beian.miit.gov.cn/#/Integrated/index'>浙ICP备2021000092</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><script type="text/javascript" src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":100},"comment":{},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":50,"type":"lunr"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>
